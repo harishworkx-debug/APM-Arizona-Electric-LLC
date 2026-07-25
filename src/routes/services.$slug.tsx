@@ -86,7 +86,7 @@ function ServiceDetail() {
               <span className="eyebrow">Benefits</span>
               <h2 className="mt-4 text-3xl md:text-4xl font-bold text-secondary">Why homeowners & businesses choose us for this.</h2>
               <ul className="mt-8 space-y-4">
-                {s.benefits.map((b) => (
+                {s.benefits.map((b: string) => (
                   <li key={b} className="flex gap-4">
                     <div className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-primary/15 text-secondary"><IconCheck className="h-4 w-4" /></div>
                     <span className="text-secondary font-medium">{b}</span>
@@ -101,7 +101,7 @@ function ServiceDetail() {
               <span className="eyebrow bg-white/10 border-white/20 text-white">Common Issues We Fix</span>
               <h3 className="mt-4 text-2xl font-bold">Sound familiar?</h3>
               <ul className="mt-6 space-y-3">
-                {s.problems.map((p) => (
+                {s.problems.map((p: string) => (
                   <li key={p} className="flex items-center gap-3 text-white/85"><span className="h-1.5 w-1.5 rounded-full bg-primary" /> {p}</li>
                 ))}
               </ul>

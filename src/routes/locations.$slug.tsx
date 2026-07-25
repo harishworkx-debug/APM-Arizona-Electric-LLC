@@ -76,7 +76,7 @@ function LocationDetail() {
               <h2 className="mt-4 text-3xl md:text-4xl font-bold text-secondary">Your neighborhood electricians in {l.city}.</h2>
               <p className="mt-4 text-muted-foreground text-lg">We know {l.city} — from older homes with dated wiring to new builds needing modern smart systems. Every neighborhood, every panel type, every code requirement.</p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {l.landmarks.map((lm) => (
+                {l.landmarks.map((lm: string) => (
                   <span key={lm} className="inline-flex items-center gap-1 rounded-full bg-primary/10 border border-primary/20 px-3 py-1.5 text-xs font-semibold text-secondary">
                     <IconMapPin className="h-3 w-3 text-primary" /> {lm}
                   </span>
