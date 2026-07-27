@@ -1,20 +1,43 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconPhone, IconWhatsapp, IconMail, IconMapPin, IconClock, IconCheck, IconArrowRight } from "@/components/site/Icons";
+
+const CONTACT_TITLE = "Contact Our Phoenix Electricians | APM Arizona Electric LLC";
+const CONTACT_DESC =
+  "Contact APM Arizona Electric LLC in Tempe, AZ. Call +1 (480) 619-0510, message us on WhatsApp or request a free written estimate for electrical work across the Phoenix Metro Area.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact APM Arizona Electric LLC" },
-      { name: "description", content: "Call +1 (480) 619-0510 or request a free estimate for professional electrical services in Phoenix, Arizona." },
-      { property: "og:title", content: "Contact APM Arizona Electric LLC" },
-      { property: "og:description", content: "Call +1 (480) 619-0510 or request a free estimate." },
-      { property: "og:url", content: "/contact" },
+      { title: CONTACT_TITLE },
+      { name: "description", content: CONTACT_DESC },
+      { property: "og:title", content: CONTACT_TITLE },
+      { property: "og:description", content: CONTACT_DESC },
+      { property: "og:url", content: abs("/contact") },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: CONTACT_TITLE },
+      { name: "twitter:description", content: CONTACT_DESC },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: abs("/contact") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          url: abs("/contact"),
+          about: { "@type": "ElectricalContractor", "@id": `${SITE.url}/#business`, name: BUSINESS.name, telephone: BUSINESS.phoneSchema },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }])),
+      },
+    ],
   }),
   component: ContactPage,
 });
