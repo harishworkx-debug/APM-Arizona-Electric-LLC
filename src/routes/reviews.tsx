@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconStar, IconArrowRight, IconPhone } from "@/components/site/Icons";
 
 const REVIEWS = [
