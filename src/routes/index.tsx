@@ -11,22 +11,44 @@ import {
 
 const HERO = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=70";
 
+const HOME_TITLE = "Electrician in Phoenix, AZ | APM Arizona Electric LLC";
+const HOME_DESC =
+  "Licensed residential and commercial electricians serving Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. Panel upgrades, rewiring, lighting, ceiling fans and breaker repair. Call +1 (480) 619-0510 for a free estimate.";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "APM Arizona Electric LLC | Electrician in Phoenix, AZ" },
-      { name: "description", content: "Licensed residential and commercial electricians serving Phoenix, Mesa, Scottsdale, Chandler and nearby Arizona communities. Electrical repairs, lighting, ceiling fans, breaker troubleshooting and more. Call +1 (480) 619-0510 for a free estimate." },
-      { property: "og:title", content: "APM Arizona Electric LLC | Electrician in Phoenix, AZ" },
-      { property: "og:description", content: "Licensed Phoenix electricians. Honest workmanship, family values, free estimates." },
+      { title: HOME_TITLE },
+      { name: "description", content: HOME_DESC },
+      { property: "og:title", content: HOME_TITLE },
+      { property: "og:description", content: HOME_DESC },
       { property: "og:image", content: HERO },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: abs("/") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: HERO },
-      { name: "twitter:title", content: "APM Arizona Electric LLC" },
-      { name: "twitter:description", content: "Licensed Phoenix electricians. Free estimates." },
+      { name: "twitter:title", content: HOME_TITLE },
+      { name: "twitter:description", content: HOME_DESC },
     ],
     links: [
-      { rel: "canonical", href: "/" },
+      { rel: "canonical", href: abs("/") },
       { rel: "preload", as: "image", href: HERO, fetchpriority: "high" },
+    ],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(localBusinessSchema()) },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": `${SITE.url}/#website`,
+          url: SITE.url,
+          name: BUSINESS.name,
+          publisher: { "@id": `${SITE.url}/#business` },
+        }),
+      },
+      { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQS)) },
+      { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }])) },
     ],
   }),
   component: HomePage,
@@ -37,9 +59,12 @@ function HomePage() {
     <>
       <Hero />
       <TrustBar />
+      <LocalIntro />
       <WhyChoose />
       <ServicesGrid />
+      <Stats />
       <ResVsCom />
+      <Industries />
       <Process />
       <Gallery />
       <SafetyTips />
