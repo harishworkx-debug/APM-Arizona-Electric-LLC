@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { BUSINESS, SERVICES, LOCATIONS, FAQS } from "@/lib/business";
+import { BUSINESS, SERVICES, LOCATIONS, FAQS, INDUSTRIES, STATS, SITE, abs, localBusinessSchema, faqSchema, breadcrumbSchema } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
 import {
   IconPhone, IconArrowRight, IconStar, IconCheck, IconShield, IconBolt,
