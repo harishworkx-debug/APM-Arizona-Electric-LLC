@@ -67,7 +67,8 @@ function AboutPage() {
           <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, oklch(0.14 0.05 265 / 0.92), oklch(0.22 0.04 260 / 0.7))" }} />
         </div>
         <div className="container-x relative">
-          <Reveal><span className="eyebrow bg-white/10 border-white/20 text-white">Our Story</span></Reveal>
+          <Reveal><Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "About", path: "/about" }]} /></Reveal>
+          <Reveal delay={0.05}><span className="mt-6 eyebrow bg-white/10 border-white/20 text-white">Our Story</span></Reveal>
           <Reveal delay={0.1}><h1 className="mt-6 text-5xl md:text-7xl font-bold max-w-4xl leading-[1.05]">A family business, born from <span className="text-gradient-primary">a lineman's legacy</span>.</h1></Reveal>
         </div>
       </section>
