@@ -1,19 +1,58 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SERVICES, BUSINESS } from "@/lib/business";
+import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
-import { IconPhone, IconArrowRight, IconCheck } from "@/components/site/Icons";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { IconPhone, IconArrowRight, IconCheck, IconMapPin } from "@/components/site/Icons";
+
+const SERVICES_TITLE = "Electrical Services in Phoenix, AZ | APM Arizona Electric LLC";
+const SERVICES_DESC =
+  "Explore residential and commercial electrical services across Phoenix, AZ — panel upgrades, rewiring, ceiling fans, lighting, breaker repair and maintenance. Call +1 (480) 619-0510.";
 
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
-      { title: "Electrical Services in Phoenix, AZ | APM Arizona Electric LLC" },
-      { name: "description", content: "Professional residential and commercial electrical services across Phoenix, Arizona. Ceiling fans, lighting, breaker repairs, maintenance and more. Call +1 (480) 619-0510." },
-      { property: "og:title", content: "Electrical Services in Phoenix, AZ | APM Arizona Electric LLC" },
-      { property: "og:description", content: "Full-service residential and commercial electricians serving Phoenix and the Valley." },
-      { property: "og:url", content: "/services" },
+      { title: SERVICES_TITLE },
+      { name: "description", content: SERVICES_DESC },
+      { property: "og:title", content: SERVICES_TITLE },
+      { property: "og:description", content: SERVICES_DESC },
+      { property: "og:url", content: abs("/services") },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: SERVICES_TITLE },
+      { name: "twitter:description", content: SERVICES_DESC },
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: abs("/services") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Electrical Services in Phoenix, AZ",
+          itemListElement: SERVICES.map((s, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: s.title,
+            url: abs(`/${s.slug}`),
+          })),
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ElectricalContractor",
+          "@id": `${SITE.url}/#business`,
+          name: BUSINESS.name,
+          url: SITE.url,
+          telephone: BUSINESS.phoneSchema,
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Services", path: "/services" }])),
+      },
+    ],
   }),
   component: ServicesPage,
 });
@@ -23,11 +62,12 @@ function ServicesPage() {
     <>
       <section className="relative pt-40 pb-20 text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=2000&q=70" alt="Electrical services" className="h-full w-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=2000&q=70" alt="Licensed electricians providing electrical services in Phoenix, Arizona" className="h-full w-full object-cover" />
           <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, oklch(0.14 0.05 265 / 0.9), oklch(0.22 0.04 260 / 0.75))" }} />
         </div>
         <div className="container-x relative">
-          <Reveal><span className="eyebrow bg-white/10 border-white/20 text-white">Our Services</span></Reveal>
+          <Reveal><Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Services", path: "/services" }]} /></Reveal>
+          <Reveal delay={0.05}><span className="mt-6 eyebrow bg-white/10 border-white/20 text-white">Our Services</span></Reveal>
           <Reveal delay={0.1}><h1 className="mt-6 text-5xl md:text-7xl font-bold max-w-4xl leading-[1.05]">Complete <span className="text-gradient-primary">electrical services</span> for Phoenix.</h1></Reveal>
           <Reveal delay={0.2}><p className="mt-6 text-white/80 text-lg max-w-2xl">From a single outlet to a full commercial buildout — our licensed electricians handle every job with the same honest craftsmanship.</p></Reveal>
         </div>
