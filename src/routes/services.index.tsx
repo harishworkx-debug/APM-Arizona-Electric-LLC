@@ -99,6 +99,34 @@ function ServicesPage() {
           ))}
         </div>
       </section>
+
+      <section className="section-y">
+        <div className="container-x">
+          <Reveal><span className="eyebrow">Service Areas</span></Reveal>
+          <Reveal delay={0.1}><h2 className="mt-4 text-3xl md:text-4xl font-bold text-secondary">Every service, across the Phoenix Metro Area.</h2></Reveal>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {LOCATIONS.map((l) => (
+              <Link key={l.slug} to="/$slug" params={{ slug: l.slug }} className="flex items-center gap-3 rounded-2xl border border-border bg-white p-6 hover:border-primary/40 hover:-translate-y-0.5 transition-all">
+                <IconMapPin className="h-5 w-5 text-primary shrink-0" />
+                <span className="font-semibold text-secondary">Electrician {l.city}, AZ</span>
+              </Link>
+            ))}
+          </div>
+          <Reveal delay={0.2}>
+            <div className="mt-12 rounded-3xl p-10 text-white relative overflow-hidden" style={{ background: "linear-gradient(135deg, oklch(0.22 0.04 260), oklch(0.14 0.05 265))" }}>
+              <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full" style={{ background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)" }} />
+              <div className="relative max-w-2xl">
+                <h2 className="text-3xl md:text-4xl font-bold">Not sure which service you need?</h2>
+                <p className="mt-3 text-white/75">Tell us what you are seeing and we will diagnose it honestly — free written estimates on every project.</p>
+                <div className="mt-7 flex flex-wrap gap-3">
+                  <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
+                  <Link to="/contact" className="btn-outline">Request Estimate <IconArrowRight className="h-4 w-4" /></Link>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
     </>
   );
 }
