@@ -42,7 +42,7 @@ export function SiteFooter() {
             <h4 className="text-white font-semibold mb-5">Services</h4>
             <ul className="space-y-3 text-sm">
               {SERVICES.slice(0, 7).map((s) => (
-                <li key={s.slug}><Link to="/services/$slug" params={{ slug: s.slug }} className="hover:text-primary transition">{s.title}</Link></li>
+                <li key={s.slug}><Link to="/$slug" params={{ slug: s.slug }} className="hover:text-primary transition">{s.title}</Link></li>
               ))}
             </ul>
           </div>
@@ -51,7 +51,7 @@ export function SiteFooter() {
             <h4 className="text-white font-semibold mb-5">Service Areas</h4>
             <ul className="space-y-3 text-sm">
               {LOCATIONS.map((l) => (
-                <li key={l.slug}><Link to="/locations/$slug" params={{ slug: l.slug }} className="hover:text-primary transition">Electrician {l.city}, AZ</Link></li>
+                <li key={l.slug}><Link to="/$slug" params={{ slug: l.slug }} className="hover:text-primary transition">Electrician {l.city}, AZ</Link></li>
               ))}
             </ul>
           </div>

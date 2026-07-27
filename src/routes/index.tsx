@@ -206,7 +206,7 @@ function ServicesGrid() {
             const Icon = ICON_MAP[s.slug] ?? IconBolt;
             return (
               <Reveal key={s.slug} delay={i * 0.04}>
-                <Link to="/services/$slug" params={{ slug: s.slug }} className="group block h-full">
+                <Link to="/$slug" params={{ slug: s.slug }} className="group block h-full">
                   <div className="relative h-full overflow-hidden rounded-3xl bg-white border border-border shadow-[0_10px_40px_-25px_rgba(15,23,42,0.2)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-25px_rgba(15,23,42,0.35)]">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img src={s.image} alt={s.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
@@ -450,7 +450,7 @@ function ServiceAreas() {
         <div className="mt-14 grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {LOCATIONS.map((l, i) => (
             <Reveal key={l.slug} delay={i * 0.04}>
-              <Link to="/locations/$slug" params={{ slug: l.slug }} className="group flex items-center gap-4 rounded-3xl border border-border bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
+              <Link to="/$slug" params={{ slug: l.slug }} className="group flex items-center gap-4 rounded-3xl border border-border bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
                 <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-secondary"><IconMapPin className="h-6 w-6" /></div>
                 <div className="min-w-0 flex-1">
                   <h3 className="font-bold text-secondary">Electrician {l.city}, AZ</h3>
