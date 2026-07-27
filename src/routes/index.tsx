@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { BUSINESS, SERVICES, LOCATIONS, FAQS } from "@/lib/business";
+import { BUSINESS, SERVICES, LOCATIONS, FAQS, INDUSTRIES, STATS, SITE, abs, localBusinessSchema, faqSchema, breadcrumbSchema } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
 import {
   IconPhone, IconArrowRight, IconStar, IconCheck, IconShield, IconBolt,
@@ -11,22 +11,44 @@ import {
 
 const HERO = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=70";
 
+const HOME_TITLE = "Electrician in Phoenix, AZ | APM Arizona Electric LLC";
+const HOME_DESC =
+  "Licensed residential and commercial electricians serving Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. Panel upgrades, rewiring, lighting, ceiling fans and breaker repair. Call +1 (480) 619-0510 for a free estimate.";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "APM Arizona Electric LLC | Electrician in Phoenix, AZ" },
-      { name: "description", content: "Licensed residential and commercial electricians serving Phoenix, Mesa, Scottsdale, Chandler and nearby Arizona communities. Electrical repairs, lighting, ceiling fans, breaker troubleshooting and more. Call +1 (480) 619-0510 for a free estimate." },
-      { property: "og:title", content: "APM Arizona Electric LLC | Electrician in Phoenix, AZ" },
-      { property: "og:description", content: "Licensed Phoenix electricians. Honest workmanship, family values, free estimates." },
+      { title: HOME_TITLE },
+      { name: "description", content: HOME_DESC },
+      { property: "og:title", content: HOME_TITLE },
+      { property: "og:description", content: HOME_DESC },
       { property: "og:image", content: HERO },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: abs("/") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: HERO },
-      { name: "twitter:title", content: "APM Arizona Electric LLC" },
-      { name: "twitter:description", content: "Licensed Phoenix electricians. Free estimates." },
+      { name: "twitter:title", content: HOME_TITLE },
+      { name: "twitter:description", content: HOME_DESC },
     ],
     links: [
-      { rel: "canonical", href: "/" },
+      { rel: "canonical", href: abs("/") },
       { rel: "preload", as: "image", href: HERO, fetchpriority: "high" },
+    ],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(localBusinessSchema()) },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": `${SITE.url}/#website`,
+          url: SITE.url,
+          name: BUSINESS.name,
+          publisher: { "@id": `${SITE.url}/#business` },
+        }),
+      },
+      { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQS)) },
+      { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }])) },
     ],
   }),
   component: HomePage,
@@ -37,9 +59,12 @@ function HomePage() {
     <>
       <Hero />
       <TrustBar />
+      <LocalIntro />
       <WhyChoose />
       <ServicesGrid />
+      <Stats />
       <ResVsCom />
+      <Industries />
       <Process />
       <Gallery />
       <SafetyTips />
@@ -206,7 +231,7 @@ function ServicesGrid() {
             const Icon = ICON_MAP[s.slug] ?? IconBolt;
             return (
               <Reveal key={s.slug} delay={i * 0.04}>
-                <Link to="/services/$slug" params={{ slug: s.slug }} className="group block h-full">
+                <Link to="/$slug" params={{ slug: s.slug }} className="group block h-full">
                   <div className="relative h-full overflow-hidden rounded-3xl bg-white border border-border shadow-[0_10px_40px_-25px_rgba(15,23,42,0.2)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-25px_rgba(15,23,42,0.35)]">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img src={s.image} alt={s.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
@@ -450,7 +475,7 @@ function ServiceAreas() {
         <div className="mt-14 grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {LOCATIONS.map((l, i) => (
             <Reveal key={l.slug} delay={i * 0.04}>
-              <Link to="/locations/$slug" params={{ slug: l.slug }} className="group flex items-center gap-4 rounded-3xl border border-border bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
+              <Link to="/$slug" params={{ slug: l.slug }} className="group flex items-center gap-4 rounded-3xl border border-border bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
                 <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-secondary"><IconMapPin className="h-6 w-6" /></div>
                 <div className="min-w-0 flex-1">
                   <h3 className="font-bold text-secondary">Electrician {l.city}, AZ</h3>
@@ -517,6 +542,89 @@ function FinalCTA() {
   );
 }
 
+function Stats() {
+  return (
+    <section className="py-16" style={{ background: "linear-gradient(135deg, oklch(0.22 0.04 260), oklch(0.14 0.05 265))" }}>
+      <div className="container-x grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-white">
+        {STATS.map((s, i) => (
+          <Reveal key={s.l} delay={i * 0.06}>
+            <div className="text-center">
+              <div className="font-display text-5xl font-bold text-primary">{s.v}</div>
+              <div className="mt-2 text-sm text-white/70">{s.l}</div>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Industries() {
+  return (
+    <section className="section-y">
+      <div className="container-x">
+        <div className="max-w-2xl">
+          <Reveal><span className="eyebrow">Industries We Serve</span></Reveal>
+          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Commercial electricians who understand your business.</h2></Reveal>
+          <Reveal delay={0.15}><p className="mt-4 text-muted-foreground text-lg">Every industry has its own load profile, code requirements and downtime tolerance. We plan around yours.</p></Reveal>
+        </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {INDUSTRIES.map((it, i) => (
+            <Reveal key={it.t} delay={i * 0.05}>
+              <div className="h-full rounded-3xl border border-border bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-elegant">
+                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/15 text-secondary"><IconBuilding className="h-5 w-5" /></div>
+                <h3 className="mt-5 text-xl font-bold text-secondary">{it.t}</h3>
+                <p className="mt-2 text-muted-foreground text-sm leading-relaxed">{it.d}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LocalIntro() {
+  return (
+    <section className="section-y bg-surface">
+      <div className="container-x grid gap-12 lg:grid-cols-2 items-start">
+        <Reveal>
+          <div>
+            <span className="eyebrow">Phoenix Metro Electricians</span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Electrical work built for Arizona conditions.</h2>
+            <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
+              Arizona is hard on electrical systems. Attic temperatures over 150°F degrade insulation, monsoon storms drive surges through service entrances, and homes built for 1970s loads are now running two air conditioners, a pool pump and an EV charger. Our work accounts for all of it.
+            </p>
+            <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
+              APM Arizona Electric LLC is based at {BUSINESS.address} and serves Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale. Every job starts with a free written estimate, is performed by licensed and insured electricians, and is permitted and inspected wherever code requires it.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
+              <Link to="/services" className="btn-dark">Browse Services <IconArrowRight className="h-4 w-4" /></Link>
+            </div>
+          </div>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              { t: "Licensed & Insured", d: "Arizona-licensed electrical contractor with full liability coverage.", i: IconShield },
+              { t: "Upfront Pricing", d: "Written, itemized quotes before any work begins — no surprises.", i: IconCheck },
+              { t: "Fast Local Response", d: "Same-day and next-day appointments across the Valley.", i: IconClock },
+              { t: "Family Owned", d: "A local family business, not a national franchise call center.", i: IconHome },
+            ].map((c) => (
+              <div key={c.t} className="rounded-3xl border border-border bg-white p-6">
+                <div className="grid h-11 w-11 place-items-center rounded-2xl bg-primary/15 text-secondary"><c.i className="h-5 w-5" /></div>
+                <h3 className="mt-4 font-bold text-secondary">{c.t}</h3>
+                <p className="mt-1.5 text-sm text-muted-foreground">{c.d}</p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 function MapSection() {
   return (
     <section className="pb-20">
@@ -524,7 +632,7 @@ function MapSection() {
         <div className="overflow-hidden rounded-3xl border border-border shadow-elegant">
           <iframe
             title="APM Arizona Electric LLC on Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412478.3658121596!2d-117.31996582528662!3d33.35805185784505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0f0f2af0a919%3A0x97952056a9736ef4!2sApm%20Arizona%20Electric%20LLC!5e0!3m2!1sen!2sin!4v1784981145048!5m2!1sen!2sin"
+            src={BUSINESS.mapEmbed}
             width="100%" height="500" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin"
           />
         </div>

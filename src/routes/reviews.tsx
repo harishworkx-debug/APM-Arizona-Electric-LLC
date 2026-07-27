@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconStar, IconArrowRight, IconPhone } from "@/components/site/Icons";
 
 const REVIEWS = [
@@ -15,17 +16,48 @@ const REVIEWS = [
   { n: "Rachel W.", city: "Mesa", t: "Fair, on time, and clean. What more could you ask for from an electrician?" },
 ];
 
+const REVIEWS_TITLE = "Customer Reviews of Our Phoenix Electricians | APM Arizona Electric LLC";
+const REVIEWS_DESC =
+  "Read 5.0-star reviews from Phoenix, Mesa, Scottsdale, Tempe, Chandler and Glendale homeowners and businesses who trust APM Arizona Electric LLC with their electrical work.";
+
 export const Route = createFileRoute("/reviews")({
   head: () => ({
     meta: [
-      { title: "Customer Reviews | APM Arizona Electric LLC" },
-      { name: "description", content: "See why homeowners and businesses across Phoenix trust APM Arizona Electric LLC with their electrical projects. 5.0 stars, 210+ reviews." },
-      { property: "og:title", content: "Customer Reviews | APM Arizona Electric LLC" },
-      { property: "og:description", content: "5.0 stars, 210+ reviews from Phoenix homeowners and businesses." },
-      { property: "og:url", content: "/reviews" },
+      { title: REVIEWS_TITLE },
+      { name: "description", content: REVIEWS_DESC },
+      { property: "og:title", content: REVIEWS_TITLE },
+      { property: "og:description", content: REVIEWS_DESC },
+      { property: "og:url", content: abs("/reviews") },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: REVIEWS_TITLE },
+      { name: "twitter:description", content: REVIEWS_DESC },
     ],
-    links: [{ rel: "canonical", href: "/reviews" }],
+    links: [{ rel: "canonical", href: abs("/reviews") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ElectricalContractor",
+          "@id": `${SITE.url}/#business`,
+          name: BUSINESS.name,
+          url: SITE.url,
+          telephone: BUSINESS.phoneSchema,
+          aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "210" },
+          review: REVIEWS.slice(0, 6).map((r) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: r.n },
+            reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+            reviewBody: r.t,
+          })),
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Reviews", path: "/reviews" }])),
+      },
+    ],
   }),
   component: ReviewsPage,
 });
@@ -36,7 +68,8 @@ function ReviewsPage() {
       <section className="relative pt-40 pb-20 text-white overflow-hidden" style={{ background: "linear-gradient(135deg, oklch(0.14 0.05 265), oklch(0.22 0.04 260))" }}>
         <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 80% 30%, oklch(0.78 0.17 70 / 0.35), transparent 50%)" }} />
         <div className="container-x relative text-center">
-          <Reveal><span className="eyebrow bg-white/10 border-white/20 text-white">Reviews</span></Reveal>
+          <Reveal><div className="flex justify-center"><Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Reviews", path: "/reviews" }]} /></div></Reveal>
+          <Reveal delay={0.05}><span className="mt-6 eyebrow bg-white/10 border-white/20 text-white">Reviews</span></Reveal>
           <Reveal delay={0.1}><h1 className="mt-6 text-5xl md:text-7xl font-bold">Loved by <span className="text-gradient-primary">Phoenix</span>.</h1></Reveal>
           <Reveal delay={0.2}>
             <div className="mt-10 inline-flex flex-col items-center gap-3 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl px-10 py-8">
