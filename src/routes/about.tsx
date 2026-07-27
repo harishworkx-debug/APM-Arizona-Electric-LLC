@@ -1,19 +1,53 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
+import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconPhone, IconArrowRight, IconCheck, IconShield, IconStar, IconHome } from "@/components/site/Icons";
+
+const ABOUT_TITLE = "About Our Family-Owned Electricians | APM Arizona Electric LLC";
+const ABOUT_DESC =
+  "Meet APM Arizona Electric LLC, a family-owned, licensed electrical contractor in Tempe, AZ inspired by the legacy of Andres Portillo Marin and serving the Phoenix Metro Area.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About APM Arizona Electric LLC" },
-      { name: "description", content: "Learn about APM Arizona Electric LLC, a family-owned electrical contractor inspired by the legacy of Andres Portillo Marin, proudly serving Phoenix, Arizona." },
-      { property: "og:title", content: "About APM Arizona Electric LLC" },
-      { property: "og:description", content: "Family-owned Phoenix electricians honoring the legacy of Andres Portillo Marin." },
-      { property: "og:url", content: "/about" },
+      { title: ABOUT_TITLE },
+      { name: "description", content: ABOUT_DESC },
+      { property: "og:title", content: ABOUT_TITLE },
+      { property: "og:description", content: ABOUT_DESC },
+      { property: "og:url", content: abs("/about") },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: ABOUT_TITLE },
+      { name: "twitter:description", content: ABOUT_DESC },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: abs("/about") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": `${SITE.url}/#organization`,
+          name: BUSINESS.name,
+          url: SITE.url,
+          telephone: BUSINESS.phoneSchema,
+          email: BUSINESS.email,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: BUSINESS.street,
+            addressLocality: BUSINESS.addressLocality,
+            addressRegion: "AZ",
+            postalCode: BUSINESS.postalCode,
+            addressCountry: "US",
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }, { name: "About", path: "/about" }])),
+      },
+    ],
   }),
   component: AboutPage,
 });
