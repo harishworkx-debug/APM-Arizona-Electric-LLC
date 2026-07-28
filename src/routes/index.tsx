@@ -241,12 +241,13 @@ function ServicesGrid() {
                       </div>
                     </div>
                     <div className="p-6">
-                      <h3 className="font-bold text-secondary text-lg leading-snug">{s.title}</h3>
+                      <h3 className="font-bold text-secondary text-lg leading-snug group-hover:text-primary transition-colors">{s.title}</h3>
                       <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{s.short}</p>
                       <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
-                        Learn more <IconArrowRight className="h-4 w-4" />
+                        {s.navLabel ?? s.title} <IconArrowRight className="h-4 w-4 shrink-0" />
                       </div>
                     </div>
+
                   </div>
                 </Link>
               </Reveal>
