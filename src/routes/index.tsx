@@ -451,17 +451,18 @@ function EmergencyBanner() {
   return (
     <section className="py-16 relative overflow-hidden" style={{ background: "linear-gradient(120deg, oklch(0.22 0.04 260), oklch(0.16 0.05 265))" }}>
       <div className="absolute inset-0 opacity-50" style={{ background: "radial-gradient(circle at 30% 50%, oklch(0.78 0.17 70 / 0.35), transparent 50%)" }} />
-      <div className="container-x relative flex flex-col md:flex-row items-center gap-8 text-white">
-        <div className="flex-1">
-          <div className="flex items-center gap-3 text-primary text-sm font-bold uppercase tracking-[0.2em]">
-            <span className="relative flex h-2.5 w-2.5"><span className="absolute inset-0 animate-ping rounded-full bg-primary/60" /><span className="relative rounded-full h-2.5 w-2.5 bg-primary" /></span>
+      <div className="container-x relative flex w-full max-w-full flex-col md:flex-row items-start md:items-center gap-8 text-white">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-3 text-primary text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
+            <span className="relative flex h-2.5 w-2.5 shrink-0"><span className="absolute inset-0 animate-ping rounded-full bg-primary/60" /><span className="relative rounded-full h-2.5 w-2.5 bg-primary" /></span>
             24/7 Emergency Service
           </div>
-          <h2 className="mt-3 text-3xl md:text-4xl font-bold">Electrical emergency? We're here.</h2>
+          <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold">Electrical emergency? We're here.</h2>
           <p className="mt-2 text-white/70 max-w-xl">Power out, burning smell, sparks or exposed wiring — call now and we'll dispatch a licensed electrician immediately.</p>
         </div>
-        <a href={BUSINESS.phoneHref} className="btn-primary text-base px-8 py-4"><IconPhone className="h-5 w-5" /> {BUSINESS.phone}</a>
+        <a href={BUSINESS.phoneHref} className="btn-primary w-full max-w-full md:w-auto text-base px-8 py-4"><IconPhone className="h-5 w-5 shrink-0" /> {BUSINESS.phone}</a>
       </div>
+
     </section>
   );
 }
