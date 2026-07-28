@@ -13,7 +13,7 @@ const HERO = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=
 
 const HOME_TITLE = "Electrician in Phoenix, AZ | APM Arizona Electric LLC";
 const HOME_DESC =
-  "Licensed residential and commercial electricians serving Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. Panel upgrades, rewiring, lighting, ceiling fans and breaker repair. Call +1 (480) 619-0510 for a free estimate.";
+  "Licensed residential and commercial electricians serving Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. Panel upgrades, rewiring, lighting, ceiling fans and breaker repair. Call (480) 619-0510 for a free estimate.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

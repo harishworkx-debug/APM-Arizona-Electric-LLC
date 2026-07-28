@@ -25,7 +25,7 @@ export const Route = createFileRoute("/sitemap.xml")({
         ];
         const urls = entries.map((e) => [
           `  <url>`,
-          `    <loc>${BASE_URL}${e.path}</loc>`,
+          `    <loc>${BASE_URL}${e.path.endsWith('/') ? e.path : e.path + '/'}</loc>`,
           e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
           e.priority ? `    <priority>${e.priority}</priority>` : null,
           `  </url>`,

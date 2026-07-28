@@ -86,7 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "ElectricalContractor",
           name: "APM Arizona Electric LLC",
           image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=70",
-          telephone: "+1-480-619-0510",
+          telephone: "480-619-0510",
           email: "info@apmarizonaelectric.com",
           priceRange: "$$",
           address: { "@type": "PostalAddress", addressLocality: "Phoenix", addressRegion: "AZ", addressCountry: "US" },

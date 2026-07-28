@@ -3,14 +3,14 @@ export const SITE = {
   domain: "apmarizonaelectric.com",
 };
 
-export const abs = (path: string) => `${SITE.url}${path === "/" ? "/" : path}`;
+export const abs = (path: string) => `${SITE.url}${path.endsWith('/') ? path : path + '/'}`;
 
 export const BUSINESS = {
   name: "APM Arizona Electric LLC",
   shortName: "APM Arizona Electric",
-  phone: "+1 (480) 619-0510",
-  phoneHref: "tel:+14806190510",
-  phoneSchema: "+1-480-619-0510",
+  phone: "(480) 619-0510",
+  phoneHref: "tel:4806190510",
+  phoneSchema: "480-619-0510",
   whatsapp: "https://wa.me/14806190510",
   email: "info@apmarizonaelectric.com",
   city: "Tempe",
@@ -60,7 +60,7 @@ export const SERVICES: Service[] = [
     navLabel: "Residential Electrical",
     metaTitle: "Residential Electrical Services in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed residential electricians in Phoenix, AZ. Panel upgrades, rewiring, outlets, lighting and home electrical repairs with upfront pricing. Call +1 (480) 619-0510 for a free estimate.",
+      "Licensed residential electricians in Phoenix, AZ. Panel upgrades, rewiring, outlets, lighting and home electrical repairs with upfront pricing. Call (480) 619-0510 for a free estimate.",
     h1: "Residential Electrical Services in Phoenix, AZ",
     short: "Trusted home electricians for repairs, upgrades and installations.",
     description:
@@ -111,7 +111,7 @@ export const SERVICES: Service[] = [
     navLabel: "Commercial Electrical",
     metaTitle: "Commercial Electrical Services in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Commercial electricians in Phoenix, AZ for offices, retail, restaurants and light industrial. Tenant improvements, lighting, panels and after-hours service. Call +1 (480) 619-0510.",
+      "Commercial electricians in Phoenix, AZ for offices, retail, restaurants and light industrial. Tenant improvements, lighting, panels and after-hours service. Call (480) 619-0510.",
     h1: "Commercial Electrical Services in Phoenix, AZ",
     short: "Reliable commercial electricians keeping Arizona businesses powered.",
     description:
@@ -162,7 +162,7 @@ export const SERVICES: Service[] = [
     navLabel: "Ceiling Fan Installation",
     metaTitle: "Ceiling Fan Installation in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Ceiling fan installation and replacement in Phoenix, AZ. Proper bracing, remote and smart controls, wobble-free finish and old fan haul-away. Call +1 (480) 619-0510.",
+      "Ceiling fan installation and replacement in Phoenix, AZ. Proper bracing, remote and smart controls, wobble-free finish and old fan haul-away. Call (480) 619-0510.",
     h1: "Ceiling Fan Installation in Phoenix, AZ",
     short: "Cool your home the right way with expertly installed ceiling fans.",
     description:
@@ -208,7 +208,7 @@ export const SERVICES: Service[] = [
     navLabel: "Light Fixture Installation",
     metaTitle: "Light Fixture Installation in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Light fixture installation in Phoenix, AZ. Chandeliers, recessed LED, pendants, under-cabinet and landscape lighting installed by licensed electricians. Call +1 (480) 619-0510.",
+      "Light fixture installation in Phoenix, AZ. Chandeliers, recessed LED, pendants, under-cabinet and landscape lighting installed by licensed electricians. Call (480) 619-0510.",
     h1: "Light Fixture Installation in Phoenix, AZ",
     short: "Chandeliers, recessed lighting, pendants and outdoor fixtures.",
     description:
@@ -254,7 +254,7 @@ export const SERVICES: Service[] = [
     navLabel: "Circuit Breaker Repair",
     metaTitle: "Circuit Breaker Repair in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Circuit breaker repair and panel troubleshooting in Phoenix, AZ. We diagnose tripping breakers, overloads and failing panels fast. Call +1 (480) 619-0510 for same-day help.",
+      "Circuit breaker repair and panel troubleshooting in Phoenix, AZ. We diagnose tripping breakers, overloads and failing panels fast. Call (480) 619-0510 for same-day help.",
     h1: "Circuit Breaker Repair in Phoenix, AZ",
     short: "Fast, accurate diagnosis of tripping breakers and panel issues.",
     description:
@@ -290,7 +290,7 @@ export const SERVICES: Service[] = [
       { q: "Why does my breaker only trip in the afternoon?", a: "Summer afternoon load plus heat inside the panel enclosure pushes a marginal circuit past its rating. It usually points to an overloaded circuit or a weakening breaker, both of which we can confirm with a load test." },
       { q: "Is a Federal Pacific panel really dangerous?", a: "Those panels have a documented history of breakers failing to trip on a fault. We inspect and give you a factual assessment. If it is still safe we will tell you so." },
       { q: "Can I just replace the breaker myself?", a: "Working inside a live panel is the most dangerous DIY electrical task there is, and using a non-listed breaker voids the panel rating. It is a job worth handing off." },
-      { q: "How fast can you get here for a no-power call?", a: "We prioritize loss-of-power calls and usually reach Phoenix Metro addresses the same day. Call +1 (480) 619-0510 and tell us it is urgent." },
+      { q: "How fast can you get here for a no-power call?", a: "We prioritize loss-of-power calls and usually reach Phoenix Metro addresses the same day. Call (480) 619-0510 and tell us it is urgent." },
     ],
     related: ["electrical-troubleshooting-phoenix-az", "electrical-maintenance-phoenix-az", "residential-electrical-services-phoenix-az"],
   },
@@ -300,7 +300,7 @@ export const SERVICES: Service[] = [
     navLabel: "Kitchen Electrical Repairs",
     metaTitle: "Kitchen Electrical Repairs in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Kitchen electrical repairs in Phoenix, AZ. Dedicated appliance circuits, GFCI upgrades, under-cabinet lighting and range wiring by licensed electricians. Call +1 (480) 619-0510.",
+      "Kitchen electrical repairs in Phoenix, AZ. Dedicated appliance circuits, GFCI upgrades, under-cabinet lighting and range wiring by licensed electricians. Call (480) 619-0510.",
     h1: "Kitchen Electrical Repairs in Phoenix, AZ",
     short: "Dedicated circuits, GFCIs and modern kitchen power upgrades.",
     description:
@@ -346,7 +346,7 @@ export const SERVICES: Service[] = [
     navLabel: "Electrical Maintenance",
     metaTitle: "Electrical Maintenance in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Preventive electrical maintenance in Phoenix, AZ for homes and businesses. Safety inspections, panel checks, thermal scans and priority scheduling. Call +1 (480) 619-0510.",
+      "Preventive electrical maintenance in Phoenix, AZ for homes and businesses. Safety inspections, panel checks, thermal scans and priority scheduling. Call (480) 619-0510.",
     h1: "Electrical Maintenance in Phoenix, AZ",
     short: "Preventive care that keeps your electrical system safe and efficient.",
     description:
@@ -392,7 +392,7 @@ export const SERVICES: Service[] = [
     navLabel: "Electrical Troubleshooting",
     metaTitle: "Electrical Troubleshooting in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Electrical troubleshooting in Phoenix, AZ. Dead outlets, flickering lights, burning smells and intermittent power diagnosed fast by licensed electricians. Call +1 (480) 619-0510.",
+      "Electrical troubleshooting in Phoenix, AZ. Dead outlets, flickering lights, burning smells and intermittent power diagnosed fast by licensed electricians. Call (480) 619-0510.",
     h1: "Electrical Troubleshooting in Phoenix, AZ",
     short: "Chasing down a mystery electrical problem? We find it fast.",
     description:
@@ -427,7 +427,7 @@ export const SERVICES: Service[] = [
     faqs: [
       { q: "How much does troubleshooting cost?", a: "We charge a flat diagnostic fee that covers the time to find the fault, and it is credited toward the repair if you have us complete the work." },
       { q: "My outlet is dead but the breaker is on. Why?", a: "Most often an upstream GFCI has tripped, or a backstabbed connection in another outlet on the same circuit has failed. Both are quick to find with a tracer." },
-      { q: "I smell burning near a switch. What should I do?", a: "Turn that circuit off at the panel and call us immediately at +1 (480) 619-0510. A burning smell means heat where there should be none and it should not wait." },
+      { q: "I smell burning near a switch. What should I do?", a: "Turn that circuit off at the panel and call us immediately at (480) 619-0510. A burning smell means heat where there should be none and it should not wait." },
       { q: "Why do my lights dim when the AC starts?", a: "A brief dip is normal, but a sustained dim points to a loose service connection, an undersized service or a failing neutral. All three are worth diagnosing now." },
     ],
     related: ["circuit-breaker-repair-phoenix-az", "residential-electrical-services-phoenix-az", "electrical-maintenance-phoenix-az"],
@@ -458,7 +458,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Phoenix",
     metaTitle: "Electrician in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Phoenix, AZ. Residential and commercial electrical repairs, panel upgrades, lighting and ceiling fans across the city. Call +1 (480) 619-0510.",
+      "Licensed electrician in Phoenix, AZ. Residential and commercial electrical repairs, panel upgrades, lighting and ceiling fans across the city. Call (480) 619-0510.",
     h1: "Electrician in Phoenix, AZ",
     blurb: "From Arcadia to Desert Ridge, we serve Phoenix homeowners and businesses every day.",
     intro: [
@@ -493,7 +493,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Mesa",
     metaTitle: "Electrician in Mesa, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Mesa, AZ. Breaker repairs, panel upgrades, ceiling fans, lighting and commercial electrical service. Free estimates. Call +1 (480) 619-0510.",
+      "Licensed electrician in Mesa, AZ. Breaker repairs, panel upgrades, ceiling fans, lighting and commercial electrical service. Free estimates. Call (480) 619-0510.",
     h1: "Electrician in Mesa, AZ",
     blurb: "Fast, licensed electrical service across Mesa — from Eastmark to Dobson Ranch.",
     intro: [
@@ -528,7 +528,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Scottsdale",
     metaTitle: "Electrician in Scottsdale, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Scottsdale, AZ. Luxury home lighting, smart controls, panel upgrades and commercial electrical service. Call +1 (480) 619-0510 for a free estimate.",
+      "Licensed electrician in Scottsdale, AZ. Luxury home lighting, smart controls, panel upgrades and commercial electrical service. Call (480) 619-0510 for a free estimate.",
     h1: "Electrician in Scottsdale, AZ",
     blurb: "Premium residential and commercial electrical work for Scottsdale homes and businesses.",
     intro: [
@@ -563,7 +563,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Tempe",
     metaTitle: "Electrician in Tempe, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Tempe, AZ, based right here on W Hermosa Dr. Repairs, panel upgrades, lighting, fans and rental property service. Call +1 (480) 619-0510.",
+      "Licensed electrician in Tempe, AZ, based right here on W Hermosa Dr. Repairs, panel upgrades, lighting, fans and rental property service. Call (480) 619-0510.",
     h1: "Electrician in Tempe, AZ",
     blurb: "Trusted electricians serving Tempe families, students, landlords and local businesses.",
     intro: [
@@ -598,7 +598,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Chandler",
     metaTitle: "Electrician in Chandler, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Chandler, AZ. Home electrical repairs, EV chargers, lighting, ceiling fans and commercial service. Free estimates. Call +1 (480) 619-0510.",
+      "Licensed electrician in Chandler, AZ. Home electrical repairs, EV chargers, lighting, ceiling fans and commercial service. Free estimates. Call (480) 619-0510.",
     h1: "Electrician in Chandler, AZ",
     blurb: "Reliable electrical service across Chandler — repairs, upgrades and new installations.",
     intro: [
@@ -633,7 +633,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Glendale",
     metaTitle: "Electrician in Glendale, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Glendale, AZ. Honest home and commercial electrical repairs, panel work, lighting and troubleshooting. Call +1 (480) 619-0510 for a free estimate.",
+      "Licensed electrician in Glendale, AZ. Honest home and commercial electrical repairs, panel work, lighting and troubleshooting. Call (480) 619-0510 for a free estimate.",
     h1: "Electrician in Glendale, AZ",
     blurb: "Honest, affordable electricians for Glendale homes and commercial spaces.",
     intro: [
@@ -683,7 +683,7 @@ export const STATS = [
 export const FAQS = [
   { q: "Are you licensed and insured?", a: "Yes. APM Arizona Electric LLC is a fully licensed and insured electrical contractor operating throughout the Phoenix Metro Area, including Phoenix, Mesa, Scottsdale, Tempe, Chandler and Glendale." },
   { q: "Do you offer free estimates?", a: "Absolutely. We provide free, no-obligation estimates for all residential and commercial electrical projects. Diagnostic troubleshooting carries a flat fee that is credited toward the repair." },
-  { q: "How quickly can you respond to emergencies?", a: "We prioritize loss-of-power, burning smell and sparking calls and typically respond the same day. Call +1 (480) 619-0510 and tell us it is urgent." },
+  { q: "How quickly can you respond to emergencies?", a: "We prioritize loss-of-power, burning smell and sparking calls and typically respond the same day. Call (480) 619-0510 and tell us it is urgent." },
   { q: "What areas do you serve?", a: "We serve Phoenix, Mesa, Scottsdale, Tempe, Chandler, Glendale and the surrounding Phoenix Metro Area from our base at 1216 W Hermosa Dr in Tempe." },
   { q: "Do you handle both residential and commercial work?", a: "Yes — from single-family homes and rentals to offices, restaurants, retail spaces and light industrial facilities." },
   { q: "How much does an electrician cost?", a: "Every job is different, which is why we quote in writing before starting. You approve an itemized price first, so there are no surprises when the work is done." },
