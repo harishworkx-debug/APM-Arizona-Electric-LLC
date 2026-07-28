@@ -89,7 +89,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
               <Link key={s.slug} to="/$slug" params={{ slug: s.slug }} className="group rounded-2xl bg-white border border-border p-6 hover:-translate-y-0.5 hover:shadow-elegant transition-all">
                 <h3 className="font-bold text-secondary">{s.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{s.short}</p>
-                <div className="mt-3 inline-flex items-center gap-2 text-sm text-primary font-semibold">{n.title ?? "View service"} <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></div>
+                <div className="mt-3 inline-flex items-center gap-2 text-sm text-primary font-semibold">{s.navLabel ?? s.title} <IconArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" /></div>
               </Link>
             ))}
           </div>
