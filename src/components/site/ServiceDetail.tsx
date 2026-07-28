@@ -74,7 +74,7 @@ export function ServiceDetail({ service: s }: { service: Service }) {
                   <li key={p} className="flex items-center gap-3 text-white/85"><span className="h-1.5 w-1.5 rounded-full bg-primary" /> {p}</li>
                 ))}
               </ul>
-              <a href={BUSINESS.phoneHref} className="mt-8 btn-primary inline-flex"><IconPhone className="h-4 w-4" /> Get It Fixed</a>
+              <a href={BUSINESS.phoneHref} className="mt-8 btn-primary inline-flex"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
             </div>
           </Reveal>
         </div>

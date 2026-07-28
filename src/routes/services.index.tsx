@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
+import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema, locLabel } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconPhone, IconArrowRight, IconCheck, IconMapPin } from "@/components/site/Icons";
@@ -90,8 +90,8 @@ function ServicesPage() {
                     ))}
                   </ul>
                   <div className="mt-auto flex flex-wrap gap-2">
-                    <Link to="/$slug" params={{ slug: s.slug }} className="btn-dark text-xs px-5 py-2.5">Learn More <IconArrowRight className="h-3.5 w-3.5" /></Link>
-                    <a href={BUSINESS.phoneHref} className="btn-primary text-xs px-5 py-2.5"><IconPhone className="h-3.5 w-3.5" /> Call</a>
+                    <Link to="/$slug" params={{ slug: s.slug }} className="btn-dark text-xs px-5 py-2.5">{s.navLabel ?? s.title} <IconArrowRight className="h-3.5 w-3.5 shrink-0" /></Link>
+                    <a href={BUSINESS.phoneHref} className="btn-primary text-xs px-5 py-2.5"><IconPhone className="h-3.5 w-3.5" /> {BUSINESS.phone}</a>
                   </div>
                 </div>
               </div>
@@ -108,7 +108,7 @@ function ServicesPage() {
             {LOCATIONS.map((l) => (
               <Link key={l.slug} to="/$slug" params={{ slug: l.slug }} className="flex items-center gap-3 rounded-2xl border border-border bg-white p-6 hover:border-primary/40 hover:-translate-y-0.5 transition-all">
                 <IconMapPin className="h-5 w-5 text-primary shrink-0" />
-                <span className="font-semibold text-secondary">Electrician {l.city}, AZ</span>
+                <span className="font-semibold text-secondary">{locLabel(l.city)}</span>
               </Link>
             ))}
           </div>

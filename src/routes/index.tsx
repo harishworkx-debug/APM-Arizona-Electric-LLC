@@ -241,12 +241,13 @@ function ServicesGrid() {
                       </div>
                     </div>
                     <div className="p-6">
-                      <h3 className="font-bold text-secondary text-lg leading-snug">{s.title}</h3>
+                      <h3 className="font-bold text-secondary text-lg leading-snug group-hover:text-primary transition-colors">{s.title}</h3>
                       <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{s.short}</p>
                       <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
-                        Learn more <IconArrowRight className="h-4 w-4" />
+                        {s.navLabel ?? s.title} <IconArrowRight className="h-4 w-4 shrink-0" />
                       </div>
                     </div>
+
                   </div>
                 </Link>
               </Reveal>
@@ -286,7 +287,7 @@ function ResVsCom() {
                       <li key={it} className="flex items-center gap-2 text-white/90"><IconCheck className="h-4 w-4 text-primary shrink-0" /> {it}</li>
                     ))}
                   </ul>
-                  <a href={BUSINESS.phoneHref} className="mt-8 btn-primary self-start"><IconPhone className="h-4 w-4" /> Get Started</a>
+                  <a href={BUSINESS.phoneHref} className="mt-8 btn-primary self-start"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
                 </div>
               </div>
             </Reveal>
@@ -472,20 +473,21 @@ function ServiceAreas() {
           <Reveal><span className="eyebrow">Service Areas</span></Reveal>
           <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Proudly serving the Valley.</h2></Reveal>
         </div>
-        <div className="mt-14 grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 [&>*]:min-w-0">
           {LOCATIONS.map((l, i) => (
             <Reveal key={l.slug} delay={i * 0.04}>
-              <Link to="/$slug" params={{ slug: l.slug }} className="group flex items-center gap-4 rounded-3xl border border-border bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
-                <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-secondary"><IconMapPin className="h-6 w-6" /></div>
+              <Link to="/$slug" params={{ slug: l.slug }} className="group flex w-full min-w-0 items-center gap-4 rounded-3xl border border-border bg-white p-5 sm:p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
+                <div className="grid h-12 w-12 sm:h-14 sm:w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-secondary"><IconMapPin className="h-6 w-6" /></div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="font-bold text-secondary">Electrician {l.city}, AZ</h3>
-                  <p className="text-sm text-muted-foreground truncate">{l.blurb}</p>
+                  <h3 className="truncate font-bold text-secondary">{l.city === "Phoenix" ? "Electrician Phoenix, AZ" : `${l.city}, AZ`}</h3>
+                  <p className="truncate text-sm text-muted-foreground">{l.blurb}</p>
                 </div>
                 <IconArrowRight className="h-5 w-5 text-primary shrink-0 transition-transform group-hover:translate-x-1" />
               </Link>
             </Reveal>
           ))}
         </div>
+
       </div>
     </section>
   );
@@ -500,7 +502,7 @@ function FAQ() {
           <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Questions? We've got answers.</h2></Reveal>
           <Reveal delay={0.15}><p className="mt-4 text-muted-foreground">Still curious? Give us a call — we're happy to talk through any electrical concern.</p></Reveal>
           <Reveal delay={0.2}>
-            <a href={BUSINESS.phoneHref} className="mt-6 btn-dark inline-flex"><IconPhone className="h-4 w-4" /> Talk to an Electrician</a>
+            <a href={BUSINESS.phoneHref} className="mt-6 btn-dark inline-flex"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
           </Reveal>
         </div>
         <div className="space-y-3">

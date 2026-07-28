@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { BUSINESS, NAV, SERVICES, LOCATIONS } from "@/lib/business";
+import { BUSINESS, NAV, SERVICES, LOCATIONS, locLabel } from "@/lib/business";
 import { IconBolt, IconPhone, IconMail, IconMapPin, IconClock } from "./Icons";
 
 export function SiteFooter() {
@@ -51,7 +51,7 @@ export function SiteFooter() {
             <h4 className="text-white font-semibold mb-5">Service Areas</h4>
             <ul className="space-y-3 text-sm">
               {LOCATIONS.map((l) => (
-                <li key={l.slug}><Link to="/$slug" params={{ slug: l.slug }} className="hover:text-primary transition">Electrician {l.city}, AZ</Link></li>
+                <li key={l.slug}><Link to="/$slug" params={{ slug: l.slug }} className="hover:text-primary transition">{locLabel(l.city)}</Link></li>
               ))}
             </ul>
           </div>

@@ -1,7 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BUSINESS, SERVICES, LOCATIONS } from "@/lib/business";
+import { BUSINESS, SERVICES, LOCATIONS, locLabel } from "@/lib/business";
 import { IconPhone, IconMenu, IconX, IconBolt, IconArrowRight } from "./Icons";
 
 const SIMPLE_NAV = [
@@ -91,7 +91,7 @@ export function SiteHeader() {
                   <div className="rounded-3xl border border-border bg-white p-3 shadow-[0_30px_70px_-30px_rgba(15,23,42,0.45)]">
                     {LOCATIONS.map((l) => (
                       <Link key={l.slug} to="/$slug" params={{ slug: l.slug }} className="block rounded-2xl px-4 py-3 text-sm font-medium text-secondary hover:bg-muted transition-colors">
-                        Electrician {l.city}, AZ
+                        {locLabel(l.city)}
                       </Link>
                     ))}
                   </div>
@@ -144,7 +144,7 @@ export function SiteHeader() {
               <div className="pl-3">
                 {LOCATIONS.map((l) => (
                   <Link key={l.slug} to="/$slug" params={{ slug: l.slug }} className="block px-3 py-2.5 rounded-xl text-sm text-muted-foreground hover:bg-muted">
-                    Electrician {l.city}, AZ
+                    {locLabel(l.city)}
                   </Link>
                 ))}
               </div>
