@@ -90,7 +90,7 @@ function AboutPage() {
                 <p>His family created this company to continue his vision: delivering honest, dependable and affordable electrical services to Arizona homeowners and businesses.</p>
                 <p>Every job we take on carries his standard. If it wouldn't have passed his inspection, it doesn't leave our truck.</p>
               </div>
-              <a href={BUSINESS.phoneHref} className="mt-8 btn-primary inline-flex"><IconPhone className="h-4 w-4" /> Talk to Our Team</a>
+              <a href={BUSINESS.phoneHref} className="mt-8 btn-primary inline-flex"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
             </div>
           </Reveal>
         </div>

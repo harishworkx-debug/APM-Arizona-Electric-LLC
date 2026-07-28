@@ -287,7 +287,7 @@ function ResVsCom() {
                       <li key={it} className="flex items-center gap-2 text-white/90"><IconCheck className="h-4 w-4 text-primary shrink-0" /> {it}</li>
                     ))}
                   </ul>
-                  <a href={BUSINESS.phoneHref} className="mt-8 btn-primary self-start"><IconPhone className="h-4 w-4" /> Get Started</a>
+                  <a href={BUSINESS.phoneHref} className="mt-8 btn-primary self-start"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
                 </div>
               </div>
             </Reveal>
@@ -502,7 +502,7 @@ function FAQ() {
           <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Questions? We've got answers.</h2></Reveal>
           <Reveal delay={0.15}><p className="mt-4 text-muted-foreground">Still curious? Give us a call — we're happy to talk through any electrical concern.</p></Reveal>
           <Reveal delay={0.2}>
-            <a href={BUSINESS.phoneHref} className="mt-6 btn-dark inline-flex"><IconPhone className="h-4 w-4" /> Talk to an Electrician</a>
+            <a href={BUSINESS.phoneHref} className="mt-6 btn-dark inline-flex"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
           </Reveal>
         </div>
         <div className="space-y-3">
