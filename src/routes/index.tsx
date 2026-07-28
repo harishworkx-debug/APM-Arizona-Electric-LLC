@@ -92,34 +92,35 @@ function Hero() {
       <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, oklch(0.14 0.05 265 / 0.92) 0%, oklch(0.22 0.04 260 / 0.75) 60%, oklch(0.22 0.04 260 / 0.4) 100%)" }} />
       <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 80% 20%, oklch(0.78 0.17 70 / 0.35), transparent 40%)" }} />
 
-      <div className="container-x relative z-10 flex min-h-[100svh] items-center pt-28 pb-40">
-        <div className="max-w-3xl">
+      <div className="container-x relative z-10 flex min-h-[100svh] w-full max-w-full items-center pt-28 pb-44 md:pb-40">
+        <div className="w-full max-w-3xl">
           <Reveal>
-            <span className="eyebrow bg-white/10 border-white/20 text-white">
-              <IconBolt className="h-3.5 w-3.5 text-primary" /> Licensed · Insured · Family-Owned
+            <span className="eyebrow bg-white/10 border-white/20 text-white max-w-full">
+              <IconBolt className="h-3.5 w-3.5 shrink-0 text-primary" /> Licensed · Insured · Family-Owned
             </span>
           </Reveal>
           <Reveal delay={0.1}>
-            <h1 className="mt-6 text-5xl md:text-7xl font-bold leading-[1.02] tracking-tight">
+            <h1 className="mt-6 text-[2rem] sm:text-4xl md:text-7xl font-bold leading-[1.08] md:leading-[1.02] tracking-tight">
               Trusted Electricians <br className="hidden md:block" />
               Serving <span className="text-gradient-primary">Phoenix, Arizona</span>
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/80 leading-relaxed">
+            <p className="mt-5 max-w-2xl text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
               Professional residential & commercial electrical services backed by honest workmanship and family values — inspired by the legacy of a lineman who served the industry for 40 years.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <div className="mt-9 flex flex-wrap gap-4">
-              <a href={BUSINESS.phoneHref} className="btn-primary">
-                <IconPhone className="h-4 w-4" /> Call Now · {BUSINESS.phone}
+            <div className="mt-8 flex w-full flex-wrap gap-3 sm:gap-4">
+              <a href={BUSINESS.phoneHref} className="btn-primary w-full max-w-full sm:w-auto">
+                <IconPhone className="h-4 w-4 shrink-0" /> Call Now · {BUSINESS.phone}
               </a>
-              <Link to="/contact" className="btn-outline">
-                Request Free Estimate <IconArrowRight className="h-4 w-4" />
+              <Link to="/contact" className="btn-outline w-full max-w-full sm:w-auto">
+                Request Free Estimate <IconArrowRight className="h-4 w-4 shrink-0" />
               </Link>
             </div>
           </Reveal>
+
           <Reveal delay={0.4}>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/80">
               <div className="flex items-center gap-2"><div className="flex text-primary">{[0,1,2,3,4].map(i => <IconStar key={i} className="h-4 w-4" />)}</div><span>5.0 · 210+ Reviews</span></div>
@@ -450,17 +451,18 @@ function EmergencyBanner() {
   return (
     <section className="py-16 relative overflow-hidden" style={{ background: "linear-gradient(120deg, oklch(0.22 0.04 260), oklch(0.16 0.05 265))" }}>
       <div className="absolute inset-0 opacity-50" style={{ background: "radial-gradient(circle at 30% 50%, oklch(0.78 0.17 70 / 0.35), transparent 50%)" }} />
-      <div className="container-x relative flex flex-col md:flex-row items-center gap-8 text-white">
-        <div className="flex-1">
-          <div className="flex items-center gap-3 text-primary text-sm font-bold uppercase tracking-[0.2em]">
-            <span className="relative flex h-2.5 w-2.5"><span className="absolute inset-0 animate-ping rounded-full bg-primary/60" /><span className="relative rounded-full h-2.5 w-2.5 bg-primary" /></span>
+      <div className="container-x relative flex w-full max-w-full flex-col md:flex-row items-start md:items-center gap-8 text-white">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-3 text-primary text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
+            <span className="relative flex h-2.5 w-2.5 shrink-0"><span className="absolute inset-0 animate-ping rounded-full bg-primary/60" /><span className="relative rounded-full h-2.5 w-2.5 bg-primary" /></span>
             24/7 Emergency Service
           </div>
-          <h2 className="mt-3 text-3xl md:text-4xl font-bold">Electrical emergency? We're here.</h2>
+          <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold">Electrical emergency? We're here.</h2>
           <p className="mt-2 text-white/70 max-w-xl">Power out, burning smell, sparks or exposed wiring — call now and we'll dispatch a licensed electrician immediately.</p>
         </div>
-        <a href={BUSINESS.phoneHref} className="btn-primary text-base px-8 py-4"><IconPhone className="h-5 w-5" /> {BUSINESS.phone}</a>
+        <a href={BUSINESS.phoneHref} className="btn-primary w-full max-w-full md:w-auto text-base px-8 py-4"><IconPhone className="h-5 w-5 shrink-0" /> {BUSINESS.phone}</a>
       </div>
+
     </section>
   );
 }
