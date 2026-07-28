@@ -746,3 +746,7 @@ export const faqSchema = (faqs: { q: string; a: string }[]) => ({
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 });
+
+/** Only Phoenix keeps the "Electrician" prefix in link labels. */
+export const locLabel = (city: string) =>
+  city === "Phoenix" ? "Electrician Phoenix, AZ" : `${city}, AZ`;

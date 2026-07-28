@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { BUSINESS, LOCATIONS, SERVICES, type Location } from "@/lib/business";
+import { BUSINESS, LOCATIONS, SERVICES, type Location, locLabel } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconPhone, IconArrowRight, IconMapPin, IconCheck, IconClock } from "@/components/site/Icons";
@@ -105,7 +105,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
             {nearbyPages.map((n) => (
               <Link key={n.slug} to="/$slug" params={{ slug: n.slug }} className="flex items-center gap-3 rounded-2xl border border-border bg-white p-5 hover:border-primary/40 hover:-translate-y-0.5 transition-all">
                 <IconMapPin className="h-5 w-5 text-primary shrink-0" />
-                <span className="font-semibold text-secondary text-sm">Electrician {n.city}, AZ</span>
+                <span className="font-semibold text-secondary text-sm">{locLabel(n.city)}</span>
               </Link>
             ))}
           </div>

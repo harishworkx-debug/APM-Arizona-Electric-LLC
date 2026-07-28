@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
+import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema, locLabel } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconPhone, IconArrowRight, IconCheck, IconMapPin } from "@/components/site/Icons";
@@ -108,7 +108,7 @@ function ServicesPage() {
             {LOCATIONS.map((l) => (
               <Link key={l.slug} to="/$slug" params={{ slug: l.slug }} className="flex items-center gap-3 rounded-2xl border border-border bg-white p-6 hover:border-primary/40 hover:-translate-y-0.5 transition-all">
                 <IconMapPin className="h-5 w-5 text-primary shrink-0" />
-                <span className="font-semibold text-secondary">Electrician {l.city}, AZ</span>
+                <span className="font-semibold text-secondary">{locLabel(l.city)}</span>
               </Link>
             ))}
           </div>
