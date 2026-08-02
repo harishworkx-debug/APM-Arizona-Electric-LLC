@@ -7,7 +7,7 @@ import { IconPhone, IconWhatsapp, IconMail, IconMapPin, IconClock, IconCheck, Ic
 
 const CONTACT_TITLE = "Contact Our Phoenix Electricians | APM Arizona Electric LLC";
 const CONTACT_DESC =
-  "Contact APM Arizona Electric LLC in Tempe, AZ. Call (480) 619-0510, message us on WhatsApp or request a free written estimate for electrical work across the Phoenix Metro Area.";
+  "Contact APM Arizona Electric LLC in Tempe, AZ. Call (480) 790-4269, message us on WhatsApp or request a free written estimate for electrical work across the Phoenix Metro Area.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({

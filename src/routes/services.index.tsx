@@ -6,7 +6,7 @@ import { IconPhone, IconArrowRight, IconCheck, IconMapPin } from "@/components/s
 
 const SERVICES_TITLE = "Electrical Services in Phoenix, AZ | APM Arizona Electric LLC";
 const SERVICES_DESC =
-  "Explore residential and commercial electrical services across Phoenix, AZ — panel upgrades, rewiring, ceiling fans, lighting, breaker repair and maintenance. Call (480) 619-0510.";
+  "Explore residential and commercial electrical services across Phoenix, AZ — panel upgrades, rewiring, ceiling fans, lighting, breaker repair and maintenance. Call (480) 790-4269.";
 
 export const Route = createFileRoute("/services/")({
   head: () => ({
