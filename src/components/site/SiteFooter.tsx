@@ -23,7 +23,7 @@ export function SiteFooter() {
             </p>
             <div className="mt-6 space-y-3 text-sm">
               <a href={BUSINESS.phoneHref} className="flex items-center gap-3 text-white hover:text-primary transition"><IconPhone className="h-4 w-4 text-primary" /> {BUSINESS.phone}</a>
-              <a href={BUSINESS.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-primary transition"><IconMail className="h-4 w-4 text-primary" /> WhatsApp Us</a>
+              <a href={`mailto:${BUSINESS.email}`} className="flex items-center gap-3 hover:text-primary transition"><IconMail className="h-4 w-4 text-primary" /> {BUSINESS.email}</a>
               <div className="flex items-center gap-3"><IconMapPin className="h-4 w-4 text-primary" /> Phoenix, Arizona</div>
               <div className="flex items-center gap-3"><IconClock className="h-4 w-4 text-primary" /> Mon–Fri 7am–4pm</div>
             </div>

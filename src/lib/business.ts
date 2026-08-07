@@ -11,7 +11,6 @@ export const BUSINESS = {
   phone: "(480) 790-4269",
   phoneHref: "tel:4806190510",
   phoneSchema: "480-790-4269",
-  whatsapp: "https://wa.me/14807904269",
   email: "info@apmarizonaelectric.com",
   city: "Tempe",
   primaryLocation: "Phoenix",

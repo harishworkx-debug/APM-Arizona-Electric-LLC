@@ -9,9 +9,6 @@ const p = (props: SVGProps<SVGSVGElement>) => ({
 export const IconPhone = (props: SVGProps<SVGSVGElement>) => (
   <svg {...p(props)}><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
 );
-export const IconWhatsapp = (props: SVGProps<SVGSVGElement>) => (
-  <svg {...p(props)}><path d="M20.52 3.48A11.94 11.94 0 0 0 12.05 0C5.5 0 .17 5.33.17 11.88c0 2.1.55 4.14 1.6 5.94L0 24l6.35-1.67a11.87 11.87 0 0 0 5.7 1.45h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.15-3.42-8.42z" fill="currentColor" stroke="none"/></svg>
-);
 export const IconMail = (props: SVGProps<SVGSVGElement>) => (
   <svg {...p(props)}><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
 );

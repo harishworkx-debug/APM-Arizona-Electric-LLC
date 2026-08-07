@@ -301,7 +301,7 @@ function ResVsCom() {
 
 function Process() {
   const steps = [
-    { n: "01", t: "Call or Request", d: "Reach us by phone, WhatsApp or web form. We answer fast and schedule same-day when possible." },
+    { n: "01", t: "Call or Request", d: "Reach us by phone or web form. We answer fast and schedule same-day when possible." },
     { n: "02", t: "Free Estimate", d: "A licensed electrician assesses the work and gives you a clear, honest, written estimate — no pressure." },
     { n: "03", t: "Quality Workmanship", d: "We show up on time, do the work right, keep it clean and pull permits when required." },
     { n: "04", t: "Follow-Up & Guarantee", d: "We stand behind every job with a workmanship guarantee and a phone number you can actually reach." },

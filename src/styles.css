@@ -29,7 +29,6 @@
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
   --color-surface: var(--surface);
-  --color-whatsapp: var(--whatsapp);
 
   --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
@@ -77,7 +76,6 @@
   --input: oklch(0.92 0.008 260);
   --ring: oklch(0.78 0.17 70);
 
-  --whatsapp: oklch(0.68 0.16 150);
 
   --gradient-hero: linear-gradient(135deg, oklch(0.22 0.04 260 / 0.92), oklch(0.14 0.05 265 / 0.85));
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-glow));

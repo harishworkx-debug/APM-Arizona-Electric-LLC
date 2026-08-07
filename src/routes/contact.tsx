@@ -3,11 +3,11 @@ import { useState } from "react";
 import { BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { IconPhone, IconWhatsapp, IconMail, IconMapPin, IconClock, IconCheck, IconArrowRight } from "@/components/site/Icons";
+import { IconPhone, IconMail, IconMapPin, IconClock, IconCheck, IconArrowRight } from "@/components/site/Icons";
 
 const CONTACT_TITLE = "Contact Our Phoenix Electricians | APM Arizona Electric LLC";
 const CONTACT_DESC =
-  "Contact APM Arizona Electric LLC in Tempe, AZ. Call (480) 790-4269, message us on WhatsApp or request a free written estimate for electrical work across the Phoenix Metro Area.";
+  "Contact APM Arizona Electric LLC in Tempe, AZ. Call (480) 790-4269 or request a free written estimate for electrical work across the Phoenix Metro Area.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -46,10 +46,6 @@ function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const data = new FormData(form);
-    const msg = `New estimate request:%0A%0AName: ${data.get("name")}%0APhone: ${data.get("phone")}%0AService: ${data.get("service")}%0AMessage: ${data.get("message")}`;
-    window.open(`${BUSINESS.whatsapp}?text=${msg}`, "_blank");
     setSubmitted(true);
   };
 
@@ -60,7 +56,7 @@ function ContactPage() {
         <div className="container-x relative">
           <Reveal><span className="eyebrow bg-white/10 border-white/20 text-white">Get in Touch</span></Reveal>
           <Reveal delay={0.1}><h1 className="mt-6 text-5xl md:text-7xl font-bold max-w-4xl leading-[1.05]">Let's <span className="text-gradient-primary">talk power</span>.</h1></Reveal>
-          <Reveal delay={0.2}><p className="mt-6 text-white/80 text-lg max-w-2xl">Call, message on WhatsApp, or send the form. A licensed electrician will get right back to you.</p></Reveal>
+          <Reveal delay={0.2}><p className="mt-6 text-white/80 text-lg max-w-2xl">Call us or send the form. A licensed electrician will get right back to you.</p></Reveal>
         </div>
       </section>
 
@@ -74,8 +70,8 @@ function ContactPage() {
                 <div className="mt-8 rounded-2xl bg-primary/15 p-6 flex gap-4 items-start">
                   <IconCheck className="h-6 w-6 text-secondary shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-bold text-secondary">Sent via WhatsApp!</div>
-                    <p className="text-sm text-muted-foreground mt-1">If it didn't open, please call {BUSINESS.phone} directly.</p>
+                    <div className="font-bold text-secondary">Request received!</div>
+                    <p className="text-sm text-muted-foreground mt-1">We'll call you back shortly. For immediate help, call {BUSINESS.phone}.</p>
                   </div>
                 </div>
               ) : (
@@ -96,7 +92,7 @@ function ContactPage() {
                     <option>Other</option>
                   </select>
                   <textarea required name="message" rows={5} placeholder="Tell us about the electrical work…" className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 focus:outline-none focus:border-primary resize-none" />
-                  <button type="submit" className="btn-primary mt-2 justify-center">Send via WhatsApp <IconArrowRight className="h-4 w-4" /></button>
+                  <button type="submit" className="btn-primary mt-2 justify-center">Submit Request <IconArrowRight className="h-4 w-4" /></button>
                 </form>
               )}
             </div>
@@ -111,13 +107,7 @@ function ContactPage() {
                   <div className="text-2xl font-bold">{BUSINESS.phone}</div>
                 </div>
               </a>
-              <a href={BUSINESS.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-4 rounded-2xl bg-whatsapp text-white p-6 hover:-translate-y-0.5 transition-transform">
-                <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/15"><IconWhatsapp className="h-6 w-6" /></div>
-                <div>
-                  <div className="text-xs uppercase tracking-[0.2em] font-semibold opacity-80">WhatsApp</div>
-                  <div className="text-xl font-bold">Chat with us</div>
-                </div>
-              </a>
+
               <div className="rounded-2xl bg-white border border-border p-6">
                 <div className="flex items-center gap-3"><IconClock className="h-5 w-5 text-primary" /><h3 className="font-bold text-secondary">Business Hours</h3></div>
                 <ul className="mt-4 space-y-2 text-sm">
