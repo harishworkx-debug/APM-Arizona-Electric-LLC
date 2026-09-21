@@ -15,11 +15,11 @@ export function SiteFooter() {
               </span>
               <div>
                 <div className="text-white font-bold">APM Arizona Electric LLC</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-white/50">Licensed Electricians</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-white/50">Residential Electrical Connections</div>
               </div>
             </div>
             <p className="mt-5 text-sm leading-relaxed text-white/70">
-              Family-owned electrical contractor serving Phoenix, Arizona with honest workmanship, fair pricing and the legacy of Andres Portillo Marin.
+              A residential-focused service to help homeowners connect with independent local electrical providers in Phoenix, Arizona.
             </p>
             <div className="mt-6 space-y-3 text-sm">
               <a href={BUSINESS.phoneHref} className="flex items-center gap-3 text-white hover:text-primary transition"><IconPhone className="h-4 w-4 text-primary" /> {BUSINESS.phone}</a>
@@ -58,8 +58,11 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
-          <p>© {new Date().getFullYear()} APM Arizona Electric LLC. All rights reserved. Licensed & Insured.</p>
-          <p>In loving memory of Andres Portillo Marin — Lineman 1962–2002.</p>
+          <p>© {new Date().getFullYear()} APM Arizona Electric LLC. All rights reserved.</p>
+          <p>Homeowners should verify provider licensing and insurance before hiring.</p>
+        </div>
+        <div className="mt-8 border-t border-white/10 pt-6 text-sm leading-relaxed text-white/65">
+          <p>Disclaimer: APM Arizona Electric LLC is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and APM Arizona Electric LLC does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on APM Arizona Electric LLC.</p>
         </div>
       </div>
     </footer>

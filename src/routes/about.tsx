@@ -6,7 +6,7 @@ import { IconPhone, IconArrowRight, IconCheck, IconShield, IconStar, IconHome } 
 
 const ABOUT_TITLE = "About Our Family-Owned Electricians | APM Arizona Electric LLC";
 const ABOUT_DESC =
-  "Meet APM Arizona Electric LLC, a family-owned, licensed electrical contractor in Tempe, AZ inspired by the legacy of Andres Portillo Marin and serving the Phoenix Metro Area.";
+  "Learn about APM Arizona Electric LLC, a residential-focused service helping Tempe, AZ homeowners connect with independent local electrical providers.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -55,8 +55,8 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   const values = [
     { icon: IconShield, t: "Honesty", d: "Every estimate is upfront and every fix is explained plainly." },
-    { icon: IconStar, t: "Quality Workmanship", d: "Code-compliant work you'd want in your own family's home." },
-    { icon: IconHome, t: "Family Owned", d: "We're not a franchise — we're a family with your back." },
+    { icon: IconStar, t: "Clear Information", d: "Residential guidance that helps homeowners make informed provider decisions." },
+    { icon: IconHome, t: "Homeowner Focus", d: "A residential connection service built around homeowner needs." },
     { icon: IconCheck, t: "Customer First", d: "We do what we say, when we say, at the price we quoted." },
   ];
   return (
@@ -87,8 +87,8 @@ function AboutPage() {
               <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">40 years on the lines. A lifetime of integrity.</h2>
               <div className="mt-6 space-y-5 text-muted-foreground text-lg leading-relaxed">
                 <p>APM Arizona Electric LLC was founded in memory of Andres Portillo Marin — a dedicated utility lineman who proudly served the electrical industry from 1962 to 2002.</p>
-                <p>His family created this company to continue his vision: delivering honest, dependable and affordable electrical services to Arizona homeowners and businesses.</p>
-                <p>Every job we take on carries his standard. If it wouldn't have passed his inspection, it doesn't leave our truck.</p>
+                <p>That legacy informs this residential-focused service, which helps Arizona homeowners connect with independent local electrical providers.</p>
+                <p>Providers are independent. Homeowners should review scope, pricing, licensing and insurance before hiring.</p>
               </div>
               <a href={BUSINESS.phoneHref} className="mt-8 btn-primary inline-flex"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
             </div>
@@ -98,7 +98,7 @@ function AboutPage() {
 
       <section className="section-y bg-surface">
         <div className="container-x grid gap-8 md:grid-cols-2">
-          <Reveal><div className="rounded-3xl bg-white border border-border p-10"><span className="eyebrow">Mission</span><h3 className="mt-3 text-2xl font-bold text-secondary">Powering Phoenix with integrity.</h3><p className="mt-3 text-muted-foreground">Deliver electrical work that's safe, code-compliant, and priced fairly — treating every home and business like our own.</p></div></Reveal>
+          <Reveal><div className="rounded-3xl bg-white border border-border p-10"><span className="eyebrow">Mission</span><h3 className="mt-3 text-2xl font-bold text-secondary">Helping homeowners connect locally.</h3><p className="mt-3 text-muted-foreground">Provide clear residential electrical information and help homeowners request connections with independent local providers.</p></div></Reveal>
           <Reveal delay={0.1}><div className="rounded-3xl bg-secondary text-white p-10"><span className="eyebrow bg-white/10 border-white/20 text-white">Vision</span><h3 className="mt-3 text-2xl font-bold">The most trusted electricians in Arizona.</h3><p className="mt-3 text-white/70">Build a company that carries Andres's name — and his standards — into the next generation of the Valley.</p></div></Reveal>
         </div>
       </section>
@@ -126,11 +126,11 @@ function AboutPage() {
       <section className="section-y bg-surface">
         <div className="container-x text-center max-w-3xl mx-auto">
           <Reveal><h2 className="text-4xl md:text-5xl font-bold text-secondary">Ready to work with a team that cares?</h2></Reveal>
-          <Reveal delay={0.1}><p className="mt-4 text-muted-foreground text-lg">We'd love to earn your trust. Call, message, or request a free estimate.</p></Reveal>
+          <Reveal delay={0.1}><p className="mt-4 text-muted-foreground text-lg">Call or message to request help connecting with an independent local provider.</p></Reveal>
           <Reveal delay={0.15}>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
-              <Link to="/contact" className="btn-dark">Free Estimate <IconArrowRight className="h-4 w-4" /></Link>
+              <Link to="/contact" className="btn-dark">Request Connection <IconArrowRight className="h-4 w-4" /></Link>
             </div>
           </Reveal>
         </div>

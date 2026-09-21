@@ -6,14 +6,14 @@ import { BUSINESS, SERVICES, LOCATIONS, FAQS, INDUSTRIES, STATS, SITE, abs, loca
 import { Reveal } from "@/components/site/Reveal";
 import {
   IconPhone, IconArrowRight, IconStar, IconCheck, IconShield, IconBolt,
-  IconHome, IconBuilding, IconFan, IconLightbulb, IconWrench, IconSparkle, IconClock, IconMapPin,
+  IconHome, IconFan, IconLightbulb, IconWrench, IconSparkle, IconClock, IconMapPin,
 } from "@/components/site/Icons";
 
 const HERO = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=70";
 
 const HOME_TITLE = "Electrician in Phoenix, AZ | APM Arizona Electric LLC";
 const HOME_DESC =
-  "Licensed residential and commercial electricians serving Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. Panel upgrades, rewiring, lighting, ceiling fans and breaker repair. Call (480) 790-4269 for a free estimate.";
+  "Residential electrical service information for homeowners in Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. Connect with a local provider for panel upgrades, rewiring, lighting, ceiling fans and breaker repair.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -68,7 +68,6 @@ function HomePage() {
       <Process />
       <Gallery />
       <SafetyTips />
-      <Testimonials />
       <EmergencyBanner />
       <ServiceAreas />
       <FAQ />
@@ -87,7 +86,7 @@ function Hero() {
   return (
     <section ref={ref} className="relative min-h-[100svh] overflow-hidden text-white">
       <motion.div style={{ y, scale }} className="absolute inset-0">
-        <img src={HERO} alt="Licensed electrician working on a residential electrical panel in Phoenix, Arizona" className="h-full w-full object-cover" fetchPriority="high" />
+        <img src={HERO} alt="Residential electrical panel in Phoenix, Arizona" className="h-full w-full object-cover" fetchPriority="high" />
       </motion.div>
       <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, oklch(0.14 0.05 265 / 0.92) 0%, oklch(0.22 0.04 260 / 0.75) 60%, oklch(0.22 0.04 260 / 0.4) 100%)" }} />
       <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 80% 20%, oklch(0.78 0.17 70 / 0.35), transparent 40%)" }} />
@@ -96,7 +95,7 @@ function Hero() {
         <div className="w-full max-w-3xl">
           <Reveal>
             <span className="eyebrow bg-white/10 border-white/20 text-white max-w-full">
-              <IconBolt className="h-3.5 w-3.5 shrink-0 text-primary" /> Licensed · Insured · Family-Owned
+              <IconBolt className="h-3.5 w-3.5 shrink-0 text-primary" /> Residential · Local · Homeowner-Focused
             </span>
           </Reveal>
           <Reveal delay={0.1}>
@@ -107,7 +106,7 @@ function Hero() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 max-w-2xl text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
-              Professional residential & commercial electrical services backed by honest workmanship and family values — inspired by the legacy of a lineman who served the industry for 40 years.
+              Residential electrical service information for homeowners, with connections to independent local providers.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
@@ -116,16 +115,16 @@ function Hero() {
                 <IconPhone className="h-4 w-4 shrink-0" /> Call Now · {BUSINESS.phone}
               </a>
               <Link to="/contact" className="btn-outline w-full max-w-full sm:w-auto">
-                Request Free Estimate <IconArrowRight className="h-4 w-4 shrink-0" />
+                Request Provider Connection <IconArrowRight className="h-4 w-4 shrink-0" />
               </Link>
             </div>
           </Reveal>
 
           <Reveal delay={0.4}>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/80">
-              <div className="flex items-center gap-2"><div className="flex text-primary">{[0,1,2,3,4].map(i => <IconStar key={i} className="h-4 w-4" />)}</div><span>5.0 · 210+ Reviews</span></div>
-              <div className="flex items-center gap-2"><IconShield className="h-4 w-4 text-primary" /> Fully Licensed</div>
-              <div className="flex items-center gap-2"><IconClock className="h-4 w-4 text-primary" /> Same-Day Service</div>
+              <div className="flex items-center gap-2"><IconHome className="h-4 w-4 text-primary" /> Residential homeowner help</div>
+              <div className="flex items-center gap-2"><IconShield className="h-4 w-4 text-primary" /> Verify Provider Credentials</div>
+              <div className="flex items-center gap-2"><IconClock className="h-4 w-4 text-primary" /> Residential Help</div>
             </div>
           </Reveal>
         </div>
@@ -140,7 +139,7 @@ function Hero() {
                 { n: "1,200+", l: "Projects Completed" },
                 { n: "950+", l: "Happy Customers" },
                 { n: "40+", l: "Years of Legacy" },
-                { n: "24/7", l: "Emergency Calls" },
+                { n: "Local", l: "Provider Connections" },
               ].map((s) => (
                 <div key={s.l} className="bg-white/80 p-6 md:p-8 text-center">
                   <div className="font-display text-3xl md:text-4xl font-bold text-secondary">{s.n}</div>
@@ -156,7 +155,7 @@ function Hero() {
 }
 
 function TrustBar() {
-  const badges = ["Licensed Electricians", "Family Owned", "Affordable Pricing", "Fast Response", "5-Star Rated"];
+  const badges = ["Residential Focus", "Local Connections", "Homeowner Information", "Provider Details", "Phoenix Metro Area"];
   return (
     <section className="py-10 bg-surface border-y border-border">
       <div className="container-x flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm font-medium text-muted-foreground">
@@ -170,10 +169,10 @@ function TrustBar() {
 
 function WhyChoose() {
   const items = [
-    { icon: IconShield, t: "Licensed & Insured", d: "Fully credentialed Arizona electrical contractor. Every job is code-compliant and permitted when required." },
+    { icon: IconShield, t: "Verify Credentials", d: "Confirm the provider's license, insurance and permit responsibilities before hiring." },
     { icon: IconBolt, t: "Honest Pricing", d: "Upfront estimates before we start. No surprises, no upsells, no hidden fees — ever." },
-    { icon: IconClock, t: "Fast Response", d: "Same-day appointments and 24/7 emergency service across the Phoenix Metro Area." },
-    { icon: IconStar, t: "5-Star Workmanship", d: "210+ five-star reviews from Phoenix homeowners and businesses who trust our work." },
+    { icon: IconClock, t: "Local Connections", d: "Request help connecting with an independent residential service provider." },
+    { icon: IconStar, t: "Homeowner Focus", d: "Residential information for homeowners who need electrical service." },
     { icon: IconHome, t: "Family Owned", d: "Built on the legacy of Andres Portillo Marin. We treat every customer like family." },
     { icon: IconSparkle, t: "Clean & Respectful", d: "Shoe covers, drop cloths and tidy work areas. We leave your space cleaner than we found it." },
   ];
@@ -205,7 +204,6 @@ function WhyChoose() {
 
 const ICON_MAP: Record<string, typeof IconHome> = {
   "residential-electrical": IconHome,
-  "commercial-electrical": IconBuilding,
   "ceiling-fan-installation": IconFan,
   "light-fixture-installation": IconLightbulb,
   "circuit-breaker-repairs": IconBolt,
@@ -263,13 +261,12 @@ function ServicesGrid() {
 function ResVsCom() {
   const cards = [
     { icon: IconHome, tag: "Residential", title: "For Your Home", items: ["Whole-home rewires", "Panel upgrades", "Ceiling fans & lighting", "GFCI & AFCI protection", "Smart home wiring"], img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=70" },
-    { icon: IconBuilding, tag: "Commercial", title: "For Your Business", items: ["Tenant improvements", "Office & retail lighting", "Emergency response", "Preventive maintenance", "Code compliance"], img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=70" },
   ];
   return (
     <section className="section-y">
       <div className="container-x">
         <div className="text-center max-w-2xl mx-auto">
-          <Reveal><span className="eyebrow">Residential vs Commercial</span></Reveal>
+          <Reveal><span className="eyebrow">Residential Electrical Help</span></Reveal>
           <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Wherever the power flows, we serve.</h2></Reveal>
         </div>
         <div className="mt-14 grid gap-8 md:grid-cols-2">
@@ -301,10 +298,10 @@ function ResVsCom() {
 
 function Process() {
   const steps = [
-    { n: "01", t: "Call or Request", d: "Reach us by phone or web form. We answer fast and schedule same-day when possible." },
-    { n: "02", t: "Free Estimate", d: "A licensed electrician assesses the work and gives you a clear, honest, written estimate — no pressure." },
-    { n: "03", t: "Quality Workmanship", d: "We show up on time, do the work right, keep it clean and pull permits when required." },
-    { n: "04", t: "Follow-Up & Guarantee", d: "We stand behind every job with a workmanship guarantee and a phone number you can actually reach." },
+    { n: "01", t: "Call or Request", d: "Tell us what residential electrical help you need." },
+    { n: "02", t: "Get Connected", d: "We help connect you with an independent local provider." },
+    { n: "03", t: "Review Details", d: "Discuss scope, pricing, licensing and insurance directly." },
+    { n: "04", t: "Choose a Provider", d: "Hire the provider that fits your home and project." },
   ];
   return (
     <section className="section-y bg-secondary text-white relative overflow-hidden">
@@ -365,7 +362,7 @@ function SafetyTips() {
     { t: "Never ignore repeated breaker trips", d: "It's your panel telling you something is wrong. Call us before it becomes a fire." },
     { t: "Watch for warm outlets or switches", d: "Heat at a device is a serious warning sign of loose or overloaded connections." },
     { t: "Test GFCIs monthly", d: "Kitchens, baths, garages and outdoor outlets need working ground-fault protection." },
-    { t: "Don't chain power strips", d: "Overloading a circuit is the #1 avoidable cause of residential electrical fires." },
+    { t: "Don't chain power strips", d: "Overloading a circuit is a common avoidable cause of residential electrical fires." },
   ];
   return (
     <section className="section-y bg-surface">
@@ -398,55 +395,6 @@ function SafetyTips() {
   );
 }
 
-function Testimonials() {
-  const reviews = [
-    { n: "Maria G.", city: "Phoenix", t: "APM diagnosed a tripping breaker two other electricians missed. Fast, respectful, and fairly priced. This is our electrician for life." },
-    { n: "David R.", city: "Mesa", t: "Installed three ceiling fans and replaced a chandelier. Meticulous work, cleaned up perfectly. Highly recommend." },
-    { n: "Jennifer K.", city: "Scottsdale", t: "Called for an emergency after our panel started buzzing. They were at the door within two hours. True professionals." },
-    { n: "Carlos M.", city: "Chandler", t: "Family business you can feel it. Honest quote, no upsell, and the workmanship is spotless." },
-    { n: "Amanda T.", city: "Tempe", t: "Rewired our whole kitchen for a remodel. On time, on budget, and the inspector had zero notes. Amazing." },
-    { n: "Robert P.", city: "Glendale", t: "Best electrical contractor I've hired in 20 years of owning rentals. Communication is next level." },
-  ];
-  return (
-    <section className="section-y">
-      <div className="container-x">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-          <div className="max-w-2xl">
-            <Reveal><span className="eyebrow">Customer Reviews</span></Reveal>
-            <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Phoenix trusts APM Arizona.</h2></Reveal>
-          </div>
-          <Reveal delay={0.15}>
-            <div className="flex items-center gap-4 rounded-2xl bg-secondary text-white px-6 py-4">
-              <div className="flex text-primary">{[0,1,2,3,4].map(i => <IconStar key={i} className="h-5 w-5" />)}</div>
-              <div>
-                <div className="font-bold text-xl">5.0 · 210+ Reviews</div>
-                <div className="text-xs uppercase tracking-widest text-white/60">Google Verified</div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {reviews.map((r, i) => (
-            <Reveal key={r.n} delay={i * 0.05}>
-              <div className="h-full rounded-3xl bg-white p-8 border border-border shadow-[0_10px_40px_-25px_rgba(15,23,42,0.2)]">
-                <div className="flex text-primary mb-4">{[0,1,2,3,4].map(k => <IconStar key={k} className="h-4 w-4" />)}</div>
-                <p className="text-secondary leading-relaxed">"{r.t}"</p>
-                <div className="mt-6 flex items-center gap-3">
-                  <div className="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-primary to-primary-glow text-secondary font-bold">{r.n[0]}</div>
-                  <div>
-                    <div className="font-semibold text-secondary">{r.n}</div>
-                    <div className="text-xs text-muted-foreground">{r.city}, AZ</div>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function EmergencyBanner() {
   return (
     <section className="py-16 relative overflow-hidden" style={{ background: "linear-gradient(120deg, oklch(0.22 0.04 260), oklch(0.16 0.05 265))" }}>
@@ -455,10 +403,10 @@ function EmergencyBanner() {
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-3 text-primary text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
             <span className="relative flex h-2.5 w-2.5 shrink-0"><span className="absolute inset-0 animate-ping rounded-full bg-primary/60" /><span className="relative rounded-full h-2.5 w-2.5 bg-primary" /></span>
-            24/7 Emergency Service
+            Residential Electrical Help
           </div>
           <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold">Electrical emergency? We're here.</h2>
-          <p className="mt-2 text-white/70 max-w-xl">Power out, burning smell, sparks or exposed wiring — call now and we'll dispatch a licensed electrician immediately.</p>
+          <p className="mt-2 text-white/70 max-w-xl">Power out, burning smell, sparks or exposed wiring? Call to request a connection with an independent local provider.</p>
         </div>
         <a href={BUSINESS.phoneHref} className="btn-primary w-full max-w-full md:w-auto text-base px-8 py-4"><IconPhone className="h-5 w-5 shrink-0" /> {BUSINESS.phone}</a>
       </div>
@@ -533,11 +481,11 @@ function FinalCTA() {
           <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full" style={{ background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)" }} />
           <div className="relative max-w-2xl">
             <span className="eyebrow bg-white/10 border-white/20 text-white">Ready When You Are</span>
-            <h2 className="mt-5 text-4xl md:text-6xl font-bold leading-tight">Get a free estimate today.</h2>
-            <p className="mt-4 text-white/70 text-lg">Whether it's a flickering light or a full commercial buildout — call, message or request an estimate. We'll take it from there.</p>
+            <h2 className="mt-5 text-4xl md:text-6xl font-bold leading-tight">Connect with a local provider.</h2>
+            <p className="mt-4 text-white/70 text-lg">Whether it is a flickering light or a panel concern, call or request help for your residential electrical needs.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
-              <Link to="/contact" className="btn-outline">Request Free Estimate <IconArrowRight className="h-4 w-4" /></Link>
+              <Link to="/contact" className="btn-outline">Request Connection <IconArrowRight className="h-4 w-4" /></Link>
             </div>
           </div>
         </div>
@@ -568,15 +516,15 @@ function Industries() {
     <section className="section-y">
       <div className="container-x">
         <div className="max-w-2xl">
-          <Reveal><span className="eyebrow">Industries We Serve</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Commercial electricians who understand your business.</h2></Reveal>
-          <Reveal delay={0.15}><p className="mt-4 text-muted-foreground text-lg">Every industry has its own load profile, code requirements and downtime tolerance. We plan around yours.</p></Reveal>
+          <Reveal><span className="eyebrow">Residential Needs</span></Reveal>
+          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Electrical help for the place you call home.</h2></Reveal>
+          <Reveal delay={0.15}><p className="mt-4 text-muted-foreground text-lg">Explore common residential electrical needs and request a connection with an independent local provider.</p></Reveal>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {INDUSTRIES.map((it, i) => (
             <Reveal key={it.t} delay={i * 0.05}>
               <div className="h-full rounded-3xl border border-border bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-elegant">
-                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/15 text-secondary"><IconBuilding className="h-5 w-5" /></div>
+                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/15 text-secondary"><IconHome className="h-5 w-5" /></div>
                 <h3 className="mt-5 text-xl font-bold text-secondary">{it.t}</h3>
                 <p className="mt-2 text-muted-foreground text-sm leading-relaxed">{it.d}</p>
               </div>
@@ -600,7 +548,7 @@ function LocalIntro() {
               Arizona is hard on electrical systems. Attic temperatures over 150°F degrade insulation, monsoon storms drive surges through service entrances, and homes built for 1970s loads are now running two air conditioners, a pool pump and an EV charger. Our work accounts for all of it.
             </p>
             <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
-              APM Arizona Electric LLC is based at {BUSINESS.address} and serves Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale. Every job starts with a free written estimate, is performed by licensed and insured electricians, and is permitted and inspected wherever code requires it.
+              APM Arizona Electric LLC is based at {BUSINESS.address} and this site provides residential electrical information for Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale. We help homeowners request connections with independent local providers.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
@@ -611,10 +559,10 @@ function LocalIntro() {
         <Reveal delay={0.1}>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { t: "Licensed & Insured", d: "Arizona-licensed electrical contractor with full liability coverage.", i: IconShield },
-              { t: "Upfront Pricing", d: "Written, itemized quotes before any work begins — no surprises.", i: IconCheck },
-              { t: "Fast Local Response", d: "Same-day and next-day appointments across the Valley.", i: IconClock },
-              { t: "Family Owned", d: "A local family business, not a national franchise call center.", i: IconHome },
+              { t: "Verify Credentials", d: "Confirm the provider's license and insurance before hiring.", i: IconShield },
+              { t: "Review Pricing", d: "Ask for written scope and pricing before authorizing work.", i: IconCheck },
+              { t: "Local Connections", d: "Request help connecting with an independent local provider.", i: IconClock },
+              { t: "Homeowner Focus", d: "Residential information for homeowners and renters.", i: IconHome },
             ].map((c) => (
               <div key={c.t} className="rounded-3xl border border-border bg-white p-6">
                 <div className="grid h-11 w-11 place-items-center rounded-2xl bg-primary/15 text-secondary"><c.i className="h-5 w-5" /></div>

@@ -24,7 +24,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
           <Reveal delay={0.3}>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> Call {BUSINESS.phone}</a>
-              <Link to="/contact" className="btn-outline">Free Estimate <IconArrowRight className="h-4 w-4" /></Link>
+              <Link to="/contact" className="btn-outline">Request Connection <IconArrowRight className="h-4 w-4" /></Link>
             </div>
           </Reveal>
         </div>
@@ -133,7 +133,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
             <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full" style={{ background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)" }} />
             <div className="relative max-w-2xl">
               <h2 className="text-3xl md:text-5xl font-bold leading-tight">Need an electrician in {l.city} today?</h2>
-              <p className="mt-4 text-white/70 text-lg">Call now or request a free written estimate. {l.responseTime}.</p>
+              <p className="mt-4 text-white/70 text-lg">Call now or request a connection with an independent local provider. {l.responseTime}.</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
                 <Link to="/contact" className="btn-outline">Request Estimate <IconArrowRight className="h-4 w-4" /></Link>

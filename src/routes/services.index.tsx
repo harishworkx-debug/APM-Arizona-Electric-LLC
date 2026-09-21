@@ -6,7 +6,7 @@ import { IconPhone, IconArrowRight, IconCheck, IconMapPin } from "@/components/s
 
 const SERVICES_TITLE = "Electrical Services in Phoenix, AZ | APM Arizona Electric LLC";
 const SERVICES_DESC =
-  "Explore residential and commercial electrical services across Phoenix, AZ — panel upgrades, rewiring, ceiling fans, lighting, breaker repair and maintenance. Call (480) 790-4269.";
+  "Explore residential electrical service information across Phoenix, AZ — panel upgrades, rewiring, ceiling fans, lighting, breaker repair and maintenance. Connect with a local provider.";
 
 export const Route = createFileRoute("/services/")({
   head: () => ({
@@ -41,7 +41,7 @@ export const Route = createFileRoute("/services/")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "ElectricalContractor",
+          "@type": "Organization",
           "@id": `${SITE.url}/#business`,
           name: BUSINESS.name,
           url: SITE.url,
@@ -62,14 +62,14 @@ function ServicesPage() {
     <>
       <section className="relative pt-40 pb-20 text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=2000&q=70" alt="Licensed electricians providing electrical services in Phoenix, Arizona" className="h-full w-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=2000&q=70" alt="Residential electrical service in Phoenix, Arizona" className="h-full w-full object-cover" />
           <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, oklch(0.14 0.05 265 / 0.9), oklch(0.22 0.04 260 / 0.75))" }} />
         </div>
         <div className="container-x relative">
           <Reveal><Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Services", path: "/services" }]} /></Reveal>
           <Reveal delay={0.05}><span className="mt-6 eyebrow bg-white/10 border-white/20 text-white">Our Services</span></Reveal>
           <Reveal delay={0.1}><h1 className="mt-6 text-5xl md:text-7xl font-bold max-w-4xl leading-[1.05]">Complete <span className="text-gradient-primary">electrical services</span> for Phoenix.</h1></Reveal>
-          <Reveal delay={0.2}><p className="mt-6 text-white/80 text-lg max-w-2xl">From a single outlet to a full commercial buildout — our licensed electricians handle every job with the same honest craftsmanship.</p></Reveal>
+          <Reveal delay={0.2}><p className="mt-6 text-white/80 text-lg max-w-2xl">From a single outlet to a panel upgrade, explore residential electrical needs and request a connection with an independent local provider.</p></Reveal>
         </div>
       </section>
 
@@ -117,10 +117,10 @@ function ServicesPage() {
               <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full" style={{ background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)" }} />
               <div className="relative max-w-2xl">
                 <h2 className="text-3xl md:text-4xl font-bold">Not sure which service you need?</h2>
-                <p className="mt-3 text-white/75">Tell us what you are seeing and we will diagnose it honestly — free written estimates on every project.</p>
+                <p className="mt-3 text-white/75">Tell us what you are seeing and request help connecting with an independent local provider.</p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
-                  <Link to="/contact" className="btn-outline">Request Estimate <IconArrowRight className="h-4 w-4" /></Link>
+                  <Link to="/contact" className="btn-outline">Request Connection <IconArrowRight className="h-4 w-4" /></Link>
                 </div>
               </div>
             </div>

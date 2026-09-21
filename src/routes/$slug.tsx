@@ -37,7 +37,7 @@ export const Route = createFileRoute("/$slug")({
           description: loaderData.service!.description,
           url,
           provider: {
-            "@type": "ElectricalContractor",
+            "@type": "Organization",
             "@id": `${SITE.url}/#business`,
             name: BUSINESS.name,
             telephone: BUSINESS.phoneSchema,
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/$slug")({
         }
       : {
           "@context": "https://schema.org",
-          "@type": "LocalBusiness",
+          "@type": "Organization",
           "@id": `${url}#localbusiness`,
           name: `${BUSINESS.name} — ${loaderData.location!.city}`,
           url,
@@ -62,7 +62,6 @@ export const Route = createFileRoute("/$slug")({
             addressCountry: "US",
           },
           areaServed: { "@type": "City", name: `${loaderData.location!.city}, AZ` },
-          aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "210" },
         };
 
     return {

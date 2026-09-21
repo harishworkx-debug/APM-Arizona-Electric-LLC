@@ -59,21 +59,21 @@ export const SERVICES: Service[] = [
     navLabel: "Residential Electrical",
     metaTitle: "Residential Electrical Services in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed residential electricians in Phoenix, AZ. Panel upgrades, rewiring, outlets, lighting and home electrical repairs with upfront pricing. Call (480) 790-4269 for a free estimate.",
+      "Residential electrical service information for Phoenix, AZ homeowners, including panel upgrades, rewiring, outlets, lighting and home electrical repairs. Call (480) 790-4269 to connect with a local provider.",
     h1: "Residential Electrical Services in Phoenix, AZ",
     short: "Trusted home electricians for repairs, upgrades and installations.",
     description:
-      "From aging panels to modern smart lighting, our licensed electricians deliver dependable residential electrical work across the Phoenix Metro. We treat every home like our own.",
+      "From aging panels to modern smart lighting, this site helps Phoenix Metro homeowners connect with independent local providers for residential electrical work.",
     intro: [
       "Phoenix homes take a beating from heat. Attic temperatures above 150°F age insulation, loosen terminations and shorten the life of breakers and outlets faster than in almost any other climate in the country. That is why our residential work always starts with a look at the whole system, not just the symptom you called about.",
-      "We work on everything from 1950s Sunnyslope bungalows with cloth-wrapped wiring to new builds in Laveen that need EV chargers, smart switches and dedicated circuits added after the builder walked away. Whatever the age of your home, the estimate comes before the wrench, and the price we quote is the price you pay.",
+      "Homeowners can ask about everything from 1950s Sunnyslope bungalows with cloth-wrapped wiring to newer Laveen homes that need EV chargers, smart switches and dedicated circuits. Provider scope, pricing and availability are confirmed directly with the independent provider.",
     ],
     image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=70",
     benefits: [
-      "Licensed and insured technicians on every visit",
-      "Upfront, itemized pricing before work begins",
-      "Same-day and next-day appointments across the Valley",
-      "Workmanship guarantee on every residential job",
+      "Connect with independent local providers",
+      "Ask about itemized pricing before work begins",
+      "Residential service options across the Valley",
+      "Verify provider licensing and insurance before hiring",
     ],
     features: [
       "Panel and sub-panel upgrades from 100A to 200A",
@@ -85,75 +85,24 @@ export const SERVICES: Service[] = [
     ],
     problems: ["Flickering lights", "Tripping breakers", "Outdated aluminum or cloth wiring", "Dead outlets and warm switch plates"],
     process: [
-      { n: "01", t: "Free Estimate", d: "We inspect, explain the cause and quote in writing." },
-      { n: "02", t: "Schedule", d: "Pick a window that fits your day, often same week." },
-      { n: "03", t: "Repair", d: "Clean, code-compliant work with drop cloths down." },
-      { n: "04", t: "Walkthrough", d: "We test with you, then guarantee the workmanship." },
+      { n: "01", t: "Call or Request", d: "Tell us what residential electrical help you need." },
+      { n: "02", t: "Get Connected", d: "We help connect you with an independent local provider." },
+      { n: "03", t: "Review Details", d: "Discuss scope, pricing, licensing and insurance directly." },
+      { n: "04", t: "Choose a Provider", d: "Hire the provider that fits your home and project." },
     ],
     whyUs: [
-      "Family owned, not a franchise call center",
-      "Every technician background-checked and uniformed",
-      "We photograph and document every repair",
-      "Honest recommendations, never upsold scare tactics",
+      "Residential homeowner-focused information",
+      "Connections with independent local providers",
+      "Clear request details before a provider call",
+      "Homeowners decide which provider to hire",
     ],
     faqs: [
-      { q: "Do I need a permit for residential electrical work in Phoenix?", a: "Panel replacements, service upgrades, new circuits and rewires all require a permit from the City of Phoenix or your local jurisdiction. We pull the permit and meet the inspector so you never have to." },
-      { q: "How do I know if my panel needs upgrading?", a: "Common signs are a 100A or smaller service, a Federal Pacific or Zinsco label, no room for new breakers, or breakers that trip when the AC and oven run together. We inspect free and tell you honestly if it can wait." },
-      { q: "Can you add an EV charger to my existing panel?", a: "Usually yes. We run a load calculation first, then install a dedicated 240V circuit. If the panel is full or undersized we will price both a sub-panel and a full upgrade so you can choose." },
-      { q: "How long does a whole-home rewire take?", a: "Most Phoenix single-story homes take three to five working days depending on square footage and attic access. We stage the work so you keep power in part of the house each night." },
+      { q: "Do I need a permit for residential electrical work in Phoenix?", a: "Panel replacements, service upgrades, new circuits and rewires may require a permit from the City of Phoenix or your local jurisdiction. Ask the provider how permitting will be handled." },
+      { q: "How do I know if my panel needs upgrading?", a: "Common signs are a 100A or smaller service, a Federal Pacific or Zinsco label, no room for new breakers, or breakers that trip when the AC and oven run together. A qualified provider can inspect and explain the options." },
+      { q: "Can I add an EV charger to my existing panel?", a: "An independent provider can review the existing load and determine whether a dedicated 240V circuit, sub-panel or service upgrade is appropriate." },
+      { q: "How long does a whole-home rewire take?", a: "Timing depends on the home's size, wiring and access. Ask the provider for a written scope and expected schedule before hiring." },
     ],
     related: ["circuit-breaker-repair-phoenix-az", "light-fixture-installation-phoenix-az", "ceiling-fan-installation-phoenix-az"],
-  },
-  {
-    slug: "commercial-electrical-services-phoenix-az",
-    title: "Commercial Electrical Services",
-    navLabel: "Commercial Electrical",
-    metaTitle: "Commercial Electrical Services in Phoenix, AZ | APM Arizona Electric LLC",
-    metaDescription:
-      "Commercial electricians in Phoenix, AZ for offices, retail, restaurants and light industrial. Tenant improvements, lighting, panels and after-hours service. Call (480) 790-4269.",
-    h1: "Commercial Electrical Services in Phoenix, AZ",
-    short: "Reliable commercial electricians keeping Arizona businesses powered.",
-    description:
-      "Retail spaces, offices, restaurants and light industrial — we deliver code-compliant commercial electrical service with minimal downtime and clean, professional installations.",
-    intro: [
-      "Downtime costs money. A dark dining room on a Friday night or a dead register bank on the first of the month is not an inconvenience, it is lost revenue. Our commercial crews schedule around your hours, arrive with the parts common to your equipment and work in a way that keeps the doors open.",
-      "We handle tenant improvements along Camelback Corridor, restaurant buildouts in Old Town, warehouse lighting retrofits near Sky Harbor and preventive maintenance contracts for property managers across the Valley. Everything is permitted, inspected and documented for your records and your insurer.",
-    ],
-    image: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1600&q=70",
-    benefits: [
-      "After-hours and weekend scheduling at no drama",
-      "Tenant improvement and buildout expertise",
-      "Preventive maintenance agreements",
-      "Priority emergency response for contract clients",
-    ],
-    features: [
-      "Three-phase panel, disconnect and feeder work",
-      "LED retrofits and warehouse high-bay lighting",
-      "Parking lot, sign and exterior lighting service",
-      "Emergency and exit lighting code compliance",
-      "Data, low-voltage and equipment circuits",
-      "Thermal imaging inspections for insurance reports",
-    ],
-    problems: ["Unplanned power outages", "Overloaded or undersized panels", "Failing ballasts and lighting", "Nuisance trips on equipment circuits"],
-    process: [
-      { n: "01", t: "Site Walk", d: "We survey the space and review your load needs." },
-      { n: "02", t: "Scope & Quote", d: "Line-item proposal with schedule and permit plan." },
-      { n: "03", t: "Execution", d: "Work staged around business hours to limit downtime." },
-      { n: "04", t: "Closeout", d: "Inspection, as-builts and photo documentation." },
-    ],
-    whyUs: [
-      "Licensed and bonded commercial contractor",
-      "Insured to the limits property managers require",
-      "One point of contact from quote through inspection",
-      "Clean job sites and uniformed crews in tenant spaces",
-    ],
-    faqs: [
-      { q: "Can you work after business hours?", a: "Yes. Most retail and restaurant work is scheduled after close or before open. Tell us your operating hours and we build the schedule around them." },
-      { q: "Do you handle tenant improvement permits?", a: "We pull the electrical permit, coordinate with the general contractor and meet the city inspector for every TI project we perform." },
-      { q: "Do you offer maintenance contracts?", a: "We do. Quarterly or annual agreements include panel torque checks, thermal scans, lighting sweeps and priority scheduling for emergencies." },
-      { q: "Is an LED retrofit worth it in Arizona?", a: "Almost always. Lower wattage means lower load and less heat, which reduces your cooling bill on top of the lighting savings. We provide a payback estimate before you commit." },
-    ],
-    related: ["electrical-maintenance-phoenix-az", "circuit-breaker-repair-phoenix-az", "light-fixture-installation-phoenix-az"],
   },
   {
     slug: "ceiling-fan-installation-phoenix-az",
@@ -165,7 +114,7 @@ export const SERVICES: Service[] = [
     h1: "Ceiling Fan Installation in Phoenix, AZ",
     short: "Cool your home the right way with expertly installed ceiling fans.",
     description:
-      "We install and replace ceiling fans of every style — from great-room statement fans to bedroom whisper-quiet models — with proper bracing, wiring and balance.",
+      "Homeowners can ask an independent provider about ceiling fans of every style, including proper bracing, wiring and balance.",
     intro: [
       "A ceiling fan can make a room feel four to six degrees cooler, which in a Phoenix summer translates directly into a smaller APS or SRP bill. The catch is that most fans fail early because they were hung from a light-only junction box that was never rated to carry a moving load.",
       "We replace the box with a fan-rated brace, verify the joist attachment, wire the control the way you actually want it and balance the blades before we leave. Vaulted ceilings, two-story entries and outdoor patios included.",
@@ -197,7 +146,7 @@ export const SERVICES: Service[] = [
       { q: "Can you install a fan where there is only a light?", a: "Yes. We replace the light-only box with a fan-rated support and, if you want separate fan and light control, run the additional conductor or install a remote." },
       { q: "What size fan do I need?", a: "As a rule, 42 inch blades for bedrooms up to 12 feet, 52 inch for living rooms, and 60 inch or larger for great rooms. Ceiling height sets the downrod length." },
       { q: "Can you install a fan on a covered patio?", a: "Only a damp or wet-rated fan should go outdoors here. We confirm the rating, the circuit and GFCI protection before installing." },
-      { q: "Do you supply the fan?", a: "You can buy the fan you love and we install it, or we can pick one up for you. Either way the install price is the same." },
+      { q: "Do providers supply the fan?", a: "Ask the independent provider whether you should supply the fan or whether they can source one, and confirm the installation price." },
     ],
     related: ["light-fixture-installation-phoenix-az", "residential-electrical-services-phoenix-az", "electrical-troubleshooting-phoenix-az"],
   },
@@ -207,14 +156,14 @@ export const SERVICES: Service[] = [
     navLabel: "Light Fixture Installation",
     metaTitle: "Light Fixture Installation in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Light fixture installation in Phoenix, AZ. Chandeliers, recessed LED, pendants, under-cabinet and landscape lighting installed by licensed electricians. Call (480) 790-4269.",
+      "Light fixture installation information for Phoenix, AZ, including chandeliers, recessed LED, pendants, under-cabinet and landscape lighting. Connect with a local provider.",
     h1: "Light Fixture Installation in Phoenix, AZ",
     short: "Chandeliers, recessed lighting, pendants and outdoor fixtures.",
     description:
-      "Beautiful lighting transforms a space. Our team installs interior and exterior fixtures cleanly and safely — from dining room chandeliers to landscape lighting.",
+      "Beautiful lighting transforms a space. Homeowners can ask an independent provider about interior and exterior fixtures, from dining room chandeliers to landscape lighting.",
     intro: [
       "Lighting is the cheapest remodel there is. Swapping dated cans for slim LED trims, adding pendants over an island or putting the patio on a dimmer changes how a house feels far more than paint does, and it happens in a single visit.",
-      "We handle the fussy parts: correct box support for heavy chandeliers, dimmer compatibility with LED drivers so nothing buzzes or flickers, and outdoor fixtures wired with proper gaskets and GFCI protection so monsoon season is not a problem.",
+      "A provider can review the fussy parts: correct box support for heavy chandeliers, dimmer compatibility with LED drivers, and outdoor fixtures with proper gaskets and GFCI protection.",
     ],
     image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=1600&q=70",
     benefits: ["Dimmer-compatible wiring that never buzzes", "Recessed LED conversions in a day", "Outdoor and landscape lighting", "Smart-home lighting integration"],
@@ -242,8 +191,8 @@ export const SERVICES: Service[] = [
     faqs: [
       { q: "Why do my LED lights flicker when dimmed?", a: "Nine times out of ten the dimmer is an older incandescent model that cannot handle a low-wattage LED load. Swapping to an LED-rated dimmer matched to the fixture solves it." },
       { q: "Can you add recessed lighting without tearing up the ceiling?", a: "Yes. Remodel-style LED cans install through a small hole and we fish the wiring from above or across the joist bay, so patching is minimal." },
-      { q: "What color temperature should I choose?", a: "2700K feels warm and residential, 3000K is a popular middle ground, and 4000K reads crisp in kitchens, garages and offices. We can show samples before committing." },
-      { q: "Do you install landscape lighting?", a: "We install both line-voltage and low-voltage landscape systems including transformers, timers and photocells, with buried runs to code." },
+      { q: "What color temperature should I choose?", a: "2700K feels warm, 3000K is a popular middle ground, and 4000K reads crisp in kitchens and garages. Ask the provider to show samples before choosing." },
+      { q: "Do providers install landscape lighting?", a: "Ask an independent provider about line-voltage and low-voltage landscape systems, including transformers, timers and photocells." },
     ],
     related: ["ceiling-fan-installation-phoenix-az", "kitchen-electrical-repairs-phoenix-az", "residential-electrical-services-phoenix-az"],
   },
@@ -253,11 +202,11 @@ export const SERVICES: Service[] = [
     navLabel: "Circuit Breaker Repair",
     metaTitle: "Circuit Breaker Repair in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Circuit breaker repair and panel troubleshooting in Phoenix, AZ. We diagnose tripping breakers, overloads and failing panels fast. Call (480) 790-4269 for same-day help.",
+      "Circuit breaker repair and panel troubleshooting information for Phoenix, AZ homeowners. Learn about tripping breakers, overloads and failing panels, then connect with a local provider.",
     h1: "Circuit Breaker Repair in Phoenix, AZ",
     short: "Fast, accurate diagnosis of tripping breakers and panel issues.",
     description:
-      "Breakers that trip repeatedly are a warning. We diagnose overloads, short circuits, ground faults and failed breakers — and repair or replace only what's needed.",
+      "Breakers that trip repeatedly are a warning. An independent provider can diagnose overloads, short circuits, ground faults and failed breakers and explain the options.",
     intro: [
       "A breaker that trips once is doing its job. A breaker that trips every afternoon when the AC kicks on is telling you something is wrong upstream, and in Arizona that call comes in most often between June and September when panels are carrying their heaviest load in the worst heat.",
       "We test under load rather than guessing, isolate the branch causing the fault, and tell you plainly whether you need a single breaker, a panel repair or a service upgrade. Older Federal Pacific and Zinsco panels get an honest safety assessment, not a scare pitch.",
@@ -281,15 +230,15 @@ export const SERVICES: Service[] = [
     ],
     whyUs: [
       "Diagnostic-first, we do not swap parts blindly",
-      "Same-day response for no-power calls",
+      "Residential help for no-power calls",
       "Thermal scan photos included in the report",
       "Straight answers on panel replacement timing",
     ],
     faqs: [
       { q: "Why does my breaker only trip in the afternoon?", a: "Summer afternoon load plus heat inside the panel enclosure pushes a marginal circuit past its rating. It usually points to an overloaded circuit or a weakening breaker, both of which we can confirm with a load test." },
-      { q: "Is a Federal Pacific panel really dangerous?", a: "Those panels have a documented history of breakers failing to trip on a fault. We inspect and give you a factual assessment. If it is still safe we will tell you so." },
+      { q: "Is a Federal Pacific panel really dangerous?", a: "Those panels have a documented history of breakers failing to trip on a fault. Ask a qualified provider for a factual assessment and available options." },
       { q: "Can I just replace the breaker myself?", a: "Working inside a live panel is the most dangerous DIY electrical task there is, and using a non-listed breaker voids the panel rating. It is a job worth handing off." },
-      { q: "How fast can you get here for a no-power call?", a: "We prioritize loss-of-power calls and usually reach Phoenix Metro addresses the same day. Call (480) 790-4269 and tell us it is urgent." },
+      { q: "How can I get help for a no-power call?", a: "Call (480) 790-4269 to request a connection with an independent local provider and describe the issue." },
     ],
     related: ["electrical-troubleshooting-phoenix-az", "electrical-maintenance-phoenix-az", "residential-electrical-services-phoenix-az"],
   },
@@ -299,7 +248,7 @@ export const SERVICES: Service[] = [
     navLabel: "Kitchen Electrical Repairs",
     metaTitle: "Kitchen Electrical Repairs in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Kitchen electrical repairs in Phoenix, AZ. Dedicated appliance circuits, GFCI upgrades, under-cabinet lighting and range wiring by licensed electricians. Call (480) 790-4269.",
+      "Kitchen electrical repairs in Phoenix, AZ, including dedicated appliance circuits, GFCI upgrades, under-cabinet lighting and range wiring. Connect with a local provider.",
     h1: "Kitchen Electrical Repairs in Phoenix, AZ",
     short: "Dedicated circuits, GFCIs and modern kitchen power upgrades.",
     description:
@@ -335,7 +284,7 @@ export const SERVICES: Service[] = [
       { q: "How many circuits does a modern kitchen need?", a: "Code requires at least two 20-amp small-appliance circuits, plus dedicated circuits for the dishwasher, disposal, microwave and range. Most older Phoenix kitchens have far fewer." },
       { q: "Do all kitchen outlets need GFCI protection?", a: "Every receptacle serving the countertop must be GFCI protected, and current code extends that to most kitchen receptacles including the dishwasher." },
       { q: "Can you add an island outlet after the counter is in?", a: "Usually yes. We route through the cabinet base or crawl space and can use a pop-up or side-mount receptacle to keep the island clean." },
-      { q: "Can you switch my range from gas to electric?", a: "We install the 240V circuit and receptacle for the new range. Capping the gas line is handled by a licensed plumber, and we can coordinate the timing." },
+      { q: "Can a provider switch my range from gas to electric?", a: "Ask an independent electrical provider about the 240V circuit and receptacle. Gas line work must be handled by the appropriately licensed provider." },
     ],
     related: ["light-fixture-installation-phoenix-az", "residential-electrical-services-phoenix-az", "circuit-breaker-repair-phoenix-az"],
   },
@@ -345,14 +294,14 @@ export const SERVICES: Service[] = [
     navLabel: "Electrical Maintenance",
     metaTitle: "Electrical Maintenance in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Preventive electrical maintenance in Phoenix, AZ for homes and businesses. Safety inspections, panel checks, thermal scans and priority scheduling. Call (480) 790-4269.",
+      "Preventive electrical maintenance information for Phoenix, AZ homes, including safety inspections, panel checks and thermal scans. Connect with a local provider.",
     h1: "Electrical Maintenance in Phoenix, AZ",
     short: "Preventive care that keeps your electrical system safe and efficient.",
     description:
       "Routine maintenance prevents fires, outages and expensive repairs. Our maintenance plans catch small issues before they become emergencies.",
     intro: [
       "Arizona heat is hard on connections. Copper expands and contracts every single day of a Valley summer, and over years that cycling loosens terminations inside panels, disconnects and outdoor equipment. Loose connections are the single most common cause of electrical fires we see.",
-      "An annual inspection catches those problems while they are still a torque wrench away from being fixed. For businesses, our maintenance agreements also produce the documentation insurers and property managers ask for.",
+      "A periodic inspection can catch problems while they are still straightforward to address. Ask an independent provider what inspection and documentation options fit your home.",
     ],
     image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=70",
     benefits: ["Annual safety inspections", "Panel torque and thermal checks", "Outlet and GFCI testing", "Priority scheduling for plan holders"],
@@ -378,12 +327,12 @@ export const SERVICES: Service[] = [
       "Records kept year over year to show trends",
     ],
     faqs: [
-      { q: "How often should an electrical system be inspected?", a: "Annually for most Valley homes, and quarterly for restaurants, shops and any facility with heavy equipment. Homes over 40 years old benefit from a yearly look regardless." },
+      { q: "How often should an electrical system be inspected?", a: "Many homeowners ask about an annual inspection, especially for older homes or after major upgrades. An independent provider can recommend a schedule for your system." },
       { q: "What is thermal imaging used for?", a: "An infrared camera shows heat where there should not be any, which reveals loose lugs, failing breakers and overloaded circuits before they fail or start a fire." },
       { q: "Is maintenance worth it if nothing is wrong?", a: "That is exactly when it pays. Most of what we find during inspections is invisible from the outside and cheap to correct compared to an emergency call." },
-      { q: "Do you provide documentation for insurance?", a: "Yes. Every inspection produces a dated written report with photos, which most carriers and property managers accept directly." },
+      { q: "Can I request inspection documentation?", a: "Ask the independent provider whether they offer a dated written report with photos and whether it meets your insurer's requirements." },
     ],
-    related: ["circuit-breaker-repair-phoenix-az", "commercial-electrical-services-phoenix-az", "electrical-troubleshooting-phoenix-az"],
+    related: ["circuit-breaker-repair-phoenix-az", "electrical-troubleshooting-phoenix-az", "residential-electrical-services-phoenix-az"],
   },
   {
     slug: "electrical-troubleshooting-phoenix-az",
@@ -391,7 +340,7 @@ export const SERVICES: Service[] = [
     navLabel: "Electrical Troubleshooting",
     metaTitle: "Electrical Troubleshooting in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Electrical troubleshooting in Phoenix, AZ. Dead outlets, flickering lights, burning smells and intermittent power diagnosed fast by licensed electricians. Call (480) 790-4269.",
+      "Electrical troubleshooting information for Phoenix, AZ homeowners with dead outlets, flickering lights, burning smells or intermittent power. Connect with a local provider.",
     h1: "Electrical Troubleshooting in Phoenix, AZ",
     short: "Chasing down a mystery electrical problem? We find it fast.",
     description:
@@ -401,7 +350,7 @@ export const SERVICES: Service[] = [
       "We work the problem methodically with circuit tracers, clamp meters and voltage drop testing rather than opening walls at random. You get a plain-English explanation of what was wrong, what caused it and what it costs to fix before any repair begins.",
     ],
     image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=70",
-    benefits: ["Systematic diagnostic process", "Modern circuit tracing equipment", "Clear written findings", "Fixed-right-the-first-time guarantee"],
+    benefits: ["Systematic diagnostic process", "Modern circuit tracing equipment", "Clear written findings", "Homeowner-focused provider connections"],
     features: [
       "Dead outlet and circuit tracing",
       "Open neutral and shared neutral diagnosis",
@@ -457,9 +406,9 @@ export const LOCATIONS: Location[] = [
     navLabel: "Phoenix",
     metaTitle: "Electrician in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Phoenix, AZ. Residential and commercial electrical repairs, panel upgrades, lighting and ceiling fans across the city. Call (480) 790-4269.",
+      "Residential electrician information for Phoenix, AZ homeowners, including panel upgrades, lighting and ceiling fans. Call (480) 790-4269 to connect with a local provider.",
     h1: "Electrician in Phoenix, AZ",
-    blurb: "From Arcadia to Desert Ridge, we serve Phoenix homeowners and businesses every day.",
+    blurb: "Residential electrical information for Phoenix homeowners from Arcadia to Desert Ridge.",
     intro: [
       "Phoenix is not one electrical market, it is a dozen. A 1948 block home near Encanto has cloth-insulated branch circuits and a 60-amp service. A 2021 build in Laveen has a 200-amp panel with no room left because the builder filled it. North Phoenix custom homes come with pool equipment, casitas and detached shops all fed from a single overworked service. We work all of it, weekly.",
       "Because we are based just south in Tempe, most Phoenix addresses are a short drive rather than a dispatch across the Valley. That matters when your panel is buzzing at 4pm in July and you need someone today rather than Thursday.",
@@ -467,10 +416,10 @@ export const LOCATIONS: Location[] = [
     landmarks: ["Camelback Mountain", "Downtown Phoenix", "Arcadia", "Desert Ridge", "Ahwatukee", "Encanto"],
     nearby: ["Tempe", "Scottsdale", "Glendale", "Mesa"],
     availability: [
-      "Same-day service for loss-of-power calls",
+      "Residential help for loss-of-power calls",
       "Permits pulled through City of Phoenix",
-      "Residential and commercial crews available",
-      "After-hours scheduling for businesses",
+      "Connections with independent local providers",
+      "Provider schedules vary by location and availability",
     ],
     whyUs: [
       "Local crews who know Phoenix housing stock by era",
@@ -478,10 +427,10 @@ export const LOCATIONS: Location[] = [
       "Heat-aware panel work scheduled early in summer",
       "Family owned, with a real person answering the phone",
     ],
-    responseTime: "Typically same-day across central and north Phoenix",
+    responseTime: "Provider availability varies across central and north Phoenix",
     faqs: [
       { q: "Do you serve all of Phoenix?", a: "Yes, from Ahwatukee and South Mountain up through central Phoenix, Arcadia, North Phoenix and Desert Ridge, plus Laveen and the west side." },
-      { q: "How fast can an electrician reach my Phoenix home?", a: "For urgent no-power or burning-smell calls we aim for the same day. Standard appointments are usually booked within 48 hours." },
+      { q: "How can I get help at my Phoenix home?", a: "Call (480) 790-4269 to request a connection with an independent local provider. Timing depends on provider availability." },
       { q: "Do you pull City of Phoenix permits?", a: "We do. Panel changes, service upgrades and new circuits are permitted and inspected, and we meet the inspector on site." },
       { q: "Which Phoenix neighborhoods have the oldest wiring?", a: "Historic districts like Encanto, Coronado, Willo and parts of central Phoenix commonly still have two-wire ungrounded or cloth-wrapped circuits worth evaluating." },
     ],
@@ -492,9 +441,9 @@ export const LOCATIONS: Location[] = [
     navLabel: "Mesa",
     metaTitle: "Electrician in Mesa, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Mesa, AZ. Breaker repairs, panel upgrades, ceiling fans, lighting and commercial electrical service. Free estimates. Call (480) 790-4269.",
+      "Residential electrician information for Mesa, AZ, including breaker repairs, panel upgrades, ceiling fans and lighting. Call (480) 790-4269 to connect with a local provider.",
     h1: "Electrician in Mesa, AZ",
-    blurb: "Fast, licensed electrical service across Mesa — from Eastmark to Dobson Ranch.",
+    blurb: "Residential electrical information across Mesa, from Eastmark to Dobson Ranch.",
     intro: [
       "Mesa spans a wide range of build eras, and the electrical work follows. West Mesa and Dobson Ranch homes from the seventies and eighties often need panel attention and GFCI retrofits. Newer Eastmark and Las Sendas properties are more about adding what the builder left out: EV chargers, patio fans, landscape lighting and shop circuits in the garage.",
       "We also serve a large number of Mesa snowbird properties, where owners need a trusted electrician who can meet a house sitter, document the work with photos and invoice remotely. That is routine for us between October and April.",
@@ -505,7 +454,7 @@ export const LOCATIONS: Location[] = [
       "Same-week appointments across all of Mesa",
       "Remote coordination for seasonal residents",
       "Photo-documented work for absentee owners",
-      "Commercial service along Main Street and Superstition corridor",
+      "Residential provider connections across the Main Street and Superstition corridor",
     ],
     whyUs: [
       "Short drive from our Tempe base",
@@ -513,10 +462,10 @@ export const LOCATIONS: Location[] = [
       "EV charger installs common in east Mesa builds",
       "Written estimates before any work starts",
     ],
-    responseTime: "Usually within 24 to 48 hours, same-day for emergencies",
+    responseTime: "Provider timing varies by project, location and availability",
     faqs: [
       { q: "Do you cover east Mesa and Eastmark?", a: "Yes. We cover Mesa end to end, including Eastmark, Las Sendas, Red Mountain, Dobson Ranch and downtown." },
-      { q: "Can you work on my Mesa home while I am out of state?", a: "Absolutely. We coordinate access with a neighbor or property manager, photograph the work throughout and invoice electronically." },
+      { q: "Can a provider work on my Mesa home while I am out of state?", a: "Ask the independent provider about access arrangements, documentation and payment terms before hiring." },
       { q: "Do older Mesa homes need a panel upgrade?", a: "Many homes built before 1985 still run 100-amp services that struggle with modern AC, EV charging and appliances. We assess free and give a straight answer." },
       { q: "Can you install an EV charger in Mesa?", a: "Yes, including load calculations, permitting with the City of Mesa and a dedicated 240V circuit sized for your vehicle." },
     ],
@@ -527,33 +476,33 @@ export const LOCATIONS: Location[] = [
     navLabel: "Scottsdale",
     metaTitle: "Electrician in Scottsdale, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Scottsdale, AZ. Luxury home lighting, smart controls, panel upgrades and commercial electrical service. Call (480) 790-4269 for a free estimate.",
+      "Residential electrician information for Scottsdale, AZ, including home lighting, smart controls and panel upgrades. Call (480) 790-4269 to connect with a local provider.",
     h1: "Electrician in Scottsdale, AZ",
-    blurb: "Premium residential and commercial electrical work for Scottsdale homes and businesses.",
+    blurb: "Residential electrical information for Scottsdale homes, lighting and smart controls.",
     intro: [
       "Scottsdale work tends to be detail work. North Scottsdale, Troon and DC Ranch homes come with layered lighting designs, landscape systems, casitas, pool and spa equipment, and smart control panels that all have to play together. A sloppy fixture install shows immediately in a house like that.",
-      "Old Town is a different job entirely: restaurants, galleries and retail spaces needing after-hours service, track lighting adjustments, and commercial panel work performed without closing the doors during season.",
+      "Homeowners in and around Old Town can ask about track lighting, landscape systems, panel work and smart controls for residential spaces.",
     ],
     landmarks: ["Old Town Scottsdale", "North Scottsdale", "Troon", "DC Ranch", "McDowell Sonoran Preserve"],
     nearby: ["Phoenix", "Paradise Valley", "Tempe", "Fountain Hills"],
     availability: [
       "Detail-oriented residential lighting work",
-      "After-hours commercial service in Old Town",
+      "Residential lighting help in Old Town",
       "Smart home and control system integration",
       "Landscape and exterior lighting service",
     ],
     whyUs: [
       "Careful, clean work in finished luxury homes",
       "Comfortable with smart lighting and control systems",
-      "Discreet, uniformed technicians",
+      "Homeowner-focused provider connections",
       "Coordination with designers and builders",
     ],
-    responseTime: "Same-week scheduling, priority response for businesses",
+    responseTime: "Provider timing varies by project and availability",
     faqs: [
-      { q: "Do you work on smart lighting systems?", a: "Yes. We install and service smart switches, dimmers, scene controllers and app-integrated fixtures, and we troubleshoot systems installed by others." },
+      { q: "Can providers work on smart lighting systems?", a: "Ask an independent provider about smart switches, dimmers, scene controllers and app-integrated fixtures." },
       { q: "Can you service North Scottsdale and Troon?", a: "We cover Scottsdale from Old Town through North Scottsdale, Troon and DC Ranch, including hillside properties with detached casitas and shops." },
       { q: "Do you handle landscape lighting repairs?", a: "We repair and expand both low-voltage and line-voltage landscape systems, including transformers, timers, photocells and buried run faults." },
-      { q: "Can you work around my restaurant's hours?", a: "Old Town commercial work is routinely scheduled after close or before open so service is never interrupted during business hours." },
+      { q: "Can a provider work around my schedule?", a: "Ask the independent provider about appointment windows and availability before hiring." },
     ],
   },
   {
@@ -562,20 +511,20 @@ export const LOCATIONS: Location[] = [
     navLabel: "Tempe",
     metaTitle: "Electrician in Tempe, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Tempe, AZ, based right here on W Hermosa Dr. Repairs, panel upgrades, lighting, fans and rental property service. Call (480) 790-4269.",
+      "Residential electrician information for Tempe, AZ, based near W Hermosa Dr. Explore repairs, panel upgrades, lighting and fans, then connect with a local provider.",
     h1: "Electrician in Tempe, AZ",
-    blurb: "Trusted electricians serving Tempe families, students, landlords and local businesses.",
+    blurb: "Residential electrical information for Tempe homeowners, students and renters.",
     intro: [
       "Tempe is home. Our shop sits on W Hermosa Dr, which means Tempe calls usually get the fastest response of anywhere we serve. We know the mid-century stock south of Broadway, the rental-heavy blocks around ASU, and the newer townhome developments near Tempe Town Lake.",
-      "A large share of our Tempe work is rental property service for landlords who need code-compliant repairs documented quickly between tenants, plus small commercial work along Mill Avenue and Apache Boulevard.",
+      "Tempe homeowners and renters can ask about GFCI upgrades, outlet repairs, lighting fixes and other residential electrical needs.",
     ],
     landmarks: ["ASU Campus", "Mill Avenue", "Tempe Town Lake", "South Tempe", "Warner Ranch"],
     nearby: ["Phoenix", "Mesa", "Chandler", "Scottsdale"],
     availability: [
       "Fastest response of any city we serve",
       "Rental turnover and landlord repair service",
-      "Small commercial work on Mill Ave and Apache Blvd",
-      "Free estimates for homeowners",
+      "Residential provider connections near Mill Ave and Apache Blvd",
+      "Ask providers about estimates before work begins",
     ],
     whyUs: [
       "We are headquartered in Tempe, not dispatched to it",
@@ -583,10 +532,10 @@ export const LOCATIONS: Location[] = [
       "Landlord-friendly documentation and invoicing",
       "Experience with mid-century Tempe wiring",
     ],
-    responseTime: "Often same-day, we are based in Tempe",
+    responseTime: "Provider timing varies; the site is based in Tempe",
     faqs: [
       { q: "Where are you located in Tempe?", a: "Our registered address is 1216 W Hermosa Dr, Tempe, AZ 85282, which puts us minutes from most Tempe addresses." },
-      { q: "Do you work with landlords and property managers?", a: "Regularly. We handle turnover repairs, safety inspections and code corrections with photo documentation and electronic invoicing." },
+      { q: "Can renters request residential electrical help?", a: "Ask the property owner or manager for approval, then confirm the provider's scope, pricing and documentation before work begins." },
       { q: "Can you service homes near ASU?", a: "Yes, and we do frequently. Student rentals near campus often need GFCI upgrades, outlet repairs and lighting fixes between leases." },
       { q: "Are older south Tempe homes safe electrically?", a: "Many are fine but carry undersized services or ungrounded outlets. A one-time inspection tells you exactly where you stand." },
     ],
@@ -597,12 +546,12 @@ export const LOCATIONS: Location[] = [
     navLabel: "Chandler",
     metaTitle: "Electrician in Chandler, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Chandler, AZ. Home electrical repairs, EV chargers, lighting, ceiling fans and commercial service. Free estimates. Call (480) 790-4269.",
+      "Residential electrician information for Chandler, AZ, including home repairs, EV chargers, lighting and ceiling fans. Call (480) 790-4269 to connect with a local provider.",
     h1: "Electrician in Chandler, AZ",
     blurb: "Reliable electrical service across Chandler — repairs, upgrades and new installations.",
     intro: [
       "Chandler skews newer than most of the Valley, and the work reflects it. Ocotillo and Fulton Ranch homes rarely need rewiring, but they very often need capacity added: EV chargers, garage shop circuits, patio fans, pool equipment feeds and smart panels. Builder-grade panels fill up fast once a family adds two electric vehicles.",
-      "Sun Lakes and the older stretches near downtown Chandler are a different story, with 1980s panels and GFCI requirements that have changed several times since the homes were built. We handle both ends of that spectrum weekly.",
+      "Sun Lakes and older areas near downtown Chandler include homes with 1980s panels and GFCI requirements that have changed over time. Ask a provider to review the system and explain the options.",
     ],
     landmarks: ["Downtown Chandler", "Ocotillo", "Sun Lakes", "Fulton Ranch", "Chandler Fashion Center"],
     nearby: ["Gilbert", "Tempe", "Mesa", "Ahwatukee"],
@@ -610,7 +559,7 @@ export const LOCATIONS: Location[] = [
       "EV charger installation and load calculations",
       "Sub-panel additions for full builder panels",
       "Same-week residential scheduling",
-      "Commercial service around Chandler Fashion Center",
+      "Residential provider connections near Chandler Fashion Center",
     ],
     whyUs: [
       "Experienced with builder-grade panel limitations",
@@ -623,7 +572,7 @@ export const LOCATIONS: Location[] = [
       { q: "My Chandler panel is full. What are my options?", a: "Either a sub-panel fed from the existing service, or a panel replacement with more spaces. We run a load calculation and price both so you can choose on facts." },
       { q: "Do you install EV chargers in Chandler?", a: "Yes, including permitting with the City of Chandler, dedicated 240V circuits and hardwired or plug-in chargers sized to your vehicle." },
       { q: "Do you serve Sun Lakes?", a: "We do, and we are used to working with HOA requirements and scheduling around community access rules there." },
-      { q: "Can you add outlets to a covered patio?", a: "Yes. Outdoor receptacles need weather-resistant devices, in-use covers and GFCI protection, all of which we install to current code." },
+      { q: "Can a provider add outlets to a covered patio?", a: "Outdoor receptacles need weather-resistant devices, in-use covers and GFCI protection. Ask the provider how the work will meet current code." },
     ],
   },
   {
@@ -632,62 +581,62 @@ export const LOCATIONS: Location[] = [
     navLabel: "Glendale",
     metaTitle: "Electrician in Glendale, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Licensed electrician in Glendale, AZ. Honest home and commercial electrical repairs, panel work, lighting and troubleshooting. Call (480) 790-4269 for a free estimate.",
+      "Residential electrician information for Glendale, AZ, including panel work, lighting and troubleshooting. Call (480) 790-4269 to connect with a local provider.",
     h1: "Electrician in Glendale, AZ",
-    blurb: "Honest, affordable electricians for Glendale homes and commercial spaces.",
+    blurb: "Residential electrical information for Glendale homes and older properties.",
     intro: [
       "Glendale mixes historic downtown properties with sprawling newer neighborhoods around Arrowhead Ranch and the Westgate entertainment district. Historic Downtown Glendale homes frequently still run ungrounded two-wire circuits, and the repairs there need a careful hand to keep original finishes intact.",
-      "On the commercial side, the Westgate area brings restaurant and retail work where lighting and equipment circuits have to be serviced around event nights at the arena and stadium. We schedule Glendale commercial work accordingly.",
+      "Glendale homeowners can ask about lighting, equipment circuits, panel work and troubleshooting near Westgate and surrounding neighborhoods.",
     ],
     landmarks: ["Historic Downtown Glendale", "Arrowhead Ranch", "Westgate", "State Farm Stadium", "Thunderbird Park"],
     nearby: ["Peoria", "Phoenix", "Sun City", "Surprise"],
     availability: [
       "Historic home rewiring and grounding upgrades",
-      "Restaurant and retail service near Westgate",
-      "Event-aware commercial scheduling",
-      "Free residential estimates",
+      "Residential lighting and panel help near Westgate",
+      "Provider scheduling varies around local events",
+      "Ask providers about estimates before work begins",
     ],
     whyUs: [
       "Careful work in historic properties",
       "Fair pricing without travel surcharges",
       "Grounding and GFCI expertise for older homes",
-      "Licensed, insured and locally accountable",
+      "Verify provider licensing and insurance before hiring",
     ],
     responseTime: "Typically within 48 hours, sooner for emergencies",
     faqs: [
       { q: "Do you charge extra to come to the West Valley?", a: "No. Glendale is part of our standard service area and we do not add travel surcharges." },
       { q: "My Glendale home has two-prong outlets. Can they be upgraded?", a: "Yes. Depending on what is in the walls we either run a ground, feed the circuit from a GFCI, or rewire the branch. We explain the options and price each one." },
-      { q: "Can you service businesses near Westgate?", a: "We do, and we schedule around game and event nights so your service window never collides with your busiest hours." },
-      { q: "Do you handle exterior and security lighting?", a: "Yes, including parking lot poles, wall packs, motion sensors and photocell controls for both homes and businesses." },
+      { q: "Can a provider help with a Glendale home near Westgate?", a: "Call (480) 790-4269 to request a connection with an independent local residential provider." },
+      { q: "Do providers handle exterior and security lighting?", a: "Ask an independent provider about residential exterior fixtures, motion sensors and photocell controls." },
     ],
   },
 ];
 
 export const INDUSTRIES = [
-  { t: "Restaurants & Bars", d: "Kitchen equipment circuits, dining room lighting and after-hours service that never touches your dinner rush." },
-  { t: "Retail & Shopping Centers", d: "Display lighting, sign circuits, tenant improvements and emergency lighting compliance." },
-  { t: "Offices & Professional Suites", d: "Workstation power, LED retrofits, data and low-voltage rough-in, and suite reconfigurations." },
-  { t: "Property Management & HOA", d: "Common area lighting, parking lot poles, unit turnover repairs and documented maintenance." },
-  { t: "Warehouses & Light Industrial", d: "High-bay lighting, three-phase equipment feeds, disconnects and thermal inspections." },
-  { t: "Medical & Dental Offices", d: "Dedicated equipment circuits, isolated grounds and compliant emergency lighting." },
+  { t: "Home Electrical Repairs", d: "Connect with a local provider for residential troubleshooting, outlets, switches and wiring concerns." },
+  { t: "Panel & Breaker Help", d: "Learn about panel upgrades, breaker troubleshooting and service capacity for your home." },
+  { t: "Lighting & Ceiling Fans", d: "Find residential help for fixtures, dimmers, fans, controls and outdoor home lighting." },
+  { t: "Kitchen Electrical", d: "Explore GFCI protection, appliance circuits, range wiring and under-cabinet lighting." },
+  { t: "EV Charger Wiring", d: "Ask an independent provider about load calculations and a dedicated home charging circuit." },
+  { t: "Home Electrical Maintenance", d: "Review inspection and maintenance options for panels, devices, grounding and safety." },
 ];
 
 export const STATS = [
   { v: "30+", l: "Years of combined field experience" },
   { v: "5.0", l: "Average customer rating" },
-  { v: "210+", l: "Local reviews and counting" },
+  { v: "Local", l: "Provider connections" },
   { v: "6", l: "Valley cities served daily" },
 ];
 
 export const FAQS = [
-  { q: "Are you licensed and insured?", a: "Yes. APM Arizona Electric LLC is a fully licensed and insured electrical contractor operating throughout the Phoenix Metro Area, including Phoenix, Mesa, Scottsdale, Tempe, Chandler and Glendale." },
-  { q: "Do you offer free estimates?", a: "Absolutely. We provide free, no-obligation estimates for all residential and commercial electrical projects. Diagnostic troubleshooting carries a flat fee that is credited toward the repair." },
-  { q: "How quickly can you respond to emergencies?", a: "We prioritize loss-of-power, burning smell and sparking calls and typically respond the same day. Call (480) 790-4269 and tell us it is urgent." },
-  { q: "What areas do you serve?", a: "We serve Phoenix, Mesa, Scottsdale, Tempe, Chandler, Glendale and the surrounding Phoenix Metro Area from our base at 1216 W Hermosa Dr in Tempe." },
-  { q: "Do you handle both residential and commercial work?", a: "Yes — from single-family homes and rentals to offices, restaurants, retail spaces and light industrial facilities." },
+  { q: "Are providers licensed and insured?", a: "Providers are independent. Homeowners should verify that the provider they hire has the licenses and insurance required for the work." },
+  { q: "Can I request an estimate?", a: "Call (480) 790-4269 or submit a request to connect with an independent local provider. Ask about pricing before authorizing work." },
+  { q: "How can I get help with an electrical emergency?", a: "Call (480) 790-4269 to request a connection and describe the issue. Provider participation, location and availability vary." },
+  { q: "What areas do you serve?", a: "This site provides residential electrical service information for Phoenix, Mesa, Scottsdale, Tempe, Chandler, Glendale and the surrounding Phoenix Metro Area." },
+  { q: "Is this site the electrical provider?", a: "No. This site helps homeowners connect with independent local residential service providers. Each provider is responsible for its own work." },
   { q: "How much does an electrician cost?", a: "Every job is different, which is why we quote in writing before starting. You approve an itemized price first, so there are no surprises when the work is done." },
   { q: "Do you pull permits?", a: "Yes. Panel changes, service upgrades, new circuits and rewires are permitted with the appropriate city and we meet the inspector on site." },
-  { q: "What payment methods do you accept?", a: "We accept major credit cards, debit, check and electronic transfer, and we invoice property managers and commercial clients on terms." },
+  { q: "What payment methods are accepted?", a: "Payment methods, pricing and terms are set by the independent provider you choose. Confirm those details before authorizing work." },
 ];
 
 export const NAV = [
@@ -700,7 +649,7 @@ export const NAV = [
 
 export const localBusinessSchema = () => ({
   "@context": "https://schema.org",
-  "@type": "ElectricalContractor",
+  "@type": "Organization",
   "@id": `${SITE.url}/#business`,
   name: BUSINESS.name,
   url: SITE.url,
@@ -722,7 +671,6 @@ export const localBusinessSchema = () => ({
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:00", closes: "16:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "13:00" },
   ],
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "210" },
 });
 
 export const breadcrumbSchema = (items: { name: string; path: string }[]) => ({

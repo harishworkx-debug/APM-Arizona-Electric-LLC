@@ -13,7 +13,7 @@ export function ServiceDetail({ service: s }: { service: Service }) {
     <>
       <section className="relative pt-40 pb-24 text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img src={s.image} alt={`${s.title} by licensed electricians in Phoenix, Arizona`} className="h-full w-full object-cover" />
+          <img src={s.image} alt={`${s.title} for Phoenix, Arizona homeowners`} className="h-full w-full object-cover" />
           <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, oklch(0.14 0.05 265 / 0.92), oklch(0.22 0.04 260 / 0.7))" }} />
         </div>
         <div className="container-x relative">
@@ -53,7 +53,7 @@ export function ServiceDetail({ service: s }: { service: Service }) {
           <Reveal>
             <div>
               <span className="eyebrow">Benefits</span>
-              <h2 className="mt-4 text-3xl md:text-4xl font-bold text-secondary">Why homeowners &amp; businesses choose us for this.</h2>
+              <h2 className="mt-4 text-3xl md:text-4xl font-bold text-secondary">Residential help for this electrical need.</h2>
               <ul className="mt-8 space-y-4">
                 {s.benefits.map((b) => (
                   <li key={b} className="flex gap-4">
@@ -100,7 +100,7 @@ export function ServiceDetail({ service: s }: { service: Service }) {
       <section className="section-y bg-surface">
         <div className="container-x max-w-4xl">
           <Reveal><span className="eyebrow">Our Process</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-3xl md:text-4xl font-bold text-secondary">How we handle every {s.title.toLowerCase()} job.</h2></Reveal>
+          <Reveal delay={0.1}><h2 className="mt-4 text-3xl md:text-4xl font-bold text-secondary">How providers may handle {s.title.toLowerCase()}.</h2></Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-4">
             {s.process.map((step) => (
               <div key={step.n} className="rounded-2xl bg-white border border-border p-6">
@@ -132,7 +132,7 @@ export function ServiceDetail({ service: s }: { service: Service }) {
           <Reveal delay={0.1}>
             <div className="rounded-3xl bg-white border border-border p-8">
               <h3 className="text-xl font-bold text-secondary">Available across the Valley</h3>
-              <p className="mt-2 text-muted-foreground text-sm">We provide {s.title.toLowerCase()} in every city we serve.</p>
+              <p className="mt-2 text-muted-foreground text-sm">Request a connection for {s.title.toLowerCase()} in every city listed.</p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {LOCATIONS.map((l) => (
                   <Link key={l.slug} to="/$slug" params={{ slug: l.slug }} className="flex items-center gap-2 rounded-xl border border-border px-4 py-3 text-sm font-semibold text-secondary hover:border-primary/40 hover:-translate-y-0.5 transition-all">
@@ -180,10 +180,10 @@ export function ServiceDetail({ service: s }: { service: Service }) {
               <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full" style={{ background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)" }} />
               <div className="relative max-w-2xl">
                 <h2 className="text-3xl md:text-4xl font-bold">Ready to book {s.title.toLowerCase()}?</h2>
-                <p className="mt-3 text-white/75">Free written estimates for homes and businesses across Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale.</p>
+                <p className="mt-3 text-white/75">Request help connecting with an independent local provider across Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale.</p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
-                  <Link to="/contact" className="btn-outline">Get a Free Estimate <IconArrowRight className="h-4 w-4" /></Link>
+                  <Link to="/contact" className="btn-outline">Request Connection <IconArrowRight className="h-4 w-4" /></Link>
                 </div>
               </div>
             </div>
