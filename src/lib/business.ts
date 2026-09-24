@@ -8,7 +8,7 @@ export const abs = (path: string) => `${SITE.url}${path.endsWith('/') ? path : p
 export const BUSINESS = {
   name: "APM Arizona Electric LLC",
   shortName: "APM Arizona Electric",
-  phone: "(480) 790-4269",
+  phone: "(480) 806-1832",
   phoneHref: "tel:4806190510",
   phoneSchema: "480-790-4269",
   email: "info@apmarizonaelectric.com",
@@ -59,7 +59,7 @@ export const SERVICES: Service[] = [
     navLabel: "Residential Electrical",
     metaTitle: "Residential Electrical Services in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Residential electrical service information for Phoenix, AZ homeowners, including panel upgrades, rewiring, outlets, lighting and home electrical repairs. Call (480) 790-4269 to connect with a local provider.",
+      "Residential electrical service information for Phoenix, AZ homeowners, including panel upgrades, rewiring, outlets, lighting and home electrical repairs. Call (480) 806-1832 to connect with a local provider.",
     h1: "Residential Electrical Services in Phoenix, AZ",
     short: "Trusted home electricians for repairs, upgrades and installations.",
     description:
@@ -110,7 +110,7 @@ export const SERVICES: Service[] = [
     navLabel: "Ceiling Fan Installation",
     metaTitle: "Ceiling Fan Installation in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Ceiling fan installation and replacement in Phoenix, AZ. Proper bracing, remote and smart controls, wobble-free finish and old fan haul-away. Call (480) 790-4269.",
+      "Ceiling fan installation and replacement in Phoenix, AZ. Proper bracing, remote and smart controls, wobble-free finish and old fan haul-away. Call (480) 806-1832.",
     h1: "Ceiling Fan Installation in Phoenix, AZ",
     short: "Cool your home the right way with expertly installed ceiling fans.",
     description:
@@ -238,7 +238,7 @@ export const SERVICES: Service[] = [
       { q: "Why does my breaker only trip in the afternoon?", a: "Summer afternoon load plus heat inside the panel enclosure pushes a marginal circuit past its rating. It usually points to an overloaded circuit or a weakening breaker, both of which we can confirm with a load test." },
       { q: "Is a Federal Pacific panel really dangerous?", a: "Those panels have a documented history of breakers failing to trip on a fault. Ask a qualified provider for a factual assessment and available options." },
       { q: "Can I just replace the breaker myself?", a: "Working inside a live panel is the most dangerous DIY electrical task there is, and using a non-listed breaker voids the panel rating. It is a job worth handing off." },
-      { q: "How can I get help for a no-power call?", a: "Call (480) 790-4269 to request a connection with an independent local provider and describe the issue." },
+      { q: "How can I get help for a no-power call?", a: "Call (480) 806-1832 to request a connection with an independent local provider and describe the issue." },
     ],
     related: ["electrical-troubleshooting-phoenix-az", "electrical-maintenance-phoenix-az", "residential-electrical-services-phoenix-az"],
   },
@@ -375,7 +375,7 @@ export const SERVICES: Service[] = [
     faqs: [
       { q: "How much does troubleshooting cost?", a: "We charge a flat diagnostic fee that covers the time to find the fault, and it is credited toward the repair if you have us complete the work." },
       { q: "My outlet is dead but the breaker is on. Why?", a: "Most often an upstream GFCI has tripped, or a backstabbed connection in another outlet on the same circuit has failed. Both are quick to find with a tracer." },
-      { q: "I smell burning near a switch. What should I do?", a: "Turn that circuit off at the panel and call us immediately at (480) 790-4269. A burning smell means heat where there should be none and it should not wait." },
+      { q: "I smell burning near a switch. What should I do?", a: "Turn that circuit off at the panel and call us immediately at (480) 806-1832. A burning smell means heat where there should be none and it should not wait." },
       { q: "Why do my lights dim when the AC starts?", a: "A brief dip is normal, but a sustained dim points to a loose service connection, an undersized service or a failing neutral. All three are worth diagnosing now." },
     ],
     related: ["circuit-breaker-repair-phoenix-az", "residential-electrical-services-phoenix-az", "electrical-maintenance-phoenix-az"],
@@ -406,7 +406,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Phoenix",
     metaTitle: "Electrician in Phoenix, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Residential electrician information for Phoenix, AZ homeowners, including panel upgrades, lighting and ceiling fans. Call (480) 790-4269 to connect with a local provider.",
+      "Residential electrician information for Phoenix, AZ homeowners, including panel upgrades, lighting and ceiling fans. Call (480) 806-1832 to connect with a local provider.",
     h1: "Electrician in Phoenix, AZ",
     blurb: "Residential electrical information for Phoenix homeowners from Arcadia to Desert Ridge.",
     intro: [
@@ -430,7 +430,7 @@ export const LOCATIONS: Location[] = [
     responseTime: "Provider availability varies across central and north Phoenix",
     faqs: [
       { q: "Do you serve all of Phoenix?", a: "Yes, from Ahwatukee and South Mountain up through central Phoenix, Arcadia, North Phoenix and Desert Ridge, plus Laveen and the west side." },
-      { q: "How can I get help at my Phoenix home?", a: "Call (480) 790-4269 to request a connection with an independent local provider. Timing depends on provider availability." },
+      { q: "How can I get help at my Phoenix home?", a: "Call (480) 806-1832 to request a connection with an independent local provider. Timing depends on provider availability." },
       { q: "Do you pull City of Phoenix permits?", a: "We do. Panel changes, service upgrades and new circuits are permitted and inspected, and we meet the inspector on site." },
       { q: "Which Phoenix neighborhoods have the oldest wiring?", a: "Historic districts like Encanto, Coronado, Willo and parts of central Phoenix commonly still have two-wire ungrounded or cloth-wrapped circuits worth evaluating." },
     ],
@@ -441,7 +441,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Mesa",
     metaTitle: "Electrician in Mesa, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Residential electrician information for Mesa, AZ, including breaker repairs, panel upgrades, ceiling fans and lighting. Call (480) 790-4269 to connect with a local provider.",
+      "Residential electrician information for Mesa, AZ, including breaker repairs, panel upgrades, ceiling fans and lighting. Call (480) 806-1832 to connect with a local provider.",
     h1: "Electrician in Mesa, AZ",
     blurb: "Residential electrical information across Mesa, from Eastmark to Dobson Ranch.",
     intro: [
@@ -476,7 +476,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Scottsdale",
     metaTitle: "Electrician in Scottsdale, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Residential electrician information for Scottsdale, AZ, including home lighting, smart controls and panel upgrades. Call (480) 790-4269 to connect with a local provider.",
+      "Residential electrician information for Scottsdale, AZ, including home lighting, smart controls and panel upgrades. Call (480) 806-1832 to connect with a local provider.",
     h1: "Electrician in Scottsdale, AZ",
     blurb: "Residential electrical information for Scottsdale homes, lighting and smart controls.",
     intro: [
@@ -546,7 +546,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Chandler",
     metaTitle: "Electrician in Chandler, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Residential electrician information for Chandler, AZ, including home repairs, EV chargers, lighting and ceiling fans. Call (480) 790-4269 to connect with a local provider.",
+      "Residential electrician information for Chandler, AZ, including home repairs, EV chargers, lighting and ceiling fans. Call (480) 806-1832 to connect with a local provider.",
     h1: "Electrician in Chandler, AZ",
     blurb: "Reliable electrical service across Chandler — repairs, upgrades and new installations.",
     intro: [
@@ -581,7 +581,7 @@ export const LOCATIONS: Location[] = [
     navLabel: "Glendale",
     metaTitle: "Electrician in Glendale, AZ | APM Arizona Electric LLC",
     metaDescription:
-      "Residential electrician information for Glendale, AZ, including panel work, lighting and troubleshooting. Call (480) 790-4269 to connect with a local provider.",
+      "Residential electrician information for Glendale, AZ, including panel work, lighting and troubleshooting. Call (480) 806-1832 to connect with a local provider.",
     h1: "Electrician in Glendale, AZ",
     blurb: "Residential electrical information for Glendale homes and older properties.",
     intro: [
@@ -606,7 +606,7 @@ export const LOCATIONS: Location[] = [
     faqs: [
       { q: "Do you charge extra to come to the West Valley?", a: "No. Glendale is part of our standard service area and we do not add travel surcharges." },
       { q: "My Glendale home has two-prong outlets. Can they be upgraded?", a: "Yes. Depending on what is in the walls we either run a ground, feed the circuit from a GFCI, or rewire the branch. We explain the options and price each one." },
-      { q: "Can a provider help with a Glendale home near Westgate?", a: "Call (480) 790-4269 to request a connection with an independent local residential provider." },
+      { q: "Can a provider help with a Glendale home near Westgate?", a: "Call (480) 806-1832 to request a connection with an independent local residential provider." },
       { q: "Do providers handle exterior and security lighting?", a: "Ask an independent provider about residential exterior fixtures, motion sensors and photocell controls." },
     ],
   },
@@ -630,8 +630,8 @@ export const STATS = [
 
 export const FAQS = [
   { q: "Are providers licensed and insured?", a: "Providers are independent. Homeowners should verify that the provider they hire has the licenses and insurance required for the work." },
-  { q: "Can I request an estimate?", a: "Call (480) 790-4269 or submit a request to connect with an independent local provider. Ask about pricing before authorizing work." },
-  { q: "How can I get help with an electrical emergency?", a: "Call (480) 790-4269 to request a connection and describe the issue. Provider participation, location and availability vary." },
+  { q: "Can I request an estimate?", a: "Call (480) 806-1832 or submit a request to connect with an independent local provider. Ask about pricing before authorizing work." },
+  { q: "How can I get help with an electrical emergency?", a: "Call (480) 806-1832 to request a connection and describe the issue. Provider participation, location and availability vary." },
   { q: "What areas do you serve?", a: "This site provides residential electrical service information for Phoenix, Mesa, Scottsdale, Tempe, Chandler, Glendale and the surrounding Phoenix Metro Area." },
   { q: "Is this site the electrical provider?", a: "No. This site helps homeowners connect with independent local residential service providers. Each provider is responsible for its own work." },
   { q: "How much does an electrician cost?", a: "Every job is different, which is why we quote in writing before starting. You approve an itemized price first, so there are no surprises when the work is done." },
