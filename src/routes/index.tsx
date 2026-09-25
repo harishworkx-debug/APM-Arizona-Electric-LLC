@@ -13,7 +13,7 @@ const HERO = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=
 
 const HOME_TITLE = "Electrician in Phoenix, AZ | APM Arizona Electric LLC";
 const HOME_DESC =
-  "Residential electrical service information for homeowners in Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. Connect with a local provider for panel upgrades, rewiring, lighting, ceiling fans and breaker repair.";
+  "Residential electrical service information for homeowners in Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. schedule your service for panel upgrades, rewiring, lighting, ceiling fans and breaker repair.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -106,7 +106,7 @@ function Hero() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 max-w-2xl text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
-              Residential electrical service information for homeowners, with connections to independent local providers.
+              Residential electrical service information for homeowners, with professional electrical services.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
@@ -115,7 +115,7 @@ function Hero() {
                 <IconPhone className="h-4 w-4 shrink-0" /> Call Now · {BUSINESS.phone}
               </a>
               <Link to="/contact" className="btn-outline w-full max-w-full sm:w-auto">
-                Request Provider Connection <IconArrowRight className="h-4 w-4 shrink-0" />
+                Call Now <IconArrowRight className="h-4 w-4 shrink-0" />
               </Link>
             </div>
           </Reveal>
@@ -123,7 +123,7 @@ function Hero() {
           <Reveal delay={0.4}>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/80">
               <div className="flex items-center gap-2"><IconHome className="h-4 w-4 text-primary" /> Residential homeowner help</div>
-              <div className="flex items-center gap-2"><IconShield className="h-4 w-4 text-primary" /> Verify Provider Credentials</div>
+              <div className="flex items-center gap-2"><IconShield className="h-4 w-4 text-primary" /> Licensed & Insured</div>
               <div className="flex items-center gap-2"><IconClock className="h-4 w-4 text-primary" /> Residential Help</div>
             </div>
           </Reveal>
@@ -139,7 +139,7 @@ function Hero() {
                 { n: "1,200+", l: "Projects Completed" },
                 { n: "950+", l: "Happy Customers" },
                 { n: "40+", l: "Years of Legacy" },
-                { n: "Local", l: "Provider Connections" },
+                { n: "Local", l: "Expert Services" },
               ].map((s) => (
                 <div key={s.l} className="bg-white/80 p-6 md:p-8 text-center">
                   <div className="font-display text-3xl md:text-4xl font-bold text-secondary">{s.n}</div>
@@ -155,7 +155,7 @@ function Hero() {
 }
 
 function TrustBar() {
-  const badges = ["Residential Focus", "Local Connections", "Homeowner Information", "Provider Details", "Phoenix Metro Area"];
+  const badges = ["Residential Focus", "Local Connections", "Homeowner Information", "Service Details", "Phoenix Metro Area"];
   return (
     <section className="py-10 bg-surface border-y border-border">
       <div className="container-x flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm font-medium text-muted-foreground">
@@ -169,9 +169,9 @@ function TrustBar() {
 
 function WhyChoose() {
   const items = [
-    { icon: IconShield, t: "Verify Credentials", d: "Confirm the provider's license, insurance and permit responsibilities before hiring." },
+    { icon: IconShield, t: "Verify Credentials", d: "We are fully licensed, insured, and handle all permitting." },
     { icon: IconBolt, t: "Honest Pricing", d: "Upfront estimates before we start. No surprises, no upsells, no hidden fees — ever." },
-    { icon: IconClock, t: "Local Connections", d: "Request help connecting with an independent residential service provider." },
+    { icon: IconClock, t: "Local Connections", d: "request our electrical services." },
     { icon: IconStar, t: "Homeowner Focus", d: "Residential information for homeowners who need electrical service." },
     { icon: IconHome, t: "Family Owned", d: "Built on the legacy of Andres Portillo Marin. We treat every customer like family." },
     { icon: IconSparkle, t: "Clean & Respectful", d: "Shoe covers, drop cloths and tidy work areas. We leave your space cleaner than we found it." },
@@ -230,7 +230,7 @@ function ServicesGrid() {
             const Icon = ICON_MAP[s.slug] ?? IconBolt;
             return (
               <Reveal key={s.slug} delay={i * 0.04}>
-                <Link to="/$slug" params={{ slug: s.slug }} className="group block h-full">
+                <Link to="/services/$slug" params={{ slug: s.slug }} className="group block h-full">
                   <div className="relative h-full overflow-hidden rounded-3xl bg-white border border-border shadow-[0_10px_40px_-25px_rgba(15,23,42,0.2)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-25px_rgba(15,23,42,0.35)]">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img src={s.image} alt={s.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
@@ -299,9 +299,9 @@ function ResVsCom() {
 function Process() {
   const steps = [
     { n: "01", t: "Call or Request", d: "Tell us what residential electrical help you need." },
-    { n: "02", t: "Get Connected", d: "We help connect you with an independent local provider." },
+    { n: "02", t: "Get Connected", d: "We help connect you with an our expert electricians." },
     { n: "03", t: "Review Details", d: "Discuss scope, pricing, licensing and insurance directly." },
-    { n: "04", t: "Choose a Provider", d: "Hire the provider that fits your home and project." },
+    { n: "04", t: "Choose a Provider", d: "Hire the expert team that fits your home and project." },
   ];
   return (
     <section className="section-y bg-secondary text-white relative overflow-hidden">
@@ -406,7 +406,7 @@ function EmergencyBanner() {
             Residential Electrical Help
           </div>
           <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold">Electrical emergency? We're here.</h2>
-          <p className="mt-2 text-white/70 max-w-xl">Power out, burning smell, sparks or exposed wiring? Call to request a connection with an independent local provider.</p>
+          <p className="mt-2 text-white/70 max-w-xl">Power out, burning smell, sparks or exposed wiring? Call to request electrical service.</p>
         </div>
         <a href={BUSINESS.phoneHref} className="btn-primary w-full max-w-full md:w-auto text-base px-8 py-4"><IconPhone className="h-5 w-5 shrink-0" /> {BUSINESS.phone}</a>
       </div>
@@ -426,7 +426,7 @@ function ServiceAreas() {
         <div className="mt-14 grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 [&>*]:min-w-0">
           {LOCATIONS.map((l, i) => (
             <Reveal key={l.slug} delay={i * 0.04}>
-              <Link to="/$slug" params={{ slug: l.slug }} className="group flex w-full min-w-0 items-center gap-4 rounded-3xl border border-border bg-white p-5 sm:p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
+              <Link to="/locations/$slug" params={{ slug: l.slug }} className="group flex w-full min-w-0 items-center gap-4 rounded-3xl border border-border bg-white p-5 sm:p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
                 <div className="grid h-12 w-12 sm:h-14 sm:w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-secondary"><IconMapPin className="h-6 w-6" /></div>
                 <div className="min-w-0 flex-1">
                   <h3 className="truncate font-bold text-secondary">{l.city === "Phoenix" ? "Electrician Phoenix, AZ" : `${l.city}, AZ`}</h3>
@@ -481,11 +481,11 @@ function FinalCTA() {
           <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full" style={{ background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)" }} />
           <div className="relative max-w-2xl">
             <span className="eyebrow bg-white/10 border-white/20 text-white">Ready When You Are</span>
-            <h2 className="mt-5 text-4xl md:text-6xl font-bold leading-tight">Connect with a local provider.</h2>
+            <h2 className="mt-5 text-4xl md:text-6xl font-bold leading-tight">schedule your service.</h2>
             <p className="mt-4 text-white/70 text-lg">Whether it is a flickering light or a panel concern, call or request help for your residential electrical needs.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
-              <Link to="/contact" className="btn-outline">Request Connection <IconArrowRight className="h-4 w-4" /></Link>
+              <Link to="/contact" className="btn-outline">Request Service <IconArrowRight className="h-4 w-4" /></Link>
             </div>
           </div>
         </div>
@@ -518,7 +518,7 @@ function Industries() {
         <div className="max-w-2xl">
           <Reveal><span className="eyebrow">Residential Needs</span></Reveal>
           <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Electrical help for the place you call home.</h2></Reveal>
-          <Reveal delay={0.15}><p className="mt-4 text-muted-foreground text-lg">Explore common residential electrical needs and request a connection with an independent local provider.</p></Reveal>
+          <Reveal delay={0.15}><p className="mt-4 text-muted-foreground text-lg">Explore common residential electrical needs and request electrical service.</p></Reveal>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {INDUSTRIES.map((it, i) => (
@@ -548,7 +548,7 @@ function LocalIntro() {
               Arizona is hard on electrical systems. Attic temperatures over 150°F degrade insulation, monsoon storms drive surges through service entrances, and homes built for 1970s loads are now running two air conditioners, a pool pump and an EV charger. Our work accounts for all of it.
             </p>
             <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
-              APM Arizona Electric LLC is based at {BUSINESS.address} and this site provides residential electrical information for Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale. We help homeowners request connections with independent local providers.
+              APM Arizona Electric LLC is based at {BUSINESS.address} and this site provides residential electrical information for Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale. We help homeowners request connections with our expert electricians.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
@@ -559,9 +559,9 @@ function LocalIntro() {
         <Reveal delay={0.1}>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { t: "Verify Credentials", d: "Confirm the provider's license and insurance before hiring.", i: IconShield },
+              { t: "Verify Credentials", d: "We are a fully licensed and insured electrical contractor.", i: IconShield },
               { t: "Review Pricing", d: "Ask for written scope and pricing before authorizing work.", i: IconCheck },
-              { t: "Local Connections", d: "Request help connecting with an independent local provider.", i: IconClock },
+              { t: "Local Connections", d: "request our electrical services.", i: IconClock },
               { t: "Homeowner Focus", d: "Residential information for homeowners and renters.", i: IconHome },
             ].map((c) => (
               <div key={c.t} className="rounded-3xl border border-border bg-white p-6">

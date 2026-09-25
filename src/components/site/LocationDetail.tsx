@@ -24,7 +24,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
           <Reveal delay={0.3}>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> Call {BUSINESS.phone}</a>
-              <Link to="/contact" className="btn-outline">Request Connection <IconArrowRight className="h-4 w-4" /></Link>
+              <Link to="/contact" className="btn-outline">Request Service <IconArrowRight className="h-4 w-4" /></Link>
             </div>
           </Reveal>
         </div>
@@ -86,7 +86,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
           <Reveal delay={0.1}><h2 className="mt-4 text-3xl md:text-4xl font-bold text-secondary">Full electrical service for {l.city}, AZ.</h2></Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {SERVICES.map((s) => (
-              <Link key={s.slug} to="/$slug" params={{ slug: s.slug }} className="group rounded-2xl bg-white border border-border p-6 hover:-translate-y-0.5 hover:shadow-elegant transition-all">
+              <Link key={s.slug} to="/services/$slug" params={{ slug: s.slug }} className="group rounded-2xl bg-white border border-border p-6 hover:-translate-y-0.5 hover:shadow-elegant transition-all">
                 <h3 className="font-bold text-secondary">{s.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{s.short}</p>
                 <div className="mt-3 inline-flex items-center gap-2 text-sm text-primary font-semibold">{s.navLabel ?? s.title} <IconArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" /></div>
@@ -133,7 +133,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
             <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full" style={{ background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)" }} />
             <div className="relative max-w-2xl">
               <h2 className="text-3xl md:text-5xl font-bold leading-tight">Need an electrician in {l.city} today?</h2>
-              <p className="mt-4 text-white/70 text-lg">Call now or request a connection with an independent local provider. {l.responseTime}.</p>
+              <p className="mt-4 text-white/70 text-lg">Call now or request electrical service. {l.responseTime}.</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
                 <Link to="/contact" className="btn-outline">Request Estimate <IconArrowRight className="h-4 w-4" /></Link>

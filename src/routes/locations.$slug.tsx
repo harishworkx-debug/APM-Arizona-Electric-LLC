@@ -3,10 +3,9 @@ import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema, faqSchema }
 import { ServiceDetail } from "@/components/site/ServiceDetail";
 import { LocationDetail } from "@/components/site/LocationDetail";
 
-export const Route = createFileRoute("/$slug")({
+export const Route = createFileRoute("/locations/$slug")({
   loader: ({ params }) => {
-    const service = SERVICES.find((s) => s.slug === params.slug);
-    if (service) return { kind: "service" as const, service, location: null };
+    
     const location = LOCATIONS.find((l) => l.slug === params.slug);
     if (location) return { kind: "location" as const, service: null, location };
     throw notFound();
@@ -16,16 +15,16 @@ export const Route = createFileRoute("/$slug")({
       return { meta: [{ title: "Page Unavailable | APM Arizona Electric LLC" }, { name: "robots", content: "noindex" }] };
     }
 
-    const isService = loaderData.kind === "service";
-    const item = isService ? loaderData.service! : loaderData.location!;
-    const url = abs(`/${item.slug}`);
+    const isService = false;
+    const item = loaderData.location!;
+    const url = abs(`/locations/${item.slug}`);
     const title = item.metaTitle;
     const desc = item.metaDescription;
     const faqs = item.faqs;
 
     const crumbs = isService
-      ? [{ name: "Home", path: "/" }, { name: "Services", path: "/services" }, { name: loaderData.service!.title, path: `/${item.slug}` }]
-      : [{ name: "Home", path: "/" }, { name: "Service Areas", path: "/services" }, { name: `${loaderData.location!.city}, AZ`, path: `/${item.slug}` }];
+      ? [{ name: "Home", path: "/" }, { name: "Services", path: "/services" }, { name: loaderData.service!.title, path: `/locations/${item.slug}` }]
+      : [{ name: "Home", path: "/" }, { name: "Service Areas", path: "/services" }, { name: `${loaderData.location!.city}, AZ`, path: `/locations/${item.slug}` }];
 
     const primarySchema = isService
       ? {

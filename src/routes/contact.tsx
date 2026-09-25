@@ -7,7 +7,7 @@ import { IconPhone, IconMail, IconMapPin, IconClock, IconCheck, IconArrowRight }
 
 const CONTACT_TITLE = "Contact Our Phoenix Electricians | APM Arizona Electric LLC";
 const CONTACT_DESC =
-  "Contact APM Arizona Electric LLC in Tempe, AZ to request help connecting with an independent residential electrical provider across the Phoenix Metro Area.";
+  "Contact APM Arizona Electric LLC in Tempe, AZ to request electrical service across the Phoenix Metro Area.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -56,7 +56,7 @@ function ContactPage() {
         <div className="container-x relative">
           <Reveal><span className="eyebrow bg-white/10 border-white/20 text-white">Get in Touch</span></Reveal>
           <Reveal delay={0.1}><h1 className="mt-6 text-5xl md:text-7xl font-bold max-w-4xl leading-[1.05]">Let's <span className="text-gradient-primary">talk power</span>.</h1></Reveal>
-          <Reveal delay={0.2}><p className="mt-6 text-white/80 text-lg max-w-2xl">Call us or send the form to request help connecting with an independent local provider.</p></Reveal>
+          <Reveal delay={0.2}><p className="mt-6 text-white/80 text-lg max-w-2xl">Call us or send the form to request our electrical services.</p></Reveal>
         </div>
       </section>
 
@@ -64,14 +64,14 @@ function ContactPage() {
         <div className="container-x grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <Reveal>
             <div className="rounded-3xl bg-white border border-border p-8 md:p-10 shadow-elegant">
-              <h2 className="text-2xl font-bold text-secondary">Request a Provider Connection</h2>
-              <p className="mt-2 text-muted-foreground text-sm">Provider participation and response timing vary by location and availability.</p>
+              <h2 className="text-2xl font-bold text-secondary">Request Electrical Service</h2>
+              <p className="mt-2 text-muted-foreground text-sm">We provide prompt, reliable service across the valley.</p>
               {submitted ? (
                 <div className="mt-8 rounded-2xl bg-primary/15 p-6 flex gap-4 items-start">
                   <IconCheck className="h-6 w-6 text-secondary shrink-0 mt-0.5" />
                   <div>
                     <div className="font-bold text-secondary">Request received!</div>
-                    <p className="text-sm text-muted-foreground mt-1">Your request has been received. Call {BUSINESS.phone} to request a connection.</p>
+                    <p className="text-sm text-muted-foreground mt-1">Your request has been received. Call {BUSINESS.phone} to request service.</p>
                   </div>
                 </div>
               ) : (

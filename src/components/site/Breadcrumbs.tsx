@@ -17,7 +17,7 @@ export function Breadcrumbs({ items, tone = "light" }: { items: Crumb[]; tone?: 
               ) : (
                 <>
                   {c.slug ? (
-                    <Link to="/$slug" params={{ slug: c.slug }} className="hover:text-primary transition-colors">{c.name}</Link>
+                    <Link to={c.path as any} className="hover:text-primary transition-colors">{c.name}</Link>
                   ) : (
                     <Link to={c.path as "/"} className="hover:text-primary transition-colors">{c.name}</Link>
                   )}
