@@ -1,13 +1,11 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema, faqSchema } from "@/lib/business";
 import { ServiceDetail } from "@/components/site/ServiceDetail";
-import { LocationDetail } from "@/components/site/LocationDetail";
 
 export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
     const service = SERVICES.find((s) => s.slug === params.slug);
-    if (service) return { kind: "service" as const, service, location: null };
-    
+    if (service) return { kind: "service" as const, service };
     throw notFound();
   },
   head: ({ loaderData }) => {
@@ -15,53 +13,30 @@ export const Route = createFileRoute("/services/$slug")({
       return { meta: [{ title: "Page Unavailable | APM Arizona Electric LLC" }, { name: "robots", content: "noindex" }] };
     }
 
-    const isService = true;
-    const item = loaderData.service!;
+    const item = loaderData.service;
     const url = abs(`/services/${item.slug}`);
     const title = item.metaTitle;
     const desc = item.metaDescription;
     const faqs = item.faqs;
 
-    const crumbs = isService
-      ? [{ name: "Home", path: "/" }, { name: "Services", path: "/services" }, { name: loaderData.service!.title, path: `/services/${item.slug}` }]
-      : [{ name: "Home", path: "/" }, { name: "Service Areas", path: "/services" }, { name: `${loaderData.location!.city}, AZ`, path: `/services/${item.slug}` }];
+    const crumbs = [{ name: "Home", path: "/" }, { name: "Services", path: "/services" }, { name: item.title, path: `/services/${item.slug}` }];
 
-    const primarySchema = isService
-      ? {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "@id": `${url}#service`,
-          name: loaderData.service!.title,
-          serviceType: loaderData.service!.title,
-          description: loaderData.service!.description,
-          url,
-          provider: {
-            "@type": "Organization",
-            "@id": `${SITE.url}/#business`,
-            name: BUSINESS.name,
-            telephone: BUSINESS.phoneSchema,
-          },
-          areaServed: LOCATIONS.map((l) => ({ "@type": "City", name: `${l.city}, AZ` })),
-        }
-      : {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "@id": `${url}#localbusiness`,
-          name: `${BUSINESS.name} — ${loaderData.location!.city}`,
-          url,
-          telephone: BUSINESS.phoneSchema,
-          priceRange: "$$",
-          image: "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=1200&q=70",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: BUSINESS.street,
-            addressLocality: BUSINESS.addressLocality,
-            addressRegion: "AZ",
-            postalCode: BUSINESS.postalCode,
-            addressCountry: "US",
-          },
-          areaServed: { "@type": "City", name: `${loaderData.location!.city}, AZ` },
-        };
+    const primarySchema = {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": `${url}#service`,
+      name: item.title,
+      serviceType: item.title,
+      description: item.description,
+      url,
+      provider: {
+        "@type": "Organization",
+        "@id": `${SITE.url}/#business`,
+        name: BUSINESS.name,
+        telephone: BUSINESS.phoneSchema,
+      },
+      areaServed: LOCATIONS.map((l) => ({ "@type": "City", name: `${l.city}, AZ` })),
+    };
 
     return {
       meta: [
@@ -101,6 +76,5 @@ function PageNotFound() {
 
 function FlatPage() {
   const data = Route.useLoaderData();
-  if (data.kind === "service") return <ServiceDetail service={data.service!} />;
-  return <LocationDetail location={data.location!} />;
+  return <ServiceDetail service={data.service} />;
 }

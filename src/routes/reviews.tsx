@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BUSINESS, SITE, abs, breadcrumbSchema } from "@/lib/business";
+import { REVIEWS } from "@/lib/reviews-data";
 import { Reveal } from "@/components/site/Reveal";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { IconArrowRight, IconPhone } from "@/components/site/Icons";
+import { IconArrowRight, IconPhone, IconStar } from "@/components/site/Icons";
 
-const REVIEWS_TITLE = "Homeowner Resources | APM Arizona Electric LLC";
+const REVIEWS_TITLE = "Customer Reviews | APM Arizona Electric LLC";
 const REVIEWS_DESC =
-  "Residential electrical information for homeowners in Phoenix, Mesa, Scottsdale, Tempe, Chandler and Glendale, with professional electrical services.";
+  "Read authentic reviews from homeowners across Phoenix, Mesa, Scottsdale, and surrounding areas who trust APM Arizona Electric LLC.";
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({
@@ -50,12 +51,19 @@ function ReviewsPage() {
         <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 80% 30%, oklch(0.78 0.17 70 / 0.35), transparent 50%)" }} />
         <div className="container-x relative text-center">
           <Reveal><div className="flex justify-center"><Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Reviews", path: "/reviews" }]} /></div></Reveal>
-          <Reveal delay={0.05}><span className="mt-6 eyebrow bg-white/10 border-white/20 text-white">Homeowner Resources</span></Reveal>
-          <Reveal delay={0.1}><h1 className="mt-6 text-5xl md:text-7xl font-bold">Residential electrical help for <span className="text-gradient-primary">Phoenix</span>.</h1></Reveal>
+          <Reveal delay={0.05}><span className="mt-6 eyebrow bg-white/10 border-white/20 text-white">Customer Reviews</span></Reveal>
+          <Reveal delay={0.1}><h1 className="mt-6 text-5xl md:text-7xl font-bold">What our <span className="text-gradient-primary">Customers</span> say.</h1></Reveal>
           <Reveal delay={0.2}>
             <div className="mt-10 inline-flex flex-col items-center gap-3 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl px-10 py-8">
-              <div className="text-2xl font-display font-bold">schedule your service</div>
-              <div className="text-white/70 uppercase tracking-[0.2em] text-xs">Residential service information</div>
+              <div className="text-2xl font-display font-bold">5.0 Star Rating</div>
+              <div className="flex gap-1 text-primary">
+                <IconStar className="h-5 w-5 fill-current" />
+                <IconStar className="h-5 w-5 fill-current" />
+                <IconStar className="h-5 w-5 fill-current" />
+                <IconStar className="h-5 w-5 fill-current" />
+                <IconStar className="h-5 w-5 fill-current" />
+              </div>
+              <div className="text-white/70 uppercase tracking-[0.2em] text-xs">From real homeowners</div>
             </div>
           </Reveal>
         </div>
@@ -63,7 +71,22 @@ function ReviewsPage() {
 
       <section className="section-y">
         <div className="container-x grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <Reveal><div className="rounded-3xl border border-border bg-white p-8"><h2 className="text-2xl font-bold text-secondary">Before you hire</h2><p className="mt-3 text-muted-foreground">We provide clear pricing, scope, and availability before beginning any work.</p></div></Reveal>
+          {REVIEWS.map((review, i) => (
+            <Reveal key={i} delay={0.05 * (i % 6)}>
+              <div className="h-full rounded-3xl border border-border bg-white p-8 shadow-[0_10px_40px_-25px_rgba(15,23,42,0.2)]">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="font-bold text-secondary text-lg">{review.author}</div>
+                  <div className="flex text-primary">
+                    {[...Array(5)].map((_, idx) => (
+                      <IconStar key={idx} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <div className="text-sm text-muted-foreground mb-4 opacity-70">{review.time}</div>
+                <p className="text-muted-foreground leading-relaxed">"{review.text}"</p>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 

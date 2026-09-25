@@ -1,13 +1,11 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema, faqSchema } from "@/lib/business";
-import { ServiceDetail } from "@/components/site/ServiceDetail";
+import { LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema, faqSchema } from "@/lib/business";
 import { LocationDetail } from "@/components/site/LocationDetail";
 
 export const Route = createFileRoute("/locations/$slug")({
   loader: ({ params }) => {
-    
     const location = LOCATIONS.find((l) => l.slug === params.slug);
-    if (location) return { kind: "location" as const, service: null, location };
+    if (location) return { kind: "location" as const, location };
     throw notFound();
   },
   head: ({ loaderData }) => {
@@ -15,53 +13,33 @@ export const Route = createFileRoute("/locations/$slug")({
       return { meta: [{ title: "Page Unavailable | APM Arizona Electric LLC" }, { name: "robots", content: "noindex" }] };
     }
 
-    const isService = false;
-    const item = loaderData.location!;
+    const item = loaderData.location;
     const url = abs(`/locations/${item.slug}`);
     const title = item.metaTitle;
     const desc = item.metaDescription;
     const faqs = item.faqs;
 
-    const crumbs = isService
-      ? [{ name: "Home", path: "/" }, { name: "Services", path: "/services" }, { name: loaderData.service!.title, path: `/locations/${item.slug}` }]
-      : [{ name: "Home", path: "/" }, { name: "Service Areas", path: "/services" }, { name: `${loaderData.location!.city}, AZ`, path: `/locations/${item.slug}` }];
+    const crumbs = [{ name: "Home", path: "/" }, { name: "Service Areas", path: "/services" }, { name: `${item.city}, AZ`, path: `/locations/${item.slug}` }];
 
-    const primarySchema = isService
-      ? {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "@id": `${url}#service`,
-          name: loaderData.service!.title,
-          serviceType: loaderData.service!.title,
-          description: loaderData.service!.description,
-          url,
-          provider: {
-            "@type": "Organization",
-            "@id": `${SITE.url}/#business`,
-            name: BUSINESS.name,
-            telephone: BUSINESS.phoneSchema,
-          },
-          areaServed: LOCATIONS.map((l) => ({ "@type": "City", name: `${l.city}, AZ` })),
-        }
-      : {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "@id": `${url}#localbusiness`,
-          name: `${BUSINESS.name} — ${loaderData.location!.city}`,
-          url,
-          telephone: BUSINESS.phoneSchema,
-          priceRange: "$$",
-          image: "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=1200&q=70",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: BUSINESS.street,
-            addressLocality: BUSINESS.addressLocality,
-            addressRegion: "AZ",
-            postalCode: BUSINESS.postalCode,
-            addressCountry: "US",
-          },
-          areaServed: { "@type": "City", name: `${loaderData.location!.city}, AZ` },
-        };
+    const primarySchema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": `${url}#localbusiness`,
+      name: `${BUSINESS.name} — ${item.city}`,
+      url,
+      telephone: BUSINESS.phoneSchema,
+      priceRange: "$$",
+      image: "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=1200&q=70",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: BUSINESS.street,
+        addressLocality: BUSINESS.addressLocality,
+        addressRegion: "AZ",
+        postalCode: BUSINESS.postalCode,
+        addressCountry: "US",
+      },
+      areaServed: { "@type": "City", name: `${item.city}, AZ` },
+    };
 
     return {
       meta: [
@@ -101,6 +79,5 @@ function PageNotFound() {
 
 function FlatPage() {
   const data = Route.useLoaderData();
-  if (data.kind === "service") return <ServiceDetail service={data.service!} />;
-  return <LocationDetail location={data.location!} />;
+  return <LocationDetail location={data.location} />;
 }
