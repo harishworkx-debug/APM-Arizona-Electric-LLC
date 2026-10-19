@@ -2,14 +2,38 @@ import { Link } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { BUSINESS, SERVICES, LOCATIONS, FAQS, INDUSTRIES, STATS, SITE, abs, localBusinessSchema, faqSchema, breadcrumbSchema } from "@/lib/business";
+import {
+  BUSINESS,
+  SERVICES,
+  LOCATIONS,
+  FAQS,
+  INDUSTRIES,
+  STATS,
+  SITE,
+  abs,
+  localBusinessSchema,
+  faqSchema,
+  breadcrumbSchema,
+} from "@/lib/business";
 import { Reveal } from "@/components/site/Reveal";
 import {
-  IconPhone, IconArrowRight, IconStar, IconCheck, IconShield, IconBolt,
-  IconHome, IconFan, IconLightbulb, IconWrench, IconSparkle, IconClock, IconMapPin,
+  IconPhone,
+  IconArrowRight,
+  IconStar,
+  IconCheck,
+  IconShield,
+  IconBolt,
+  IconHome,
+  IconFan,
+  IconLightbulb,
+  IconWrench,
+  IconSparkle,
+  IconClock,
+  IconMapPin,
 } from "@/components/site/Icons";
 
-const HERO = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=70";
+const HERO =
+  "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=70";
 
 const HOME_TITLE = "Electrician in Phoenix, AZ | APM Arizona Electric LLC";
 const HOME_DESC =
@@ -48,7 +72,10 @@ export const Route = createFileRoute("/")({
         }),
       },
       { type: "application/ld+json", children: JSON.stringify(faqSchema(FAQS)) },
-      { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }])) },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }])),
+      },
     ],
   }),
   component: HomePage,
@@ -86,45 +113,72 @@ function Hero() {
   return (
     <section ref={ref} className="relative min-h-[100svh] overflow-hidden text-white">
       <motion.div style={{ y, scale }} className="absolute inset-0">
-        <img src={HERO} alt="Residential electrical panel in Phoenix, Arizona" className="h-full w-full object-cover" fetchPriority="high" />
+        <img
+          src={HERO}
+          alt="Residential electrical panel in Phoenix, Arizona"
+          className="h-full w-full object-cover"
+          fetchPriority="high"
+        />
       </motion.div>
-      <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, oklch(0.14 0.05 265 / 0.92) 0%, oklch(0.22 0.04 260 / 0.75) 60%, oklch(0.22 0.04 260 / 0.4) 100%)" }} />
-      <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 80% 20%, oklch(0.78 0.17 70 / 0.35), transparent 40%)" }} />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(135deg, oklch(0.14 0.05 265 / 0.92) 0%, oklch(0.22 0.04 260 / 0.75) 60%, oklch(0.22 0.04 260 / 0.4) 100%)",
+        }}
+      />
+      <div
+        className="absolute inset-0 opacity-40"
+        style={{
+          background:
+            "radial-gradient(circle at 80% 20%, oklch(0.78 0.17 70 / 0.35), transparent 40%)",
+        }}
+      />
 
       <div className="container-x relative z-10 flex min-h-[100svh] w-full max-w-full items-center pt-28 pb-44 md:pb-40">
         <div className="w-full max-w-3xl">
           <Reveal>
             <span className="eyebrow bg-white/10 border-white/20 text-white max-w-full">
-              <IconBolt className="h-3.5 w-3.5 shrink-0 text-primary" /> Residential · Local · Homeowner-Focused
+              <IconBolt className="h-3.5 w-3.5 shrink-0 text-primary" /> Licensed · Insured ·
+              Family-Owned Electrical Contractor
             </span>
           </Reveal>
           <Reveal delay={0.1}>
             <h1 className="mt-6 text-[2rem] sm:text-4xl md:text-7xl font-bold leading-[1.08] md:leading-[1.02] tracking-tight">
-              Trusted Electricians <br className="hidden md:block" />
-              Serving <span className="text-gradient-primary">Phoenix, Arizona</span>
+              Electrician in <br className="hidden md:block" />
+              <span className="text-gradient-primary">Phoenix, AZ</span>
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 max-w-2xl text-base sm:text-lg md:text-xl text-white/80 leading-relaxed">
-              Residential electrical service information for homeowners, with professional electrical services.
+              Complete residential electrical services across Phoenix and the Valley. Panel
+              upgrades, ceiling fans, lighting, breaker repairs, and troubleshooting by licensed
+              local electricians.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
             <div className="mt-8 flex w-full flex-wrap gap-3 sm:gap-4">
               <a href={BUSINESS.phoneHref} className="btn-primary w-full max-w-full sm:w-auto">
-                <IconPhone className="h-4 w-4 shrink-0" /> Call Now · {BUSINESS.phone}
+                <IconPhone className="h-4 w-4 shrink-0" /> Call (480) 806-1832
               </a>
               <Link to="/contact" className="btn-outline w-full max-w-full sm:w-auto">
-                Call Now <IconArrowRight className="h-4 w-4 shrink-0" />
+                Request an Estimate <IconArrowRight className="h-4 w-4 shrink-0" />
               </Link>
             </div>
           </Reveal>
 
           <Reveal delay={0.4}>
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/80">
-              <div className="flex items-center gap-2"><IconHome className="h-4 w-4 text-primary" /> Residential homeowner help</div>
-              <div className="flex items-center gap-2"><IconShield className="h-4 w-4 text-primary" /> Licensed & Insured</div>
-              <div className="flex items-center gap-2"><IconClock className="h-4 w-4 text-primary" /> Residential Help</div>
+              <div className="flex items-center gap-2">
+                <IconShield className="h-4 w-4 text-primary" /> Licensed, Bonded & Insured
+              </div>
+              <div className="flex items-center gap-2">
+                <IconHome className="h-4 w-4 text-primary" /> Direct Electricians (No
+                Subcontractors)
+              </div>
+              <div className="flex items-center gap-2">
+                <IconClock className="h-4 w-4 text-primary" /> Upfront Itemized Pricing
+              </div>
             </div>
           </Reveal>
         </div>
@@ -136,14 +190,18 @@ function Hero() {
           <Reveal delay={0.5}>
             <div className="glass-card grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden bg-white/70">
               {[
-                { n: "1,200+", l: "Projects Completed" },
-                { n: "950+", l: "Happy Customers" },
-                { n: "40+", l: "Years of Legacy" },
-                { n: "Local", l: "Expert Services" },
+                { n: "30+", l: "Years Combined Trade Experience" },
+                { n: "5.0 ★", l: "Over 200 Google Reviews" },
+                { n: "1,000+", l: "Valley Homes Serviced" },
+                { n: "100%", l: "Workmanship Guarantee" },
               ].map((s) => (
                 <div key={s.l} className="bg-white/80 p-6 md:p-8 text-center">
-                  <div className="font-display text-3xl md:text-4xl font-bold text-secondary">{s.n}</div>
-                  <div className="mt-1 text-xs md:text-sm uppercase tracking-widest text-muted-foreground">{s.l}</div>
+                  <div className="font-display text-3xl md:text-4xl font-bold text-secondary">
+                    {s.n}
+                  </div>
+                  <div className="mt-1 text-xs md:text-sm uppercase tracking-widest text-muted-foreground">
+                    {s.l}
+                  </div>
                 </div>
               ))}
             </div>
@@ -155,12 +213,20 @@ function Hero() {
 }
 
 function TrustBar() {
-  const badges = ["Residential Focus", "Local Connections", "Homeowner Information", "Service Details", "Phoenix Metro Area"];
+  const badges = [
+    "Licensed & Insured",
+    "Upfront Written Pricing",
+    "Permit & Code Compliant",
+    "5.0-Star Rated Local Team",
+    "Phoenix Metro Wide Service",
+  ];
   return (
     <section className="py-10 bg-surface border-y border-border">
       <div className="container-x flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm font-medium text-muted-foreground">
         {badges.map((b) => (
-          <div key={b} className="flex items-center gap-2"><IconCheck className="h-4 w-4 text-primary" /> {b}</div>
+          <div key={b} className="flex items-center gap-2">
+            <IconCheck className="h-4 w-4 text-primary" /> {b}
+          </div>
         ))}
       </div>
     </section>
@@ -169,20 +235,55 @@ function TrustBar() {
 
 function WhyChoose() {
   const items = [
-    { icon: IconShield, t: "Verify Credentials", d: "We are fully licensed, insured, and handle all permitting." },
-    { icon: IconBolt, t: "Honest Pricing", d: "Upfront estimates before we start. No surprises, no upsells, no hidden fees — ever." },
-    { icon: IconClock, t: "Local Connections", d: "request our electrical services." },
-    { icon: IconStar, t: "Homeowner Focus", d: "Residential information for homeowners who need electrical service." },
-    { icon: IconHome, t: "Family Owned", d: "Built on the legacy of Andres Portillo Marin. We treat every customer like family." },
-    { icon: IconSparkle, t: "Clean & Respectful", d: "Shoe covers, drop cloths and tidy work areas. We leave your space cleaner than we found it." },
+    {
+      icon: IconShield,
+      t: "Licensed & Insured",
+      d: "Fully licensed, bonded, and insured electrical contractor adhering to NEC and City of Phoenix safety codes.",
+    },
+    {
+      icon: IconBolt,
+      t: "Honest Upfront Pricing",
+      d: "Itemized written estimates before any work begins. No surprises, no hidden fees, and no high-pressure sales.",
+    },
+    {
+      icon: IconClock,
+      t: "Prompt Local Service",
+      d: "Centrally located in Tempe to provide rapid dispatch across Phoenix, Scottsdale, Mesa, Chandler, and Glendale.",
+    },
+    {
+      icon: IconStar,
+      t: "5.0-Star Workmanship",
+      d: "Over 200 genuine 5-star customer reviews across the Valley reflecting our commitment to getting it done right.",
+    },
+    {
+      icon: IconHome,
+      t: "Family-Owned Heritage",
+      d: "Inspired by the utility-line craftsmanship of Andres Portillo Marin. We treat every customer's home like our own.",
+    },
+    {
+      icon: IconSparkle,
+      t: "Clean & Respectful",
+      d: "Shoe covers, clean drop cloths, and thorough cleanup. We leave your home safer and cleaner than we found it.",
+    },
   ];
   return (
     <section className="section-y">
       <div className="container-x">
         <div className="max-w-2xl">
-          <Reveal><span className="eyebrow">Why Choose Us</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Electricians you can actually trust.</h2></Reveal>
-          <Reveal delay={0.15}><p className="mt-4 text-muted-foreground text-lg">We built APM Arizona Electric on the same principles a lineman lived by: show up, do it right, tell the truth.</p></Reveal>
+          <Reveal>
+            <span className="eyebrow">Why Choose Us</span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+              Electricians you can actually trust.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <p className="mt-4 text-muted-foreground text-lg">
+              We built APM Arizona Electric on the same principles a lineman lived by: show up, do
+              it right, tell the truth.
+            </p>
+          </Reveal>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((it, i) => (
@@ -218,11 +319,19 @@ function ServicesGrid() {
       <div className="container-x">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div className="max-w-2xl">
-            <Reveal><span className="eyebrow">Our Services</span></Reveal>
-            <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Full-service electrical, done right.</h2></Reveal>
+            <Reveal>
+              <span className="eyebrow">Our Services</span>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+                Full-service electrical, done right.
+              </h2>
+            </Reveal>
           </div>
           <Reveal delay={0.15}>
-            <Link to="/services" className="btn-dark self-start">View All Services <IconArrowRight className="h-4 w-4" /></Link>
+            <Link to="/services" className="btn-dark self-start">
+              View All Services <IconArrowRight className="h-4 w-4" />
+            </Link>
           </Reveal>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -233,20 +342,26 @@ function ServicesGrid() {
                 <Link to="/services/$slug" params={{ slug: s.slug }} className="group block h-full">
                   <div className="relative h-full overflow-hidden rounded-3xl bg-white border border-border shadow-[0_10px_40px_-25px_rgba(15,23,42,0.2)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-25px_rgba(15,23,42,0.35)]">
                     <div className="relative aspect-[4/3] overflow-hidden">
-                      <img src={s.image} alt={s.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                      <img
+                        src={s.image}
+                        alt={s.title}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
                       <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent" />
                       <div className="absolute top-4 left-4 grid h-11 w-11 place-items-center rounded-2xl bg-white/95 backdrop-blur text-secondary">
                         <Icon className="h-5 w-5" />
                       </div>
                     </div>
                     <div className="p-6">
-                      <h3 className="font-bold text-secondary text-lg leading-snug group-hover:text-primary transition-colors">{s.title}</h3>
+                      <h3 className="font-bold text-secondary text-lg leading-snug group-hover:text-primary transition-colors">
+                        {s.title}
+                      </h3>
                       <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{s.short}</p>
                       <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
                         {s.navLabel ?? s.title} <IconArrowRight className="h-4 w-4 shrink-0" />
                       </div>
                     </div>
-
                   </div>
                 </Link>
               </Reveal>
@@ -260,20 +375,43 @@ function ServicesGrid() {
 
 function ResVsCom() {
   const cards = [
-    { icon: IconHome, tag: "Residential", title: "For Your Home", items: ["Whole-home rewires", "Panel upgrades", "Ceiling fans & lighting", "GFCI & AFCI protection", "Smart home wiring"], img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=70" },
+    {
+      icon: IconHome,
+      tag: "Residential",
+      title: "For Your Home",
+      items: [
+        "Whole-home rewires",
+        "Panel upgrades",
+        "Ceiling fans & lighting",
+        "GFCI & AFCI protection",
+        "Smart home wiring",
+      ],
+      img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=70",
+    },
   ];
   return (
     <section className="section-y">
       <div className="container-x">
         <div className="text-center max-w-2xl mx-auto">
-          <Reveal><span className="eyebrow">Residential Electrical Help</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Wherever the power flows, we serve.</h2></Reveal>
+          <Reveal>
+            <span className="eyebrow">Residential Electrical Help</span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+              Wherever the power flows, we serve.
+            </h2>
+          </Reveal>
         </div>
         <div className="mt-14 grid gap-8 md:grid-cols-2">
           {cards.map((c, i) => (
             <Reveal key={c.tag} delay={i * 0.1}>
               <div className="group relative overflow-hidden rounded-3xl h-[480px]">
-                <img src={c.img} alt={c.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img
+                  src={c.img}
+                  alt={c.title}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-secondary/10" />
                 <div className="relative h-full flex flex-col justify-end p-8 md:p-10 text-white">
                   <div className="inline-flex items-center gap-2 self-start rounded-full bg-primary/90 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-secondary">
@@ -282,10 +420,14 @@ function ResVsCom() {
                   <h3 className="mt-4 text-3xl md:text-4xl font-bold">{c.title}</h3>
                   <ul className="mt-6 grid grid-cols-1 gap-2">
                     {c.items.map((it) => (
-                      <li key={it} className="flex items-center gap-2 text-white/90"><IconCheck className="h-4 w-4 text-primary shrink-0" /> {it}</li>
+                      <li key={it} className="flex items-center gap-2 text-white/90">
+                        <IconCheck className="h-4 w-4 text-primary shrink-0" /> {it}
+                      </li>
                     ))}
                   </ul>
-                  <a href={BUSINESS.phoneHref} className="mt-8 btn-primary self-start"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
+                  <a href={BUSINESS.phoneHref} className="mt-8 btn-primary self-start">
+                    <IconPhone className="h-4 w-4" /> {BUSINESS.phone}
+                  </a>
                 </div>
               </div>
             </Reveal>
@@ -298,18 +440,46 @@ function ResVsCom() {
 
 function Process() {
   const steps = [
-    { n: "01", t: "Call or Request", d: "Tell us what residential electrical help you need." },
-    { n: "02", t: "Get Connected", d: "We help connect you with an our expert electricians." },
-    { n: "03", t: "Review Details", d: "Discuss scope, pricing, licensing and insurance directly." },
-    { n: "04", t: "Choose a Provider", d: "Hire the expert team that fits your home and project." },
+    {
+      n: "01",
+      t: "Call or Request",
+      d: "Contact us at (480) 806-1832 or submit an online request with your electrical needs.",
+    },
+    {
+      n: "02",
+      t: "Diagnostic & Estimate",
+      d: "We evaluate your system on-site and provide an honest, upfront written quote before work begins.",
+    },
+    {
+      n: "03",
+      t: "Code-Compliant Work",
+      d: "Our licensed electricians (ROC #341995) complete repairs or upgrades to strict NEC standards.",
+    },
+    {
+      n: "04",
+      t: "Testing & Clean Up",
+      d: "We test every circuit, clean up thoroughly, and make sure you are 100% satisfied.",
+    },
   ];
   return (
     <section className="section-y bg-secondary text-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-40 pointer-events-none" style={{ background: "radial-gradient(circle at 90% 10%, oklch(0.78 0.17 70 / 0.25), transparent 40%)" }} />
+      <div
+        className="absolute inset-0 opacity-40 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle at 90% 10%, oklch(0.78 0.17 70 / 0.25), transparent 40%)",
+        }}
+      />
       <div className="container-x relative">
         <div className="max-w-2xl">
-          <Reveal><span className="eyebrow bg-white/10 border-white/20 text-white">Our Process</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold">Simple, transparent, no runaround.</h2></Reveal>
+          <Reveal>
+            <span className="eyebrow bg-white/10 border-white/20 text-white">Our Process</span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold">
+              Simple, transparent, no runaround.
+            </h2>
+          </Reveal>
         </div>
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
@@ -340,14 +510,27 @@ function Gallery() {
     <section className="section-y">
       <div className="container-x">
         <div className="max-w-2xl">
-          <Reveal><span className="eyebrow">Featured Projects</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Recent work across the Valley.</h2></Reveal>
+          <Reveal>
+            <span className="eyebrow">Featured Projects</span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+              Recent work across the Valley.
+            </h2>
+          </Reveal>
         </div>
         <div className="mt-14 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
           {imgs.map((src, i) => (
             <Reveal key={src} delay={i * 0.05}>
-              <div className={`overflow-hidden rounded-3xl ${i === 0 || i === 4 ? "md:row-span-2 md:aspect-[3/4]" : "aspect-square"}`}>
-                <img src={src} alt="APM Arizona Electric featured electrical project" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 hover:scale-110" />
+              <div
+                className={`overflow-hidden rounded-3xl ${i === 0 || i === 4 ? "md:row-span-2 md:aspect-[3/4]" : "aspect-square"}`}
+              >
+                <img
+                  src={src}
+                  alt="APM Arizona Electric featured electrical project"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-110"
+                />
               </div>
             </Reveal>
           ))}
@@ -359,10 +542,22 @@ function Gallery() {
 
 function SafetyTips() {
   const tips = [
-    { t: "Never ignore repeated breaker trips", d: "It's your panel telling you something is wrong. Call us before it becomes a fire." },
-    { t: "Watch for warm outlets or switches", d: "Heat at a device is a serious warning sign of loose or overloaded connections." },
-    { t: "Test GFCIs monthly", d: "Kitchens, baths, garages and outdoor outlets need working ground-fault protection." },
-    { t: "Don't chain power strips", d: "Overloading a circuit is a common avoidable cause of residential electrical fires." },
+    {
+      t: "Never ignore repeated breaker trips",
+      d: "It's your panel telling you something is wrong. Call us before it becomes a fire.",
+    },
+    {
+      t: "Watch for warm outlets or switches",
+      d: "Heat at a device is a serious warning sign of loose or overloaded connections.",
+    },
+    {
+      t: "Test GFCIs monthly",
+      d: "Kitchens, baths, garages and outdoor outlets need working ground-fault protection.",
+    },
+    {
+      t: "Don't chain power strips",
+      d: "Overloading a circuit is a common avoidable cause of residential electrical fires.",
+    },
   ];
   return (
     <section className="section-y bg-surface">
@@ -370,17 +565,30 @@ function SafetyTips() {
         <Reveal>
           <div className="relative">
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/20 to-accent/10 blur-2xl" />
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=70" alt="Electrical safety inspection" loading="lazy" className="relative rounded-3xl w-full aspect-[4/5] object-cover shadow-elegant" />
+            <img
+              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=70"
+              alt="Electrical safety inspection"
+              loading="lazy"
+              className="relative rounded-3xl w-full aspect-[4/5] object-cover shadow-elegant"
+            />
           </div>
         </Reveal>
         <div>
-          <Reveal><span className="eyebrow">Safety Tips</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Simple habits that prevent big problems.</h2></Reveal>
+          <Reveal>
+            <span className="eyebrow">Safety Tips</span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+              Simple habits that prevent big problems.
+            </h2>
+          </Reveal>
           <div className="mt-8 space-y-5">
             {tips.map((t, i) => (
               <Reveal key={t.t} delay={0.1 + i * 0.05}>
                 <div className="flex gap-4 rounded-2xl bg-white p-5 border border-border">
-                  <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary/15 text-secondary"><IconShield className="h-5 w-5" /></div>
+                  <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary/15 text-secondary">
+                    <IconShield className="h-5 w-5" />
+                  </div>
                   <div>
                     <h3 className="font-bold text-secondary">{t.t}</h3>
                     <p className="text-sm text-muted-foreground mt-1">{t.d}</p>
@@ -397,20 +605,40 @@ function SafetyTips() {
 
 function EmergencyBanner() {
   return (
-    <section className="py-16 relative overflow-hidden" style={{ background: "linear-gradient(120deg, oklch(0.22 0.04 260), oklch(0.16 0.05 265))" }}>
-      <div className="absolute inset-0 opacity-50" style={{ background: "radial-gradient(circle at 30% 50%, oklch(0.78 0.17 70 / 0.35), transparent 50%)" }} />
+    <section
+      className="py-16 relative overflow-hidden"
+      style={{ background: "linear-gradient(120deg, oklch(0.22 0.04 260), oklch(0.16 0.05 265))" }}
+    >
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          background:
+            "radial-gradient(circle at 30% 50%, oklch(0.78 0.17 70 / 0.35), transparent 50%)",
+        }}
+      />
       <div className="container-x relative flex w-full max-w-full flex-col md:flex-row items-start md:items-center gap-8 text-white">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-3 text-primary text-xs sm:text-sm font-bold uppercase tracking-[0.2em]">
-            <span className="relative flex h-2.5 w-2.5 shrink-0"><span className="absolute inset-0 animate-ping rounded-full bg-primary/60" /><span className="relative rounded-full h-2.5 w-2.5 bg-primary" /></span>
+            <span className="relative flex h-2.5 w-2.5 shrink-0">
+              <span className="absolute inset-0 animate-ping rounded-full bg-primary/60" />
+              <span className="relative rounded-full h-2.5 w-2.5 bg-primary" />
+            </span>
             Residential Electrical Help
           </div>
-          <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold">Electrical emergency? We're here.</h2>
-          <p className="mt-2 text-white/70 max-w-xl">Power out, burning smell, sparks or exposed wiring? Call to request electrical service.</p>
+          <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold">
+            Electrical emergency? We're here.
+          </h2>
+          <p className="mt-2 text-white/70 max-w-xl">
+            Power out, burning smell, sparks or exposed wiring? Call to request electrical service.
+          </p>
         </div>
-        <a href={BUSINESS.phoneHref} className="btn-primary w-full max-w-full md:w-auto text-base px-8 py-4"><IconPhone className="h-5 w-5 shrink-0" /> {BUSINESS.phone}</a>
+        <a
+          href={BUSINESS.phoneHref}
+          className="btn-primary w-full max-w-full md:w-auto text-base px-8 py-4"
+        >
+          <IconPhone className="h-5 w-5 shrink-0" /> {BUSINESS.phone}
+        </a>
       </div>
-
     </section>
   );
 }
@@ -420,16 +648,30 @@ function ServiceAreas() {
     <section className="section-y">
       <div className="container-x">
         <div className="text-center max-w-2xl mx-auto">
-          <Reveal><span className="eyebrow">Service Areas</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Proudly serving the Valley.</h2></Reveal>
+          <Reveal>
+            <span className="eyebrow">Service Areas</span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+              Proudly serving the Valley.
+            </h2>
+          </Reveal>
         </div>
         <div className="mt-14 grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 [&>*]:min-w-0">
           {LOCATIONS.map((l, i) => (
             <Reveal key={l.slug} delay={i * 0.04}>
-              <Link to="/locations/$slug" params={{ slug: l.slug }} className="group flex w-full min-w-0 items-center gap-4 rounded-3xl border border-border bg-white p-5 sm:p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40">
-                <div className="grid h-12 w-12 sm:h-14 sm:w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-secondary"><IconMapPin className="h-6 w-6" /></div>
+              <Link
+                to="/locations/$slug"
+                params={{ slug: l.slug }}
+                className="group flex w-full min-w-0 items-center gap-4 rounded-3xl border border-border bg-white p-5 sm:p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40"
+              >
+                <div className="grid h-12 w-12 sm:h-14 sm:w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 text-secondary">
+                  <IconMapPin className="h-6 w-6" />
+                </div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="truncate font-bold text-secondary">{l.city === "Phoenix" ? "Electrician Phoenix, AZ" : `${l.city}, AZ`}</h3>
+                  <h3 className="truncate font-bold text-secondary">
+                    {l.city === "Phoenix" ? "Electrician Phoenix, AZ" : `${l.city}, AZ`}
+                  </h3>
                   <p className="truncate text-sm text-muted-foreground">{l.blurb}</p>
                 </div>
                 <IconArrowRight className="h-5 w-5 text-primary shrink-0 transition-transform group-hover:translate-x-1" />
@@ -437,7 +679,6 @@ function ServiceAreas() {
             </Reveal>
           ))}
         </div>
-
       </div>
     </section>
   );
@@ -448,11 +689,23 @@ function FAQ() {
     <section className="section-y bg-surface">
       <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.4fr]">
         <div>
-          <Reveal><span className="eyebrow">FAQ</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Questions? We've got answers.</h2></Reveal>
-          <Reveal delay={0.15}><p className="mt-4 text-muted-foreground">Still curious? Give us a call — we're happy to talk through any electrical concern.</p></Reveal>
+          <Reveal>
+            <span className="eyebrow">FAQ</span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+              Questions? We've got answers.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <p className="mt-4 text-muted-foreground">
+              Still curious? Give us a call — we're happy to talk through any electrical concern.
+            </p>
+          </Reveal>
           <Reveal delay={0.2}>
-            <a href={BUSINESS.phoneHref} className="mt-6 btn-dark inline-flex"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
+            <a href={BUSINESS.phoneHref} className="mt-6 btn-dark inline-flex">
+              <IconPhone className="h-4 w-4" /> {BUSINESS.phone}
+            </a>
           </Reveal>
         </div>
         <div className="space-y-3">
@@ -461,7 +714,9 @@ function FAQ() {
               <details className="group rounded-2xl bg-white p-6 border border-border open:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.25)]">
                 <summary className="flex items-center justify-between cursor-pointer list-none font-semibold text-secondary">
                   {f.q}
-                  <span className="ml-4 grid h-8 w-8 place-items-center rounded-full bg-primary/15 text-secondary transition-transform group-open:rotate-45"><IconArrowRight className="h-4 w-4 rotate-[-45deg]" /></span>
+                  <span className="ml-4 grid h-8 w-8 place-items-center rounded-full bg-primary/15 text-secondary transition-transform group-open:rotate-45">
+                    <IconArrowRight className="h-4 w-4 rotate-[-45deg]" />
+                  </span>
                 </summary>
                 <p className="mt-3 text-muted-foreground leading-relaxed">{f.a}</p>
               </details>
@@ -477,15 +732,36 @@ function FinalCTA() {
   return (
     <section className="section-y">
       <div className="container-x">
-        <div className="relative overflow-hidden rounded-[2.5rem] p-10 md:p-16 text-white" style={{ background: "linear-gradient(135deg, oklch(0.22 0.04 260), oklch(0.14 0.05 265))" }}>
-          <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full" style={{ background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)" }} />
+        <div
+          className="relative overflow-hidden rounded-[2.5rem] p-10 md:p-16 text-white"
+          style={{
+            background: "linear-gradient(135deg, oklch(0.22 0.04 260), oklch(0.14 0.05 265))",
+          }}
+        >
+          <div
+            className="absolute -right-20 -top-20 h-80 w-80 rounded-full"
+            style={{
+              background: "radial-gradient(circle, oklch(0.78 0.17 70 / 0.4), transparent 70%)",
+            }}
+          />
           <div className="relative max-w-2xl">
-            <span className="eyebrow bg-white/10 border-white/20 text-white">Ready When You Are</span>
-            <h2 className="mt-5 text-4xl md:text-6xl font-bold leading-tight">schedule your service.</h2>
-            <p className="mt-4 text-white/70 text-lg">Whether it is a flickering light or a panel concern, call or request help for your residential electrical needs.</p>
+            <span className="eyebrow bg-white/10 border-white/20 text-white">
+              Ready When You Are
+            </span>
+            <h2 className="mt-5 text-4xl md:text-6xl font-bold leading-tight">
+              schedule your service.
+            </h2>
+            <p className="mt-4 text-white/70 text-lg">
+              Whether it is a flickering light or a panel concern, call or request help for your
+              residential electrical needs.
+            </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
-              <Link to="/contact" className="btn-outline">Request Service <IconArrowRight className="h-4 w-4" /></Link>
+              <a href={BUSINESS.phoneHref} className="btn-primary">
+                <IconPhone className="h-4 w-4" /> {BUSINESS.phone}
+              </a>
+              <Link to="/contact" className="btn-outline">
+                Request Service <IconArrowRight className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         </div>
@@ -496,7 +772,10 @@ function FinalCTA() {
 
 function Stats() {
   return (
-    <section className="py-16" style={{ background: "linear-gradient(135deg, oklch(0.22 0.04 260), oklch(0.14 0.05 265))" }}>
+    <section
+      className="py-16"
+      style={{ background: "linear-gradient(135deg, oklch(0.22 0.04 260), oklch(0.14 0.05 265))" }}
+    >
       <div className="container-x grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-white">
         {STATS.map((s, i) => (
           <Reveal key={s.l} delay={i * 0.06}>
@@ -516,15 +795,27 @@ function Industries() {
     <section className="section-y">
       <div className="container-x">
         <div className="max-w-2xl">
-          <Reveal><span className="eyebrow">Residential Needs</span></Reveal>
-          <Reveal delay={0.1}><h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Electrical help for the place you call home.</h2></Reveal>
-          <Reveal delay={0.15}><p className="mt-4 text-muted-foreground text-lg">Explore common residential electrical needs and request electrical service.</p></Reveal>
+          <Reveal>
+            <span className="eyebrow">Residential Needs</span>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+              Electrical help for the place you call home.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <p className="mt-4 text-muted-foreground text-lg">
+              Explore common residential electrical needs and request electrical service.
+            </p>
+          </Reveal>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {INDUSTRIES.map((it, i) => (
             <Reveal key={it.t} delay={i * 0.05}>
               <div className="h-full rounded-3xl border border-border bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-elegant">
-                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/15 text-secondary"><IconHome className="h-5 w-5" /></div>
+                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/15 text-secondary">
+                  <IconHome className="h-5 w-5" />
+                </div>
                 <h3 className="mt-5 text-xl font-bold text-secondary">{it.t}</h3>
                 <p className="mt-2 text-muted-foreground text-sm leading-relaxed">{it.d}</p>
               </div>
@@ -543,29 +834,54 @@ function LocalIntro() {
         <Reveal>
           <div>
             <span className="eyebrow">Phoenix Metro Electricians</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">Electrical work built for Arizona conditions.</h2>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-secondary">
+              Electrical work built for Arizona conditions.
+            </h2>
             <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-              Arizona is hard on electrical systems. Attic temperatures over 150°F degrade insulation, monsoon storms drive surges through service entrances, and homes built for 1970s loads are now running two air conditioners, a pool pump and an EV charger. Our work accounts for all of it.
+              Arizona is hard on electrical systems. Attic temperatures over 150°F degrade
+              insulation, monsoon storms drive surges through service entrances, and homes built for
+              1970s loads are now running two air conditioners, a pool pump and an EV charger. Our
+              work accounts for all of it.
             </p>
             <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
-              APM Arizona Electric LLC is based at {BUSINESS.address} and this site provides residential electrical information for Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale. We help homeowners request connections with our expert electricians.
+              APM Arizona Electric LLC is based at {BUSINESS.address} and this site provides
+              residential electrical information for Phoenix, Tempe, Mesa, Scottsdale, Chandler and
+              Glendale. We help homeowners request connections with our expert electricians.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={BUSINESS.phoneHref} className="btn-primary"><IconPhone className="h-4 w-4" /> {BUSINESS.phone}</a>
-              <Link to="/services" className="btn-dark">Browse Services <IconArrowRight className="h-4 w-4" /></Link>
+              <a href={BUSINESS.phoneHref} className="btn-primary">
+                <IconPhone className="h-4 w-4" /> {BUSINESS.phone}
+              </a>
+              <Link to="/services" className="btn-dark">
+                Browse Services <IconArrowRight className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         </Reveal>
         <Reveal delay={0.1}>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { t: "Verify Credentials", d: "We are a fully licensed and insured electrical contractor.", i: IconShield },
-              { t: "Review Pricing", d: "Ask for written scope and pricing before authorizing work.", i: IconCheck },
+              {
+                t: "Verify Credentials",
+                d: "We are a fully licensed and insured electrical contractor.",
+                i: IconShield,
+              },
+              {
+                t: "Review Pricing",
+                d: "Ask for written scope and pricing before authorizing work.",
+                i: IconCheck,
+              },
               { t: "Local Connections", d: "request our electrical services.", i: IconClock },
-              { t: "Homeowner Focus", d: "Residential information for homeowners and renters.", i: IconHome },
+              {
+                t: "Homeowner Focus",
+                d: "Residential information for homeowners and renters.",
+                i: IconHome,
+              },
             ].map((c) => (
               <div key={c.t} className="rounded-3xl border border-border bg-white p-6">
-                <div className="grid h-11 w-11 place-items-center rounded-2xl bg-primary/15 text-secondary"><c.i className="h-5 w-5" /></div>
+                <div className="grid h-11 w-11 place-items-center rounded-2xl bg-primary/15 text-secondary">
+                  <c.i className="h-5 w-5" />
+                </div>
                 <h3 className="mt-4 font-bold text-secondary">{c.t}</h3>
                 <p className="mt-1.5 text-sm text-muted-foreground">{c.d}</p>
               </div>
@@ -585,7 +901,12 @@ function MapSection() {
           <iframe
             title="APM Arizona Electric LLC on Google Maps"
             src={BUSINESS.mapEmbed}
-            width="100%" height="500" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin"
+            width="100%"
+            height="500"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
           />
         </div>
       </div>

@@ -1,5 +1,13 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { SERVICES, LOCATIONS, BUSINESS, SITE, abs, breadcrumbSchema, faqSchema } from "@/lib/business";
+import {
+  SERVICES,
+  LOCATIONS,
+  BUSINESS,
+  SITE,
+  abs,
+  breadcrumbSchema,
+  faqSchema,
+} from "@/lib/business";
 import { ServiceDetail } from "@/components/site/ServiceDetail";
 
 export const Route = createFileRoute("/services/$slug")({
@@ -10,7 +18,12 @@ export const Route = createFileRoute("/services/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Page Unavailable | APM Arizona Electric LLC" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [
+          { title: "Page Unavailable | APM Arizona Electric LLC" },
+          { name: "robots", content: "noindex" },
+        ],
+      };
     }
 
     const item = loaderData.service;
@@ -19,7 +32,11 @@ export const Route = createFileRoute("/services/$slug")({
     const desc = item.metaDescription;
     const faqs = item.faqs;
 
-    const crumbs = [{ name: "Home", path: "/" }, { name: "Services", path: "/services" }, { name: item.title, path: `/services/${item.slug}` }];
+    const crumbs = [
+      { name: "Home", path: "/" },
+      { name: "Services", path: "/services" },
+      { name: item.title, path: `/services/${item.slug}` },
+    ];
 
     const primarySchema = {
       "@context": "https://schema.org",
@@ -30,8 +47,8 @@ export const Route = createFileRoute("/services/$slug")({
       description: item.description,
       url,
       provider: {
-        "@type": "Organization",
-        "@id": `${SITE.url}/#business`,
+        "@type": "Electrician",
+        "@id": `${SITE.url}/#electrician`,
         name: BUSINESS.name,
         telephone: BUSINESS.phoneSchema,
       },
@@ -68,7 +85,9 @@ function PageNotFound() {
       <div className="text-center">
         <h1 className="text-4xl font-bold text-secondary">Page not found</h1>
         <p className="mt-3 text-muted-foreground">The page you are looking for does not exist.</p>
-        <Link to="/" className="mt-6 btn-primary inline-flex">Back home</Link>
+        <Link to="/" className="mt-6 btn-primary inline-flex">
+          Back home
+        </Link>
       </div>
     </div>
   );

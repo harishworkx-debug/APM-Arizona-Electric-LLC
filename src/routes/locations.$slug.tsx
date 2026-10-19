@@ -10,7 +10,12 @@ export const Route = createFileRoute("/locations/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Page Unavailable | APM Arizona Electric LLC" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [
+          { title: "Page Unavailable | APM Arizona Electric LLC" },
+          { name: "robots", content: "noindex" },
+        ],
+      };
     }
 
     const item = loaderData.location;
@@ -19,17 +24,22 @@ export const Route = createFileRoute("/locations/$slug")({
     const desc = item.metaDescription;
     const faqs = item.faqs;
 
-    const crumbs = [{ name: "Home", path: "/" }, { name: "Service Areas", path: "/services" }, { name: `${item.city}, AZ`, path: `/locations/${item.slug}` }];
+    const crumbs = [
+      { name: "Home", path: "/" },
+      { name: "Service Areas", path: "/services" },
+      { name: `${item.city}, AZ`, path: `/locations/${item.slug}` },
+    ];
 
     const primarySchema = {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": `${url}#localbusiness`,
+      "@type": "Electrician",
+      "@id": `${url}#electrician`,
       name: `${BUSINESS.name} — ${item.city}`,
       url,
       telephone: BUSINESS.phoneSchema,
       priceRange: "$$",
-      image: "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=1200&q=70",
+      image:
+        "https://images.unsplash.com/photo-1520637836862-4d197d17c93a?auto=format&fit=crop&w=1200&q=70",
       address: {
         "@type": "PostalAddress",
         streetAddress: BUSINESS.street,
@@ -38,6 +48,19 @@ export const Route = createFileRoute("/locations/$slug")({
         postalCode: BUSINESS.postalCode,
         addressCountry: "US",
       },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: BUSINESS.geo.latitude,
+        longitude: BUSINESS.geo.longitude,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          opens: "07:00",
+          closes: "19:00",
+        },
+      ],
       areaServed: { "@type": "City", name: `${item.city}, AZ` },
     };
 
@@ -71,7 +94,9 @@ function PageNotFound() {
       <div className="text-center">
         <h1 className="text-4xl font-bold text-secondary">Page not found</h1>
         <p className="mt-3 text-muted-foreground">The page you are looking for does not exist.</p>
-        <Link to="/" className="mt-6 btn-primary inline-flex">Back home</Link>
+        <Link to="/" className="mt-6 btn-primary inline-flex">
+          Back home
+        </Link>
       </div>
     </div>
   );

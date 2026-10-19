@@ -24,7 +24,9 @@ function NotFoundComponent() {
           The page you're looking for doesn't exist or has been moved.
         </p>
         <div className="mt-6">
-          <a href="/" className="btn-primary">Go home</a>
+          <a href="/" className="btn-primary">
+            Go home
+          </a>
         </div>
       </div>
     </div>
@@ -41,11 +43,25 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold tracking-tight text-foreground">This page didn't load</h1>
-        <p className="mt-2 text-sm text-muted-foreground">Something went wrong. Try refreshing or head back home.</p>
+        <h1 className="text-xl font-semibold tracking-tight text-foreground">
+          This page didn't load
+        </h1>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Something went wrong. Try refreshing or head back home.
+        </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
-          <button onClick={() => { router.invalidate(); reset(); }} className="btn-primary">Try again</button>
-          <a href="/" className="btn-dark">Go home</a>
+          <button
+            onClick={() => {
+              router.invalidate();
+              reset();
+            }}
+            className="btn-primary"
+          >
+            Try again
+          </button>
+          <a href="/" className="btn-dark">
+            Go home
+          </a>
         </div>
       </div>
     </div>
@@ -62,40 +78,82 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "APM Arizona Electric LLC" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Lovable App" },
-      { property: "og:title", content: "Lovable App" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "description", content: "Residential electrical service information helping Phoenix Metro homeowners get professional electrical services." },
-      { property: "og:description", content: "Residential electrical service information helping Phoenix Metro homeowners get professional electrical services." },
-      { name: "twitter:description", content: "Spark & Shine is a premium, modern lead generation website for APM Arizona Electric LLC." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/01493909-3027-404b-a98f-82d2e74424fb/id-preview-ac65b740--7aa95127-538a-42be-9f34-951492dea49a.lovable.app-1785143664434.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/01493909-3027-404b-a98f-82d2e74424fb/id-preview-ac65b740--7aa95127-538a-42be-9f34-951492dea49a.lovable.app-1785143664434.png" },
+      { title: "APM Arizona Electric LLC | Licensed Electrician in Phoenix Metro, AZ" },
+      { property: "og:title", content: "APM Arizona Electric LLC | Licensed Electrician" },
+      { name: "twitter:title", content: "APM Arizona Electric LLC | Licensed Electrician" },
+      {
+        name: "description",
+        content:
+          "Licensed, bonded & insured residential electrician serving Phoenix, Tempe, Mesa, Scottsdale, Chandler & Glendale. Panel upgrades, troubleshooting & repairs. Call (480) 806-1832.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Licensed, bonded & insured residential electrician serving Phoenix, Tempe, Mesa, Scottsdale, Chandler & Glendale. Panel upgrades, troubleshooting & repairs. Call (480) 806-1832.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Licensed, bonded & insured residential electrician serving Phoenix, Tempe, Mesa, Scottsdale, Chandler & Glendale. Call (480) 806-1832.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/01493909-3027-404b-a98f-82d2e74424fb/id-preview-ac65b740--7aa95127-538a-42be-9f34-951492dea49a.lovable.app-1785143664434.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/01493909-3027-404b-a98f-82d2e74424fb/id-preview-ac65b740--7aa95127-538a-42be-9f34-951492dea49a.lovable.app-1785143664434.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
-      { rel: "icon", href: "/apple-touch-icon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png", type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800;900&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800;900&display=swap",
+      },
     ],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": "Electrician",
           name: "APM Arizona Electric LLC",
-          image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=70",
+          image:
+            "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=70",
           telephone: "+14808061832",
           email: "info@apmarizonaelectric.com",
           priceRange: "$$",
-          address: { "@type": "PostalAddress", addressLocality: "Phoenix", addressRegion: "AZ", addressCountry: "US" },
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "1216 W Hermosa Dr",
+            addressLocality: "Tempe",
+            addressRegion: "AZ",
+            postalCode: "85282",
+            addressCountry: "US",
+          },
+          geo: { "@type": "GeoCoordinates", latitude: 33.4074, longitude: -111.9564 },
           areaServed: ["Phoenix", "Mesa", "Scottsdale", "Tempe", "Chandler", "Glendale"],
           openingHoursSpecification: [
-            { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:00", closes: "16:00" },
-            { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "13:00" },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              opens: "07:00",
+              closes: "19:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Saturday",
+              opens: "07:00",
+              closes: "19:00",
+            },
           ],
         }),
       },
