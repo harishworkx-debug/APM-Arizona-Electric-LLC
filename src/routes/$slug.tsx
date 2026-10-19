@@ -34,6 +34,21 @@ export const Route = createFileRoute("/$slug")({
     if (slug === "electricion-glendale-az" || slug === "glendale-az") {
       throw redirect({ href: "/electrician-glendale-az/", statusCode: 301 });
     }
+    if (slug === "electricion-gilbert-az" || slug === "gilbert-az") {
+      throw redirect({ href: "/electrician-gilbert-az/", statusCode: 301 });
+    }
+    if (slug === "electricion-peoria-az" || slug === "peoria-az") {
+      throw redirect({ href: "/electrician-peoria-az/", statusCode: 301 });
+    }
+    if (slug === "electricion-surprise-az" || slug === "surprise-az") {
+      throw redirect({ href: "/electrician-surprise-az/", statusCode: 301 });
+    }
+    if (slug === "electricion-goodyear-az" || slug === "goodyear-az") {
+      throw redirect({ href: "/electrician-goodyear-az/", statusCode: 301 });
+    }
+    if (slug === "electricion-paradise-valley-az" || slug === "paradise-valley-az") {
+      throw redirect({ href: "/electrician-paradise-valley-az/", statusCode: 301 });
+    }
 
     if (
       slug === "residential-electrical-services" ||
@@ -46,8 +61,19 @@ export const Route = createFileRoute("/$slug")({
     const service = SERVICES.find((s) => s.slug === slug);
     if (service) return { kind: "service" as const, service, location: null };
 
+    // If accessed without -phoenix-az suffix, 301 redirect to canonical flat URL
+    const serviceWithSuffix = SERVICES.find((s) => s.slug === `${slug}-phoenix-az`);
+    if (serviceWithSuffix) {
+      throw redirect({ href: `/${serviceWithSuffix.slug}/`, statusCode: 301 });
+    }
+
     const location = LOCATIONS.find((l) => l.slug === slug);
     if (location) return { kind: "location" as const, service: null, location };
+
+    const locationWithPrefix = LOCATIONS.find((l) => l.slug === `electrician-${slug}`);
+    if (locationWithPrefix) {
+      throw redirect({ href: `/${locationWithPrefix.slug}/`, statusCode: 301 });
+    }
 
     throw notFound();
   },

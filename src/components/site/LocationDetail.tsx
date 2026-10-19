@@ -290,7 +290,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
             {SERVICES.map((s) => (
               <Link
                 key={s.slug}
-                to={s.slug === "residential-electrical-phoenix-az" ? "/$slug" : "/services/$slug"}
+                to="/$slug"
                 params={{ slug: s.slug }}
                 className="group rounded-2xl bg-surface border border-border p-6 hover:-translate-y-1 hover:shadow-elegant transition-all flex flex-col justify-between"
               >

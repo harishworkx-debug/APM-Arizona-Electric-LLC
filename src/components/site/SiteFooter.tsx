@@ -27,8 +27,9 @@ export function SiteFooter() {
               </div>
             </div>
             <p className="mt-5 text-sm leading-relaxed text-white/70">
-              Professional residential and commercial electrical services for Phoenix, Tempe, Mesa,
-              Scottsdale, Chandler, and Glendale, Arizona.
+              Professional residential and commercial electrical services across Phoenix, Tempe,
+              Mesa, Scottsdale, Chandler, Gilbert, Glendale, Peoria, Surprise, Goodyear, and
+              Paradise Valley, Arizona.
             </p>
             <div className="mt-6 space-y-3 text-sm">
               <a
@@ -70,23 +71,13 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm">
               {SERVICES.map((s) => (
                 <li key={s.slug}>
-                  {s.slug === "residential-electrical-phoenix-az" ? (
-                    <Link
-                      to="/$slug"
-                      params={{ slug: s.slug }}
-                      className="hover:text-primary transition"
-                    >
-                      {s.title}
-                    </Link>
-                  ) : (
-                    <Link
-                      to="/services/$slug"
-                      params={{ slug: s.slug }}
-                      className="hover:text-primary transition"
-                    >
-                      {s.title}
-                    </Link>
-                  )}
+                  <Link
+                    to="/$slug"
+                    params={{ slug: s.slug }}
+                    className="hover:text-primary transition"
+                  >
+                    {s.title}
+                  </Link>
                 </li>
               ))}
             </ul>

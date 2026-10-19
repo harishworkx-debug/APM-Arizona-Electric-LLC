@@ -137,10 +137,10 @@ export const SERVICES: Service[] = [
         a: "A typical whole-home rewire takes between 3 to 7 working days, depending on home square footage, attic access, and drywall finishes. We plan the work systematically so your family has essential power at the end of each working day.",
       },
     ],
-    related: ["circuit-breaker-repair", "light-fixture-installation", "ceiling-fan-installation"],
+    related: ["circuit-breaker-repair-phoenix-az", "light-fixture-installation-phoenix-az", "ceiling-fan-installation-phoenix-az"],
   },
   {
-    slug: "ceiling-fan-installation",
+    slug: "ceiling-fan-installation-phoenix-az",
     title: "Ceiling Fan Installation & Replacement",
     navLabel: "Ceiling Fan Installation",
     metaTitle: "Ceiling Fan Installation in Phoenix, AZ | APM Arizona Electric LLC",
@@ -223,13 +223,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "light-fixture-installation",
+      "light-fixture-installation-phoenix-az",
       "residential-electrical-phoenix-az",
-      "electrical-troubleshooting",
+      "electrical-troubleshooting-phoenix-az",
     ],
   },
   {
-    slug: "light-fixture-installation",
+    slug: "light-fixture-installation-phoenix-az",
     title: "Light Fixture Installation",
     navLabel: "Light Fixture Installation",
     metaTitle: "Light Fixture Installation in Phoenix, AZ | APM Arizona Electric LLC",
@@ -312,13 +312,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "ceiling-fan-installation",
-      "kitchen-electrical-repairs",
+      "ceiling-fan-installation-phoenix-az",
+      "kitchen-electrical-repairs-phoenix-az",
       "residential-electrical-phoenix-az",
     ],
   },
   {
-    slug: "circuit-breaker-repair",
+    slug: "circuit-breaker-repair-phoenix-az",
     title: "Circuit Breaker Troubleshooting & Repairs",
     navLabel: "Circuit Breaker Repair",
     metaTitle: "Circuit Breaker Repair in Phoenix, AZ | APM Arizona Electric LLC",
@@ -401,13 +401,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "electrical-troubleshooting",
-      "electrical-maintenance",
+      "electrical-troubleshooting-phoenix-az",
+      "electrical-maintenance-phoenix-az",
       "residential-electrical-phoenix-az",
     ],
   },
   {
-    slug: "kitchen-electrical-repairs",
+    slug: "kitchen-electrical-repairs-phoenix-az",
     title: "Kitchen Electrical Repairs",
     navLabel: "Kitchen Electrical Repairs",
     metaTitle: "Kitchen Electrical Repairs in Phoenix, AZ | APM Arizona Electric LLC",
@@ -490,13 +490,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "light-fixture-installation",
+      "light-fixture-installation-phoenix-az",
       "residential-electrical-phoenix-az",
-      "circuit-breaker-repair",
+      "circuit-breaker-repair-phoenix-az",
     ],
   },
   {
-    slug: "electrical-maintenance",
+    slug: "electrical-maintenance-phoenix-az",
     title: "Electrical Maintenance & Safety Inspections",
     navLabel: "Electrical Maintenance",
     metaTitle: "Electrical Maintenance in Phoenix, AZ | APM Arizona Electric LLC",
@@ -579,13 +579,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "circuit-breaker-repair",
-      "electrical-troubleshooting",
+      "circuit-breaker-repair-phoenix-az",
+      "electrical-troubleshooting-phoenix-az",
       "residential-electrical-phoenix-az",
     ],
   },
   {
-    slug: "electrical-troubleshooting",
+    slug: "electrical-troubleshooting-phoenix-az",
     title: "Electrical Troubleshooting & Diagnostics",
     navLabel: "Electrical Troubleshooting",
     metaTitle: "Electrical Troubleshooting in Phoenix, AZ | APM Arizona Electric LLC",
@@ -668,13 +668,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "circuit-breaker-repair",
+      "circuit-breaker-repair-phoenix-az",
       "residential-electrical-phoenix-az",
-      "electrical-maintenance",
+      "electrical-maintenance-phoenix-az",
     ],
   },
   {
-    slug: "ev-charger-installation",
+    slug: "ev-charger-installation-phoenix-az",
     title: "EV Charger Installation & 240V Wiring",
     navLabel: "EV Charger Installation",
     metaTitle: "EV Charger Installation in Phoenix, AZ | APM Arizona Electric LLC",
@@ -757,13 +757,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "circuit-breaker-repair",
+      "circuit-breaker-repair-phoenix-az",
       "residential-electrical-phoenix-az",
-      "electrical-maintenance",
+      "electrical-maintenance-phoenix-az",
     ],
   },
   {
-    slug: "electrical-panel-upgrades",
+    slug: "electrical-panel-upgrades-phoenix-az",
     title: "Electrical Panel Upgrades & Replacement",
     navLabel: "Panel Upgrades",
     metaTitle: "Electrical Panel Upgrades in Phoenix, AZ | APM Arizona Electric LLC",
@@ -846,13 +846,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "circuit-breaker-repair",
+      "circuit-breaker-repair-phoenix-az",
       "residential-electrical-phoenix-az",
-      "electrical-maintenance",
+      "electrical-maintenance-phoenix-az",
     ],
   },
   {
-    slug: "electrical-wiring-and-rewiring",
+    slug: "electrical-wiring-and-rewiring-phoenix-az",
     title: "Electrical Wiring & Whole-Home Rewiring",
     navLabel: "Wiring & Rewiring",
     metaTitle: "Electrical Wiring & Rewiring in Phoenix, AZ | APM Arizona Electric LLC",
@@ -935,13 +935,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "circuit-breaker-repair",
+      "circuit-breaker-repair-phoenix-az",
       "residential-electrical-phoenix-az",
-      "kitchen-electrical-repairs",
+      "kitchen-electrical-repairs-phoenix-az",
     ],
   },
   {
-    slug: "outlet-and-switch-repair",
+    slug: "outlet-and-switch-repair-phoenix-az",
     title: "Outlet & Switch Repair",
     navLabel: "Outlets & Switches",
     metaTitle: "Outlet & Switch Repair Phoenix, AZ | APM Arizona Electric LLC",
@@ -1020,13 +1020,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "gfci-outlet-installation",
+      "gfci-outlet-installation-phoenix-az",
       "residential-electrical-phoenix-az",
-      "electrical-troubleshooting",
+      "electrical-troubleshooting-phoenix-az",
     ],
   },
   {
-    slug: "gfci-outlet-installation",
+    slug: "gfci-outlet-installation-phoenix-az",
     title: "GFCI Outlet Installation & Repair",
     navLabel: "GFCI Outlets",
     metaTitle: "GFCI Outlet Installation Phoenix, AZ | APM Arizona Electric LLC",
@@ -1105,13 +1105,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "outlet-and-switch-repair",
+      "outlet-and-switch-repair-phoenix-az",
       "residential-electrical-phoenix-az",
-      "kitchen-electrical-repairs",
+      "kitchen-electrical-repairs-phoenix-az",
     ],
   },
   {
-    slug: "whole-home-electrical-inspections",
+    slug: "whole-home-electrical-inspections-phoenix-az",
     title: "Whole-Home Electrical Inspections",
     navLabel: "Electrical Inspections",
     metaTitle: "Whole-Home Electrical Inspection Phoenix, AZ | APM Arizona Electric LLC",
@@ -1190,13 +1190,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "electrical-panel-upgrades",
-      "electrical-wiring-and-rewiring",
-      "electrical-maintenance",
+      "electrical-panel-upgrades-phoenix-az",
+      "electrical-wiring-and-rewiring-phoenix-az",
+      "electrical-maintenance-phoenix-az",
     ],
   },
   {
-    slug: "surge-protection-installation",
+    slug: "surge-protection-installation-phoenix-az",
     title: "Whole-Home Surge Protection",
     navLabel: "Surge Protection",
     metaTitle: "Whole-Home Surge Protection Phoenix, AZ | APM Arizona Electric LLC",
@@ -1275,13 +1275,13 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "electrical-panel-upgrades",
-      "electrical-maintenance",
+      "electrical-panel-upgrades-phoenix-az",
+      "electrical-maintenance-phoenix-az",
       "residential-electrical-phoenix-az",
     ],
   },
   {
-    slug: "emergency-electrical-troubleshooting",
+    slug: "emergency-electrical-troubleshooting-phoenix-az",
     title: "Emergency Electrical Troubleshooting",
     navLabel: "Emergency Electrical",
     metaTitle: "Emergency Electrical Troubleshooting Phoenix, AZ | APM Arizona Electric LLC",
@@ -1360,9 +1360,9 @@ export const SERVICES: Service[] = [
       },
     ],
     related: [
-      "circuit-breaker-repair",
-      "electrical-troubleshooting",
-      "electrical-panel-upgrades",
+      "circuit-breaker-repair-phoenix-az",
+      "electrical-troubleshooting-phoenix-az",
+      "electrical-panel-upgrades-phoenix-az",
     ],
   },
 ];
@@ -1982,6 +1982,491 @@ export const LOCATIONS: Location[] = [
       },
     ],
   },
+  {
+  "slug": "electrician-gilbert-az",
+  "city": "Gilbert",
+  "navLabel": "Gilbert",
+  "metaTitle": "Electrician in Gilbert, AZ | APM Arizona Electric LLC",
+  "metaDescription": "Licensed residential electrician in Gilbert, AZ. Main panel upgrades, EV chargers, pool pump circuits, ceiling fans & rewiring. Call (480) 806-1832.",
+  "h1": "Electrician in Gilbert, AZ",
+  "blurb": "Licensed residential electrical services across Gilbert — from EV charging stations in Power Ranch and Morrison Ranch to 200A service upgrades in Agritopia and Val Vista Lakes.",
+  "intro": [
+    "Gilbert has grown rapidly over the last three decades, transforming from agricultural acreage into one of the East Valley's most dynamic family communities. Homes in master-planned neighborhoods like Val Vista Lakes, Power Ranch, Seville, and Morrison Ranch feature extensive square footage, multiple air conditioning units, resort-style pools, and modern smart home automation systems that place significant demands on residential electrical distribution.",
+    "At APM Arizona Electric LLC, our licensed electricians (ROC #341995) provide Gilbert homeowners with code-compliant electrical installations and precision diagnostics. From coordinating 200-amp and 400-amp panel upgrades with Salt River Project (SRP) to pulling Town of Gilbert electrical permits and installing Level 2 EV charging circuits, our team delivers high-quality workmanship backed by upfront itemized pricing."
+  ],
+  "landmarks": [
+    "Val Vista Lakes",
+    "Power Ranch",
+    "Morrison Ranch",
+    "Agritopia",
+    "Seville",
+    "Higley",
+    "Heritage District",
+    "Finley Farms"
+  ],
+  "nearby": [
+    "Mesa",
+    "Chandler",
+    "Tempe",
+    "Phoenix",
+    "Scottsdale"
+  ],
+  "availability": [
+    "Priority dispatch for partial outages, buzzing breaker panels, and emergency tripping",
+    "Town of Gilbert municipal building permits pulled and inspector walkthroughs coordinated",
+    "Early morning dispatch to inspect hot attics and outdoor panels before summer peak temperatures",
+    "Seamless coordination with Salt River Project (SRP) for residential service capacity upgrades"
+  ],
+  "whyUs": [
+    "Licensed, bonded, and insured Arizona electrical contractor (ROC #341995)",
+    "Direct East Valley electricians dispatched promptly from nearby Tempe",
+    "Transparent, upfront written quotes before any electrical repair begins",
+    "Specialists in high-capacity 240V circuits for electric vehicles, spas, and heavy AC equipment"
+  ],
+  "responseTime": "Standard appointments scheduled Monday–Saturday within 24–48 hours; urgent electrical loss-of-power calls prioritized daily.",
+  "projects": [
+    {
+      "title": "Dual Level 2 EV Charger Installation with Load Management",
+      "neighborhood": "Power Ranch",
+      "description": "Installed two dedicated 50-amp 240V charging circuits for a Tesla Model Y and Rivian R1T. Added smart load-sharing hardware to balance capacity on the existing 200-amp Square D service panel without requiring an expensive utility drop replacement.",
+      "tag": "EV Chargers"
+    },
+    {
+      "title": "200-Amp Main Service Panel Upgrade & Whole-Home Surge Protection",
+      "neighborhood": "Val Vista Lakes",
+      "description": "Replaced an aged 150-amp Challenger load center with a 200-amp Eaton breaker panel. Installed a Type 2 whole-house surge protector to safeguard expensive pool automation and inverter-driven HVAC equipment.",
+      "tag": "Panel Upgrade"
+    },
+    {
+      "title": "Outdoor Covered Patio Lighting & Wet-Rated Ceiling Fans",
+      "neighborhood": "Morrison Ranch",
+      "description": "Ran dedicated GFCI-protected circuits through conduit to a new timber pergola and patio extension. Installed four heavy-duty damp-rated ceiling fans with wall-mounted speed controllers and low-voltage accent lighting.",
+      "tag": "Lighting & Fans"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Mark & Lindsay T.",
+      "neighborhood": "Val Vista Lakes",
+      "text": "APM upgraded our panel so we could add a Level 2 car charger and variable speed pool pump. Andres explained everything clearly, pulled the Town of Gilbert permit, and had SRP out right on time. Great communication and super neat work!",
+      "service": "Panel Upgrade & EV Charger",
+      "rating": 5
+    },
+    {
+      "author": "Brian K.",
+      "neighborhood": "Power Ranch",
+      "text": "Had a circuit breaker that kept tripping whenever the microwave and kitchen outlets ran together. They diagnosed a loose neutral connection and rebalanced the kitchen circuits the same afternoon. Very honest pricing.",
+      "service": "Circuit Breaker Repair",
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a permit for an electrical panel replacement in Gilbert?",
+      "a": "Yes. The Town of Gilbert requires municipal building permits for all main service panel replacements and capacity upgrades. APM Arizona Electric LLC handles the entire permit application, schedules the inspection, meets the town inspector, and coordinates utility meter disconnects with SRP."
+    },
+    {
+      "q": "Can my Gilbert home handle a Level 2 EV charger without upgrading the panel?",
+      "a": "It depends on your current service amperage and household loads. Many newer Gilbert homes have 200-amp panels that can accommodate a 50A charger if overall load calculations allow. If your panel is at capacity, we offer subpanel additions, smart energy managers, or 200A service upgrades."
+    },
+    {
+      "q": "Why do outdoor electrical outlets in Gilbert trip during monsoon storms?",
+      "a": "Blowing rain and extreme humidity often penetrate worn weatherproof outlet covers (in-use bubble covers) on exterior GFCI receptacles. We install commercial-grade extra-duty weather-resistant GFCI outlets and silicone-sealed enclosures that keep moisture out."
+    },
+    {
+      "q": "Who provides electrical utility service in Gilbert, AZ?",
+      "a": "The vast majority of residential homes in Gilbert receive power from Salt River Project (SRP). APM Arizona Electric LLC works with SRP daily to coordinate meter unlocks, temporary service disconnects, and service line upgrades."
+    }
+  ]
+},
+{
+  "slug": "electrician-peoria-az",
+  "city": "Peoria",
+  "navLabel": "Peoria",
+  "metaTitle": "Electrician in Peoria, AZ | APM Arizona Electric LLC",
+  "metaDescription": "Licensed residential electrician in Peoria, AZ. 200A panel upgrades, EV charger installations, ceiling fans, circuit repairs & rewiring. Call (480) 806-1832.",
+  "h1": "Electrician in Peoria, AZ",
+  "blurb": "Trusted residential electrical services in Peoria — from panel upgrades in Vistancia and Westgreen to high-ceiling fan installations in Fletcher Heights and Westbrook Village.",
+  "intro": [
+    "From established golf-course communities like Westbrook Village to sprawling modern developments in Vistancia and Fletcher Heights, Peoria encompasses a broad mix of residential electrical demands. Older Peoria homes often struggle with aging 100-amp panels and weathered exterior disconnects, while newer northern Peoria properties frequently require dedicated circuits for EV charging stations, RV hookups, and backyard pools.",
+    "APM Arizona Electric LLC delivers licensed, prompt, and code-compliant electrical craftsmanship throughout Peoria. Our team works under Arizona ROC license #341995, adhering strictly to City of Peoria building codes and coordinating seamless utility work with Arizona Public Service (APS). Whether you need emergency breaker troubleshooting or a planned service upgrade, we provide upfront itemized pricing with zero hidden fees."
+  ],
+  "landmarks": [
+    "Vistancia",
+    "Fletcher Heights",
+    "Westbrook Village",
+    "Peoria Pines",
+    "Sonoran Mountain Ranch",
+    "Meadowbrook",
+    "Old Town Peoria",
+    "Trillium"
+  ],
+  "nearby": [
+    "Glendale",
+    "Surprise",
+    "Phoenix",
+    "Goodyear",
+    "Scottsdale"
+  ],
+  "availability": [
+    "Emergency dispatch for burning odors, buzzing panels, and lost power phases",
+    "City of Peoria electrical permits pulled and municipal inspections scheduled",
+    "Dedicated residential service trucks stocked with commercial-grade breakers and wiring",
+    "APS utility coordination for meter unlocks and residential overhead/underground service upgrades"
+  ],
+  "whyUs": [
+    "Fully licensed, bonded, and insured (ROC #341995)",
+    "Experienced with both historic West Valley wiring and modern master-planned developments",
+    "Direct craftsman communication — work completed by our own electricians, never subbed out",
+    "1-year warranty on all electrical parts and professional labor"
+  ],
+  "responseTime": "Standard service visits booked within 24–48 hours; urgent breaker issues and power outages given rapid dispatch priority.",
+  "projects": [
+    {
+      "title": "200-Amp Main Panel Swap & Whole-House Surge Arrester",
+      "neighborhood": "Fletcher Heights",
+      "description": "Replaced a corroded exterior 125-amp panel showing heat discoloration with an all-weather 200-amp Square D QO panel. Installed a Type 2 surge protector to shield sensitive home appliances from grid fluctuations.",
+      "tag": "Panel Upgrade"
+    },
+    {
+      "title": "50-Amp Dedicated RV Hookup & EV Charging Circuit",
+      "neighborhood": "Vistancia",
+      "description": "Trenched and ran heavy-gauge conduit to an exterior side-yard parking pad. Installed a weatherproof NEMA 14-50 receptacle in a lockable pedestal box for dual RV shore power and electric vehicle charging.",
+      "tag": "Dedicated Circuits"
+    },
+    {
+      "title": "Vaulted Ceiling Fan Installation & Dual Wall Controls",
+      "neighborhood": "Westbrook Village",
+      "description": "Replaced builder-grade light fixtures with UL-listed expanding fan braces in an 18-foot living room. Installed two 60-inch damp-rated fans with balanced downrods and independent wall speed controls.",
+      "tag": "Ceiling Fans"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "David & Carol M.",
+      "neighborhood": "Westbrook Village",
+      "text": "Our AC disconnect melted in the middle of summer. APM came out quickly, replaced the disconnect box with a heavy-duty copper-rated unit, and verified that all breaker lugs were torqued to spec. Outstanding service.",
+      "service": "Emergency Repair",
+      "rating": 5
+    },
+    {
+      "author": "Greg R.",
+      "neighborhood": "Vistancia",
+      "text": "Needed a 50A outlet installed in my garage for my EV charger. They did a clean conduit run along the drywall, labeled everything in the breaker panel, and cleaned up thoroughly. Highly recommend!",
+      "service": "EV Charger Installation",
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a city permit for residential electrical work in Peoria, AZ?",
+      "a": "Yes. Major residential projects including main service panel replacements, solar interconnections, and substantial rewiring require permits from the City of Peoria Development and Engineering Department. APM Arizona Electric LLC handles all permit filings and meets the city inspector on-site."
+    },
+    {
+      "q": "Which electric utility serves Peoria homes?",
+      "a": "Most residential neighborhoods in Peoria are served by Arizona Public Service (APS). We coordinate directly with APS for power disconnects, meter pulls, and service line upgrades."
+    },
+    {
+      "q": "Why are the breakers in my Peoria home tripping when the pool pump runs?",
+      "a": "Pool pumps, especially older single-speed induction motors, draw significant start-up current. If combined with air conditioning or water heaters on an overloaded panel or shared breaker phase, the thermal-magnetic trip will activate. We perform load calculations to isolate the pump on a dedicated circuit."
+    },
+    {
+      "q": "Can you install ceiling fans on 20-foot vaulted ceilings in Peoria?",
+      "a": "Yes. Our electricians carry specialized extension ladders, scaffolding, and proper downrods to safely install heavy ceiling fans on high and sloped vaulted ceilings."
+    }
+  ]
+},
+{
+  "slug": "electrician-surprise-az",
+  "city": "Surprise",
+  "navLabel": "Surprise",
+  "metaTitle": "Electrician in Surprise, AZ | APM Arizona Electric LLC",
+  "metaDescription": "Licensed residential electrician in Surprise, AZ. Electrical panel upgrades, EV chargers, GFCI outlets, ceiling fans & safety inspections. Call (480) 806-1832.",
+  "h1": "Electrician in Surprise, AZ",
+  "blurb": "Quality residential electrical contracting across Surprise — from solar-ready panel upgrades in Marley Park and Sierra Montana to EV charging in Surprise Farms and Sun City Grand.",
+  "intro": [
+    "Surprise has transformed into one of the fastest-growing residential hubs in Arizona, featuring prominent master-planned communities like Marley Park, Surprise Farms, Sierra Montana, and active adult retreats like Sun City Grand. While many homes are relatively modern, builders often installed minimum-capacity 100A or 125A panels that struggle to keep up as families add electric vehicles, second refrigerators, swimming pools, and backyard workshops.",
+    "APM Arizona Electric LLC provides Surprise homeowners with certified, code-compliant residential electrical solutions. Under Arizona Registrar of Contractors license ROC #341995, our master electricians handle everything from City of Surprise building permits to main breaker replacements, whole-home rewiring, and custom lighting installations. We focus on durable craftsmanship, upfront pricing, and respectful clean service."
+  ],
+  "landmarks": [
+    "Marley Park",
+    "Surprise Farms",
+    "Sun City Grand",
+    "Sierra Montana",
+    "Mountain Vista Ranch",
+    "Bell Pointe",
+    "Rancho Gabriela",
+    "Greer Ranch"
+  ],
+  "nearby": [
+    "Peoria",
+    "Glendale",
+    "Goodyear",
+    "Phoenix",
+    "Scottsdale"
+  ],
+  "availability": [
+    "Fast dispatch for tripped main breakers, power failures, and burning electrical smells",
+    "City of Surprise permit handling and municipal inspector scheduling",
+    "Flexible morning and weekend service appointments",
+    "APS utility coordination for meter pulls, service drops, and panel capacity upgrades"
+  ],
+  "whyUs": [
+    "Licensed, bonded, and insured electrical contractor (ROC #341995)",
+    "Honest, upfront pricing with zero high-pressure sales tactics",
+    "Expert load calculations ensuring your home electrical system operates well within safety margins",
+    "Direct craftsmanship backed by a 100% satisfaction guarantee"
+  ],
+  "responseTime": "Standard service scheduled within 24 to 48 hours; urgent electrical emergencies prioritized.",
+  "projects": [
+    {
+      "title": "200A Main Service Entrance Upgrade & Surge Protection",
+      "neighborhood": "Marley Park",
+      "description": "Upgraded a 125-amp service panel to a 200-amp all-in-one solar-ready load center with integrated Type 2 surge suppression, coordinating APS meter release and passing City of Surprise final inspection.",
+      "tag": "Panel Upgrade"
+    },
+    {
+      "title": "EV Charger Circuit Installation with NEMA 14-50 Receptacle",
+      "neighborhood": "Surprise Farms",
+      "description": "Ran 50-amp dedicated copper wiring through rigid metallic conduit from the exterior service panel into the three-car garage, installing a commercial-grade industrial receptacle for daily EV charging.",
+      "tag": "EV Chargers"
+    },
+    {
+      "title": "Whole-Home GFCI & Tamper-Resistant Receptacle Upgrade",
+      "neighborhood": "Sun City Grand",
+      "description": "Replaced 42 worn-out receptacles throughout a single-story home with tamper-resistant, self-testing GFCI and AFCI outlets to meet modern National Electrical Code standards.",
+      "tag": "Safety & Rewiring"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Steven P.",
+      "neighborhood": "Marley Park",
+      "text": "APM Arizona Electric installed our EV charger and upgraded our panel. Andres and his crew were courteous, clean, and finished the job in one day. The inspection passed without a hitch.",
+      "service": "Panel Upgrade & EV Charger",
+      "rating": 5
+    },
+    {
+      "author": "Karen L.",
+      "neighborhood": "Sun City Grand",
+      "text": "Had flickering lights in half the house whenever the AC kicked on. They discovered a loose neutral lug in the main panel and tightened everything to proper torque. Very professional and reasonably priced.",
+      "service": "Electrical Troubleshooting",
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should I do if my main breaker in Surprise feels extremely hot to the touch?",
+      "a": "An uncomfortably hot breaker panel indicates high electrical resistance, overloading, or severe summer solar heating. Turn off non-essential high-draw appliances immediately and call our licensed electricians at (480) 806-1832 for prompt diagnostic evaluation."
+    },
+    {
+      "q": "Do you handle City of Surprise building permits for electrical work?",
+      "a": "Yes. All major service changes, subpanel installations, and dedicated 240V circuits requiring permit documentation are fully managed by APM Arizona Electric LLC."
+    },
+    {
+      "q": "Can I run an EV charger and an electric dryer on the same circuit?",
+      "a": "No. The National Electrical Code requires high-power continuous loads like EV chargers to be installed on dedicated individual branch circuits to prevent breaker fatigue and fire hazards."
+    },
+    {
+      "q": "What utility company provides electricity to Surprise, AZ?",
+      "a": "Arizona Public Service (APS) provides electrical utility service to virtually all residential areas within the City of Surprise."
+    }
+  ]
+},
+{
+  "slug": "electrician-goodyear-az",
+  "city": "Goodyear",
+  "navLabel": "Goodyear",
+  "metaTitle": "Electrician in Goodyear, AZ | APM Arizona Electric LLC",
+  "metaDescription": "Licensed residential electrician in Goodyear, AZ. Breaker panel upgrades, EV chargers, pool circuits, ceiling fans & safety diagnostics. Call (480) 806-1832.",
+  "h1": "Electrician in Goodyear, AZ",
+  "blurb": "Trusted residential electrical services throughout Goodyear — from panel expansions in Estrella Mountain Ranch and Palm Valley to EV chargers in Canyon Trails and Sedella.",
+  "intro": [
+    "Goodyear is one of the premier master-planned cities in the Southwest Valley, framed by the scenic Estrella Mountains and upscale neighborhoods like Estrella Mountain Ranch, Palm Valley, PebbleCreek, and Canyon Trails. With hot summer temperatures regularly exceeding 115°F, Goodyear homes rely heavily on continuous air conditioning, pool filtration systems, outdoor patio misting systems, and modern high-draw lifestyle appliances.",
+    "APM Arizona Electric LLC provides comprehensive residential electrical contracting across Goodyear. Holding Arizona license ROC #341995, our electricians bring decades of technical knowledge to every project. Whether upgrading an electrical panel, wiring a custom pool pump or spa subpanel, or installing ceiling fans and recessed LEDs, we ensure code compliance, upfront itemized pricing, and reliable long-term safety."
+  ],
+  "landmarks": [
+    "Estrella Mountain Ranch",
+    "Palm Valley",
+    "PebbleCreek",
+    "Canyon Trails",
+    "Sedella",
+    "Centerra",
+    "Sarival Village",
+    "Las Brisas"
+  ],
+  "nearby": [
+    "Surprise",
+    "Glendale",
+    "Peoria",
+    "Phoenix",
+    "Tempe"
+  ],
+  "availability": [
+    "Rapid dispatch for urgent electrical safety risks and loss-of-power diagnostics",
+    "City of Goodyear municipal permits pulled and inspector walkthroughs handled",
+    "Early morning dispatch to inspect hot attics and outdoor panels before peak heat",
+    "Coordination with APS and SRP for utility meter disconnects and service entrance upgrades"
+  ],
+  "whyUs": [
+    "Licensed, bonded, and insured electrical contractor (ROC #341995)",
+    "Experienced with modern Southwest Valley master-planned community electrical layouts",
+    "Transparent, upfront estimates with zero hidden charges",
+    "Family-owned trade craftsmanship dedicated to residential quality"
+  ],
+  "responseTime": "Standard appointments scheduled Monday–Saturday within 24–48 hours; urgent calls prioritized.",
+  "projects": [
+    {
+      "title": "200-Amp Solar-Ready Service Panel Upgrade",
+      "neighborhood": "Palm Valley",
+      "description": "Replaced an outdated 100A panel that was tripping during peak summer AC cycles with a 200A solar-ready panel, adding whole-home surge suppression and clearing municipal inspection.",
+      "tag": "Panel Upgrade"
+    },
+    {
+      "title": "Spa & Swimming Pool Subpanel Installation",
+      "neighborhood": "Estrella Mountain Ranch",
+      "description": "Installed a 60-amp outdoor subpanel with dedicated GFCI protection for a new in-ground spa, variable-speed pool pump, and landscape LED lighting transformers.",
+      "tag": "Subpanels & Pools"
+    },
+    {
+      "title": "Dual 60A Level 2 Tesla Wall Connector Installation",
+      "neighborhood": "Sedella",
+      "description": "Ran heavy copper conduit from the main panel to the garage to wire a 60-amp hardwired Tesla Wall Connector delivering maximum 48-amp continuous vehicle charging.",
+      "tag": "EV Chargers"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Robert & Tina H.",
+      "neighborhood": "Estrella Mountain Ranch",
+      "text": "We needed a subpanel and GFCI circuit for our new hot tub. APM did a flawless job, ran clean conduit that blended with our stucco, and got the Goodyear permit signed off quickly.",
+      "service": "Spa & Subpanel Wiring",
+      "rating": 5
+    },
+    {
+      "author": "Carlos M.",
+      "neighborhood": "Palm Valley",
+      "text": "Our breaker panel was humming loudly whenever the AC turned on. APM diagnosed a failing 50-amp double-pole breaker and replaced it on the spot. Great honest service.",
+      "service": "Circuit Breaker Repair",
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a permit for an electrical panel upgrade in Goodyear?",
+      "a": "Yes. The City of Goodyear requires permits and inspections for all service panel upgrades and substantial electrical installations. APM Arizona Electric LLC coordinates all permit filings and meets the inspector on-site."
+    },
+    {
+      "q": "Can I add a hot tub or pool pump to my current electrical panel in Goodyear?",
+      "a": "Hot tubs typically require a dedicated 50A or 60A 240V GFCI-protected circuit, which draws significant load. We conduct a formal load calculation to verify your panel capacity and install a dedicated subpanel if necessary."
+    },
+    {
+      "q": "What causes outdoor GFCI outlets to trip in Goodyear summer storms?",
+      "a": "Dust storm winds and heavy monsoon rain frequently drive moisture into unsealed exterior outlets. We replace old plastic covers with heavy-duty in-use weatherproof enclosures and commercial-grade GFCI receptacles."
+    },
+    {
+      "q": "Which utility company services homes in Goodyear, AZ?",
+      "a": "Goodyear is served primarily by Arizona Public Service (APS), with select areas served by Salt River Project (SRP). We work with both utilities regularly."
+    }
+  ]
+},
+{
+  "slug": "electrician-paradise-valley-az",
+  "city": "Paradise Valley",
+  "navLabel": "Paradise Valley",
+  "metaTitle": "Electrician in Paradise Valley, AZ | APM Arizona Electric LLC",
+  "metaDescription": "Licensed residential electrician in Paradise Valley, AZ. High-capacity 400A panel upgrades, architectural lighting, EV chargers & smart home wiring. Call (480) 806-1832.",
+  "h1": "Electrician in Paradise Valley, AZ",
+  "blurb": "Premier residential electrical contracting for luxury estates in Paradise Valley — 400A service upgrades, high-end architectural lighting, smart home automation, and EV infrastructure.",
+  "intro": [
+    "Paradise Valley is renowned for expansive custom estates, dramatic Camelback Mountain and Mummy Mountain vistas, and sophisticated architectural designs. These luxury residences demand sophisticated electrical infrastructure capable of powering multi-zone commercial-grade HVAC systems, extensive landscape lighting, wine cellar refrigeration, home theaters, and multiple high-amperage electric vehicle chargers.",
+    "APM Arizona Electric LLC provides discreet, precision residential electrical contracting tailored to luxury homes across Paradise Valley. Operating under Arizona ROC license #341995, our experienced electricians coordinate 400-amp and 600-amp service entrance upgrades with APS, design clean architectural LED lighting layouts, and install premium surge suppression to protect sensitive automated control systems. We deliver white-glove trade service with meticulous attention to detail."
+  ],
+  "landmarks": [
+    "Camelback Mountain Foothills",
+    "Mummy Mountain",
+    "Clearwater Hills",
+    "Jokake",
+    "Finisterre",
+    "Camelhead Estates",
+    "Mockingbird Lane",
+    "Invergordon"
+  ],
+  "nearby": [
+    "Scottsdale",
+    "Phoenix",
+    "Arcadia",
+    "Tempe",
+    "Mesa"
+  ],
+  "availability": [
+    "White-glove priority dispatch for luxury residential estates",
+    "Town of Paradise Valley building permits and municipal inspections managed from start to finish",
+    "Coordination with Arizona Public Service (APS) for 400A and 600A service capacity upgrades",
+    "Clean, protective drop-cloth protocols for fine flooring, custom plaster, and designer interiors"
+  ],
+  "whyUs": [
+    "Licensed, bonded, and insured ROC #341995 contractor with decades of custom residential experience",
+    "Expertise in high-capacity 400A dual-panel setups, subpanels, and architectural dimming",
+    "Direct master electrician oversight on every luxury estate project",
+    "Transparent written estimates and respectful, spotless clean-up on every visit"
+  ],
+  "responseTime": "Priority scheduling Monday–Saturday within 24 hours; emergency dispatch available for critical outages.",
+  "projects": [
+    {
+      "title": "400-Amp Dual Panel Service Upgrade & Whole-Estate Surge Protection",
+      "neighborhood": "Camelback Mountain Foothills",
+      "description": "Replaced an overburdened 200A service with a 400-amp (dual 200A Class 320) Square D QO service entrance, complete with cascaded Type 1 and Type 2 surge suppression to protect home automation and audio-visual electronics.",
+      "tag": "400A Panel Upgrade"
+    },
+    {
+      "title": "Architectural Recessed LED & Lutron Smart Dimming Integration",
+      "neighborhood": "Mummy Mountain",
+      "description": "Installed 36 museum-grade recessed 2700K warm-dim LED fixtures, integrated with Lutron RadioRA smart lighting controls for multi-scene illumination across an expansive living and dining pavilion.",
+      "tag": "Custom Lighting"
+    },
+    {
+      "title": "Dual 80A Commercial-Grade EV Charging Infrastructure",
+      "neighborhood": "Finisterre",
+      "description": "Engineered and wired two dedicated 80-amp 240V circuits for high-speed Porsche and Tesla Level 2 chargers, including subpanel load management and custom powder-coated conduit routing.",
+      "tag": "EV Chargers"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Jonathan & Elizabeth C.",
+      "neighborhood": "Camelback Foothills",
+      "text": "We completed a major remodel that required a 400-amp service upgrade and extensive custom lighting. Andres and his crew were meticulous, neat, and highly knowledgeable. Passed Town of Paradise Valley inspection seamlessly.",
+      "service": "400A Service & Lighting",
+      "rating": 5
+    },
+    {
+      "author": "Richard W.",
+      "neighborhood": "Mummy Mountain",
+      "text": "Installed dual EV charging stations in our detached garage. Flawless workmanship, conduit hidden expertly, and zero disruption to our home. The only electricians we will call in Paradise Valley.",
+      "service": "EV Charger Installation",
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you install 400-amp electrical panels in Paradise Valley estates?",
+      "a": "Yes. Many Paradise Valley estates require 400-amp (Class 320) or even 600-amp electrical services to power multiple air conditioners, guest casitas, swimming pools, and dual EV chargers. We engineer the load calculations, pull Town of Paradise Valley permits, and coordinate utility upgrades with APS."
+    },
+    {
+      "q": "How do you protect sensitive home automation systems from power surges in Paradise Valley?",
+      "a": "We install cascaded Type 1 and Type 2 whole-home surge protection directly at the main utility disconnect and subpanels. This stops utility line voltage spikes and lightning-induced surges before they reach sensitive home automation processors, security servers, and high-end audio systems."
+    },
+    {
+      "q": "Do I need a Town of Paradise Valley permit for residential electrical work?",
+      "a": "Yes. The Town of Paradise Valley enforces strict residential building and safety codes. APM Arizona Electric LLC handles all engineering submissions, permit applications, and on-site municipal inspection walk-throughs."
+    },
+    {
+      "q": "Which utility provides electricity in Paradise Valley?",
+      "a": "Arizona Public Service (APS) provides electrical utility service throughout the Town of Paradise Valley."
+    }
+  ]
+},
 ];
 
 export const INDUSTRIES = [
@@ -2015,7 +2500,7 @@ export const STATS = [
   { v: "30+", l: "Years Combined Field Experience" },
   { v: "5.0 ★", l: "Average Rating Across 200+ Reviews" },
   { v: "1,000+", l: "Valley Homes & Projects Serviced" },
-  { v: "6", l: "Phoenix Metro Cities Served Daily" },
+  { v: "11", l: "Phoenix Metro Cities Served Daily" },
 ];
 
 export const FAQS = [

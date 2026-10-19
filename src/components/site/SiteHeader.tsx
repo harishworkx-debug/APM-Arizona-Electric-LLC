@@ -63,15 +63,9 @@ export function SiteHeader() {
                   <div className="rounded-3xl border border-border bg-white p-3 shadow-[0_30px_70px_-30px_rgba(15,23,42,0.45)] max-h-[80vh] overflow-y-auto">
                     <div className="grid grid-cols-2 gap-1">
                       {SERVICES.map((s) => (
-                        s.slug === "residential-electrical-phoenix-az" ? (
-                          <Link key={s.slug} to="/$slug" params={{ slug: s.slug }} className="rounded-2xl px-4 py-3 text-sm font-medium text-secondary hover:bg-muted transition-colors">
-                            {s.navLabel}
-                          </Link>
-                        ) : (
-                          <Link key={s.slug} to="/services/$slug" params={{ slug: s.slug }} className="rounded-2xl px-4 py-3 text-sm font-medium text-secondary hover:bg-muted transition-colors">
-                            {s.navLabel}
-                          </Link>
-                        )
+                        <Link key={s.slug} to="/$slug" params={{ slug: s.slug }} className="rounded-2xl px-4 py-3 text-sm font-medium text-secondary hover:bg-muted transition-colors">
+                          {s.navLabel}
+                        </Link>
                       ))}
                     </div>
                     <Link to="/services" className="mt-2 flex items-center justify-between rounded-2xl bg-secondary px-4 py-3 text-sm font-semibold text-white">
@@ -141,15 +135,9 @@ export function SiteHeader() {
               <Link to="/services" className="px-3 py-3 rounded-xl text-secondary font-medium hover:bg-muted">Services</Link>
               <div className="pl-3">
                 {SERVICES.map((s) => (
-                  s.slug === "residential-electrical-phoenix-az" ? (
-                    <Link key={s.slug} to="/$slug" params={{ slug: s.slug }} className="block px-3 py-2.5 rounded-xl text-sm text-muted-foreground hover:bg-muted">
-                      {s.navLabel}
-                    </Link>
-                  ) : (
-                    <Link key={s.slug} to="/services/$slug" params={{ slug: s.slug }} className="block px-3 py-2.5 rounded-xl text-sm text-muted-foreground hover:bg-muted">
-                      {s.navLabel}
-                    </Link>
-                  )
+                  <Link key={s.slug} to="/$slug" params={{ slug: s.slug }} className="block px-3 py-2.5 rounded-xl text-sm text-muted-foreground hover:bg-muted">
+                    {s.navLabel}
+                  </Link>
                 ))}
               </div>
               <div className="px-3 pt-3 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Service Areas</div>

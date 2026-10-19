@@ -12,19 +12,36 @@ import { ServiceDetail } from "@/components/site/ServiceDetail";
 
 export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
+    const slug = params.slug;
+
     if (
-      params.slug === "residential-electrical-services" ||
-      params.slug === "residential-electrical-phoenix-az" ||
-      params.slug === "residential-electrical" ||
-      params.slug === "residential-electrical-services-phoenix-az"
+      slug === "residential-electrical-services" ||
+      slug === "residential-electrical-phoenix-az" ||
+      slug === "residential-electrical" ||
+      slug === "residential-electrical-services-phoenix-az"
     ) {
       throw redirect({
         href: "/residential-electrical-phoenix-az/",
         statusCode: 301,
       });
     }
-    const service = SERVICES.find((s) => s.slug === params.slug);
-    if (service) return { kind: "service" as const, service };
+
+    const exactService = SERVICES.find((s) => s.slug === slug);
+    if (exactService) {
+      throw redirect({
+        href: `/${exactService.slug}/`,
+        statusCode: 301,
+      });
+    }
+
+    const serviceWithSuffix = SERVICES.find((s) => s.slug === `${slug}-phoenix-az`);
+    if (serviceWithSuffix) {
+      throw redirect({
+        href: `/${serviceWithSuffix.slug}/`,
+        statusCode: 301,
+      });
+    }
+
     throw notFound();
   },
   head: ({ loaderData }) => {

@@ -220,23 +220,25 @@ function ContactPage() {
                         className="w-full rounded-xl border border-border bg-surface px-4 py-3.5 text-sm focus:outline-none focus:border-primary focus:bg-white transition-colors"
                       >
                         <option value="">Select a service…</option>
-                        <option value="circuit-breaker-repair">
+                        <option value="circuit-breaker-repair-phoenix-az">
                           Circuit Breaker & Panel Repair
                         </option>
-                        <option value="light-fixture-installation">
+                        <option value="light-fixture-installation-phoenix-az">
                           Light Fixture Installation
                         </option>
-                        <option value="ceiling-fan-installation">Ceiling Fan Installation</option>
+                        <option value="ceiling-fan-installation-phoenix-az">
+                          Ceiling Fan Installation
+                        </option>
                         <option value="residential-electrical-phoenix-az">
                           Residential Electrical & Rewiring
                         </option>
-                        <option value="kitchen-electrical-repairs">
+                        <option value="kitchen-electrical-repairs-phoenix-az">
                           Kitchen Electrical & GFCI
                         </option>
-                        <option value="electrical-troubleshooting">
+                        <option value="electrical-troubleshooting-phoenix-az">
                           Electrical Troubleshooting & Diagnostics
                         </option>
-                        <option value="electrical-maintenance">
+                        <option value="electrical-maintenance-phoenix-az">
                           Safety Inspection & Maintenance
                         </option>
                         <option value="other">Other Electrical Project</option>

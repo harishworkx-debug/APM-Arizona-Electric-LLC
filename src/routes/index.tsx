@@ -307,12 +307,18 @@ const ICON_MAP: Record<string, typeof IconHome> = {
   "residential-electrical-phoenix-az": IconHome,
   "residential-electrical-services": IconHome,
   "residential-electrical": IconHome,
+  "ceiling-fan-installation-phoenix-az": IconFan,
   "ceiling-fan-installation": IconFan,
+  "light-fixture-installation-phoenix-az": IconLightbulb,
   "light-fixture-installation": IconLightbulb,
-  "circuit-breaker-repairs": IconBolt,
+  "circuit-breaker-repair-phoenix-az": IconBolt,
   "circuit-breaker-repair": IconBolt,
+  "circuit-breaker-repairs": IconBolt,
+  "kitchen-electrical-repairs-phoenix-az": IconSparkle,
   "kitchen-electrical-repairs": IconSparkle,
+  "electrical-maintenance-phoenix-az": IconShield,
   "electrical-maintenance": IconShield,
+  "electrical-troubleshooting-phoenix-az": IconWrench,
   "electrical-troubleshooting": IconWrench,
 };
 
@@ -340,10 +346,7 @@ function ServicesGrid() {
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((s, i) => {
             const Icon = ICON_MAP[s.slug] ?? IconBolt;
-            const isResidential = s.slug === "residential-electrical-phoenix-az";
-            const linkProps = isResidential
-              ? { to: "/$slug" as const, params: { slug: s.slug } }
-              : { to: "/services/$slug" as const, params: { slug: s.slug } };
+            const linkProps = { to: "/$slug" as const, params: { slug: s.slug } };
 
             return (
               <Reveal key={s.slug} delay={i * 0.04}>

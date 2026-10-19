@@ -260,7 +260,7 @@ export function ServiceDetail({ service: s }: { service: Service }) {
             {related.map((r) => (
               <Link
                 key={r.slug}
-                to={r.slug === "residential-electrical-phoenix-az" ? "/$slug" : "/services/$slug"}
+                to="/$slug"
                 params={{ slug: r.slug }}
                 className="group overflow-hidden rounded-3xl bg-white border border-border transition-all hover:-translate-y-1 hover:shadow-elegant"
               >

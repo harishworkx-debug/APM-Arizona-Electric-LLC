@@ -5,7 +5,7 @@ import { SERVICES, LOCATIONS } from "./business";
  * All destination URLs include a trailing slash to match sitemap and canonical tags.
  */
 const STATIC_REDIRECTS: Record<string, string> = {
-  // Residential Electrical Services -> Canonical Phoenix AZ URL
+  // Residential Electrical Services aliases -> Canonical Phoenix AZ URL
   "/services/residential-electrical-services": "/residential-electrical-phoenix-az/",
   "/services/residential-electrical-services/": "/residential-electrical-phoenix-az/",
   "/services/residential-electrical-phoenix-az": "/residential-electrical-phoenix-az/",
@@ -19,14 +19,9 @@ const STATIC_REDIRECTS: Record<string, string> = {
   "/residential-electrical": "/residential-electrical-phoenix-az/",
   "/residential-electrical/": "/residential-electrical-phoenix-az/",
 
-  // Legacy Service Slugs with -phoenix-az
-  "/light-fixture-installation-phoenix-az": "/services/light-fixture-installation/",
-  "/ceiling-fan-installation-phoenix-az": "/services/ceiling-fan-installation/",
-  "/circuit-breaker-repair-phoenix-az": "/services/circuit-breaker-repair/",
-  "/kitchen-electrical-repairs-phoenix-az": "/services/kitchen-electrical-repairs/",
-  "/electrical-maintenance-phoenix-az": "/services/electrical-maintenance/",
-  "/electrical-troubleshooting-phoenix-az": "/services/electrical-troubleshooting/",
+  // Commercial Electrical
   "/commercial-electrical-services-phoenix-az": "/services/",
+  "/commercial-electrical-services-phoenix-az/": "/services/",
 
   // Location Redirects: /locations/phoenix-az, /phoenix-az, /electricion-phoenix-az -> /electrician-phoenix-az/
   "/locations/phoenix-az": "/electrician-phoenix-az/",
@@ -72,12 +67,12 @@ const STATIC_REDIRECTS: Record<string, string> = {
   "/electricion-glendale-az/": "/electrician-glendale-az/",
 };
 
-// Build sets for dynamic lookup
+// Build sets and maps for dynamic lookup
 const serviceSlugSet = new Set(SERVICES.map((s) => s.slug));
 const locationSlugSet = new Set(LOCATIONS.map((l) => l.slug));
 
 export function getRedirectDestination(rawPathname: string): string | null {
-  // Normalize by stripping any trailing slash for matching
+  // Normalize path by stripping trailing slashes for lookup
   const cleanPath = rawPathname.replace(/\/+$/, "") || "/";
 
   // 1. Direct match in static redirects table
@@ -85,7 +80,26 @@ export function getRedirectDestination(rawPathname: string): string | null {
     return STATIC_REDIRECTS[cleanPath];
   }
 
-  // 2. Any /locations/* path redirected to /electrician-[slug]/
+  // 2. Any /services/* path redirected to flat root /[slug]-phoenix-az/
+  if (cleanPath.startsWith("/services/")) {
+    const serviceSlug = cleanPath.replace("/services/", "");
+    if (serviceSlugSet.has(serviceSlug)) {
+      return `/${serviceSlug}/`;
+    }
+    const withPhoenix = `${serviceSlug}-phoenix-az`;
+    if (serviceSlugSet.has(withPhoenix)) {
+      return `/${withPhoenix}/`;
+    }
+  }
+
+  // 3. Direct service slug requested without -phoenix-az suffix -> redirect to flat -phoenix-az
+  const directSlug = cleanPath.replace(/^\//, "");
+  const suffixed = `${directSlug}-phoenix-az`;
+  if (serviceSlugSet.has(suffixed)) {
+    return `/${suffixed}/`;
+  }
+
+  // 4. Any /locations/* path redirected to /electrician-[slug]/
   if (cleanPath.startsWith("/locations/")) {
     const slug = cleanPath.replace("/locations/", "");
     const candidate = slug.startsWith("electrician-") ? slug : `electrician-${slug}`;
@@ -94,7 +108,7 @@ export function getRedirectDestination(rawPathname: string): string | null {
     }
   }
 
-  // 3. Typo /electricion-* redirected to /electrician-*
+  // 5. Typo /electricion-* redirected to /electrician-*
   if (cleanPath.startsWith("/electricion-")) {
     const candidate = cleanPath.replace("/electricion-", "electrician-");
     if (locationSlugSet.has(candidate)) {
@@ -102,23 +116,13 @@ export function getRedirectDestination(rawPathname: string): string | null {
     }
   }
 
-  // 4. Missing trailing slash on canonical routes (to prevent duplicate URL indexing)
-  if (cleanPath === "/residential-electrical-phoenix-az" && !rawPathname.endsWith("/")) {
-    return "/residential-electrical-phoenix-az/";
+  // 6. Enforce trailing slash on canonical routes (to prevent duplicate URL indexing)
+  if (serviceSlugSet.has(directSlug) && !rawPathname.endsWith("/")) {
+    return `/${directSlug}/`;
   }
 
-  if (cleanPath.startsWith("/electrician-") && !rawPathname.endsWith("/")) {
-    const slug = cleanPath.replace("/", "");
-    if (locationSlugSet.has(slug)) {
-      return `/${slug}/`;
-    }
-  }
-
-  if (cleanPath.startsWith("/services/") && !rawPathname.endsWith("/")) {
-    const slug = cleanPath.replace("/services/", "");
-    if (serviceSlugSet.has(slug)) {
-      return `/services/${slug}/`;
-    }
+  if (locationSlugSet.has(directSlug) && !rawPathname.endsWith("/")) {
+    return `/${directSlug}/`;
   }
 
   return null;
