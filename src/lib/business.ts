@@ -939,6 +939,431 @@ export const SERVICES: Service[] = [
       "kitchen-electrical-repairs",
     ],
   },
+  {
+    slug: "outlet-and-switch-repair",
+    title: "Outlet & Switch Repair",
+    navLabel: "Outlets & Switches",
+    metaTitle: "Outlet & Switch Repair Phoenix, AZ | APM Arizona Electric LLC",
+    metaDescription:
+      "Licensed outlet and switch repair in Phoenix, AZ. Fixing loose plugs, buzzing dimmers, warm switches & burnt receptacles. Fast response: (480) 806-1832.",
+    h1: "Outlet & Switch Repair in Phoenix, AZ",
+    short: "Diagnose and repair faulty outlets, dead switches, buzzing dimmers, and loose wall plugs.",
+    description:
+      "From loose receptacles that spark when plugging in vacuums to discolored switch faceplates, our licensed electricians repair and replace worn electrical devices to current NEC code.",
+    intro: [
+      "In the desert climate of Greater Phoenix, wall receptacles and light switches endure significant mechanical and thermal wear. Plugs that slip out easily or outlets that feel warm indicate degraded contact tension inside the box, which generates high-resistance electrical arcing and creates a serious fire hazard.",
+      "APM Arizona Electric LLC replaces cracked, buzzing, or non-functioning devices with commercial-grade, tamper-resistant receptacles and modern smart switches. We verify proper grounding, secure copper terminations, and make sure every box meets modern National Electrical Code standards.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=70",
+    benefits: [
+      "Commercial-grade, tamper-resistant (TR) safety outlets",
+      "Elimination of dangerous arcing and sparking hazards",
+      "Modern smart switch, dimmer, and rocker upgrade options",
+      "Full ground path verification on every replaced device",
+    ],
+    features: [
+      "Loose receptacle contact tension replacement",
+      "Buzzing, humming, and hot switch diagnostics and repair",
+      "3-way and 4-way hallway and staircase switch wiring",
+      "Smart WiFi switches, timers, and digital dimmers",
+      "Tamper-resistant and child-safe receptacle installation",
+      "Dedicated 20-amp appliance outlet installations",
+    ],
+    problems: [
+      "Plugs sliding out of the wall on their own",
+      "Outlets with brown, scorched, or melted plastic around slots",
+      "Light switches that crackle or spark when toggled",
+      "Switches that feel warm or hot to the touch during normal use",
+    ],
+    process: [
+      {
+        n: "01",
+        t: "Circuit Isolation",
+        d: "We identify the corresponding breaker, test for zero voltage, and safely de-energize the circuit.",
+      },
+      {
+        n: "02",
+        t: "Box & Wire Inspection",
+        d: "We inspect conductors for brittle insulation, aluminum wiring, and improper back-stabbing.",
+      },
+      {
+        n: "03",
+        t: "Secure Installation",
+        d: "We install heavy-duty, side-wired commercial-grade devices with proper grounding.",
+      },
+      {
+        n: "04",
+        t: "Load & Polarity Test",
+        d: "Every receptacle is tested with a digital circuit analyzer for correct polarity and ground fault safety.",
+      },
+    ],
+    whyUs: [
+      "We strictly avoid weak push-in back-stab connections that cause future arcing",
+      "ROC #341995 licensed, bonded, and insured electricians on every job",
+      "Upfront pricing with no surprises or hidden material surcharges",
+      "Full clean-up and respectful treatment of your home",
+    ],
+    faqs: [
+      {
+        q: "Why do my wall plugs keep falling out?",
+        a: "Internal metal contact blades lose spring tension over years of use. Loose contacts create electrical resistance and arcing. The only safe solution is replacing the receptacle with a new commercial-grade unit.",
+      },
+      {
+        q: "Why does my light switch feel warm when turned on?",
+        a: "Standard on/off switches should never feel warm to the touch. Warmth indicates an overloaded switch or high-resistance loose wiring inside the wall box. Dimmer switches may be mildly warm, but should never be hot.",
+      },
+      {
+        q: "Can I replace two-prong ungrounded outlets with three-prong outlets?",
+        a: "You cannot simply swap a two-prong outlet for a three-prong outlet without a ground path. Per NEC code, you must either run a dedicated equipment ground wire, install a GFCI receptacle labeled 'No Equipment Ground', or update the circuit wiring.",
+      },
+    ],
+    related: [
+      "gfci-outlet-installation",
+      "residential-electrical-services",
+      "electrical-troubleshooting",
+    ],
+  },
+  {
+    slug: "gfci-outlet-installation",
+    title: "GFCI Outlet Installation & Repair",
+    navLabel: "GFCI Outlets",
+    metaTitle: "GFCI Outlet Installation Phoenix, AZ | APM Arizona Electric LLC",
+    metaDescription:
+      "Code-compliant GFCI outlet installation & testing in Phoenix, AZ kitchens, bathrooms, garages & outdoor patios. Licensed electrician: (480) 806-1832.",
+    h1: "GFCI Outlet Installation & Repair in Phoenix, AZ",
+    short: "Protect your family from electrical shock near water sources with code-mandated GFCI receptacles.",
+    description:
+      "Ground Fault Circuit Interrupters (GFCI) protect against fatal electric shock by cutting power in milliseconds when moisture or ground faults occur. We install and service GFCI protection throughout Phoenix.",
+    intro: [
+      "Ground Fault Circuit Interrupter (GFCI) protection is mandated by the National Electrical Code in any area where electricity and moisture might meet: kitchens, bathrooms, garages, laundry rooms, crawlspaces, outdoor patios, and pool equipment areas.",
+      "A faulty or outdated GFCI that will not reset leaves circuits dead, while a failed GFCI that fails closed poses a lethal shock hazard. APM Arizona Electric LLC tests, upgrades, and installs weather-resistant and tamper-resistant GFCI devices across the Valley to keep your home fully protected and code-compliant.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1544724559-5622074591e6?auto=format&fit=crop&w=1600&q=70",
+    benefits: [
+      "Sub-second shutoff to prevent fatal electric shock",
+      "Full compliance with City of Phoenix and NEC residential codes",
+      "Weather-resistant (WR) outdoor enclosures that resist monsoon rain",
+      "Protection for downstream outlets from a single line/load unit",
+    ],
+    features: [
+      "Kitchen countertop GFCI circuit installation & daisy-chain testing",
+      "Bathroom vanity GFCI replacement and dedicated 20-amp circuiting",
+      "Outdoor weather-resistant (WR) GFCI receptacles with in-use bubble covers",
+      "Garage, workshop, and unfinished basement GFCI additions",
+      "Self-testing GFCI receptacles that run automatic internal diagnostics",
+      "Dual-function AFCI/GFCI breaker installations at the panel",
+    ],
+    problems: [
+      "GFCI reset button pops immediately when pressed",
+      "Dead outlets in bathroom or kitchen with no obvious breaker tripped",
+      "Outdoor outlets shorting out during summer monsoon rains",
+      "Older home with standard non-GFCI receptacles within 6 feet of sinks",
+    ],
+    process: [
+      {
+        n: "01",
+        t: "Fault Diagnostic",
+        d: "We test whether the GFCI itself is defective or if real current leakage is occurring on downstream loads.",
+      },
+      {
+        n: "02",
+        t: "Line vs Load Verification",
+        d: "We trace incoming hot/neutral wires to ensure line and load terminals are correctly paired.",
+      },
+      {
+        n: "03",
+        t: "Installation & Weatherproofing",
+        d: "We install tamper-resistant (TR) and weather-rated (WR) units with heavy-duty moisture gaskets.",
+      },
+      {
+        n: "04",
+        t: "Trip Time Calibration",
+        d: "We simulate ground faults using calibrated test meters to ensure sub-second trip response.",
+      },
+    ],
+    whyUs: [
+      "We use self-testing GFCI models that notify you if internal protection degrades",
+      "Licensed Arizona contractor (ROC #341995) adhering to current NEC guidelines",
+      "Properly wired line and load terminals to avoid dangerous false protection",
+      "Clean, professional service with transparent upfront estimates",
+    ],
+    faqs: [
+      {
+        q: "Why won't my GFCI outlet reset when I push the button?",
+        a: "A GFCI won't reset if there is no power reaching the unit, if line and load wires are reversed, if there is an active ground fault on the circuit, or if the internal sensing mechanism has failed from a power surge.",
+      },
+      {
+        q: "Where does building code require GFCI outlets in Arizona?",
+        a: "Per NEC guidelines adopted in Phoenix, GFCIs are required in kitchens (countertop receptacles), bathrooms, laundry rooms, garages, outdoors, crawl spaces, and within 6 feet of any sink or water source.",
+      },
+      {
+        q: "What is the difference between a standard GFCI and an outdoor WR GFCI?",
+        a: "Weather-resistant (WR) GFCIs are manufactured with UV-stabilized thermoplastics and corrosion-resistant nickel-plated contacts designed to survive intense Arizona heat and driving monsoon storms without corroding.",
+      },
+    ],
+    related: [
+      "outlet-and-switch-repair",
+      "residential-electrical-services",
+      "kitchen-electrical-repairs",
+    ],
+  },
+  {
+    slug: "whole-home-electrical-inspections",
+    title: "Whole-Home Electrical Inspections",
+    navLabel: "Electrical Inspections",
+    metaTitle: "Whole-Home Electrical Inspection Phoenix, AZ | APM Arizona Electric LLC",
+    metaDescription:
+      "Comprehensive 50-point electrical safety inspections for Phoenix home buyers and owners. Panel checks, wiring evaluation & code compliance. Call (480) 806-1832.",
+    h1: "Whole-Home Electrical Safety Inspections in Phoenix, AZ",
+    short: "Uncover hidden electrical hazards, outdated panels, and ungrounded wiring before they cause fires.",
+    description:
+      "Whether buying a home in the Valley or evaluating an older property, our comprehensive 50-point electrical safety inspections identify hidden fire hazards, unpermitted work, and code violations.",
+    intro: [
+      "Electrical systems are largely hidden behind drywall and inside attics where problems develop unnoticed until a breaker fails to trip or a cable overheats. In Phoenix, where decades of rapid home construction have resulted in a mix of Zinsco panels, aluminum wiring, and unpermitted DIY renovations, an objective electrical inspection is essential.",
+      "APM Arizona Electric LLC conducts rigorous, thorough electrical inspections for prospective home buyers, real estate transactions, insurance requirements, and safety-conscious homeowners. We provide a detailed written report with prioritized recommendations and upfront repair costs.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=70",
+    benefits: [
+      "Comprehensive 50-point safety checklist covering all electrical systems",
+      "Written report with photos and clear repair priorities",
+      "Inspection by licensed electricians (ROC #341995), not general inspectors",
+      "Negotiating leverage during home purchases and real estate transactions",
+    ],
+    features: [
+      "Main electrical panel and meter base inspection for heat damage and corrosion",
+      "Circuit breaker rating versus wire gauge compliance checks",
+      "Branch circuit evaluation: identifying knob & tube, cloth wiring, and aluminum branch circuits",
+      "Grounding electrode system and bonding verification (water pipe and Ufer ground)",
+      "GFCI and AFCI protection testing in all mandated locations",
+      "Smoke and carbon monoxide detector code-compliance check",
+    ],
+    problems: [
+      "Preparing to buy or sell a residential property in Greater Phoenix",
+      "Home insurance company requesting an electrical certificate or panel verification",
+      "Older home (built before 1990) that has never had an electrical evaluation",
+      "Frequent breaker trips, flickering lights, or unexplained burning odors",
+    ],
+    process: [
+      {
+        n: "01",
+        t: "Panel & Service Check",
+        d: "We pull the main panel dead-front to inspect bussing, breaker condition, neutral bars, and grounding electrode connections.",
+      },
+      {
+        n: "02",
+        t: "Branch Circuit & Device Audit",
+        d: "We test receptacles, switches, GFCI trip responses, and ceiling fixtures across every room of the home.",
+      },
+      {
+        n: "03",
+        t: "Attic & Major Appliance Review",
+        d: "We evaluate junction boxes, cable routing in extreme heat zones, and dedicated AC/water heater disconnects.",
+      },
+      {
+        n: "04",
+        t: "Actionable Report",
+        d: "You receive an itemized, clear report categorizing immediate safety hazards versus recommended upgrades.",
+      },
+    ],
+    whyUs: [
+      "We are licensed electrical contractors, not generalists who merely look at outlets",
+      "Honest, unbiased evaluations without pressure tactics or exaggerated claims",
+      "Accurate itemized estimates for any necessary code corrections",
+      "Deep experience with historic Phoenix neighborhoods and Valley building practices",
+    ],
+    faqs: [
+      {
+        q: "How does an electrician's inspection differ from a standard home inspector?",
+        a: "General home inspectors do a surface-level walkthrough and cannot remove panel components or conduct deep circuit diagnostics. Our licensed electricians open panels, test wire gauges against breaker amperage, examine grounding paths, and accurately diagnose hazards.",
+      },
+      {
+        q: "What dangerous electrical panels are common in older Phoenix homes?",
+        a: "Federal Pacific Electric (FPE) Stab-Lok panels and Zinsco/Sylvania panels are notorious for failing to trip during overcurrent conditions, creating severe fire risks. We verify panel brands and bussing conditions during every inspection.",
+      },
+      {
+        q: "How long does a full home electrical inspection take?",
+        a: "A typical 1,500 to 3,000 sq ft home inspection takes between 1.5 to 2.5 hours, depending on the age and complexity of the home.",
+      },
+    ],
+    related: [
+      "electrical-panel-upgrades",
+      "electrical-wiring-and-rewiring",
+      "electrical-maintenance",
+    ],
+  },
+  {
+    slug: "surge-protection-installation",
+    title: "Whole-Home Surge Protection",
+    navLabel: "Surge Protection",
+    metaTitle: "Whole-Home Surge Protection Phoenix, AZ | APM Arizona Electric LLC",
+    metaDescription:
+      "Protect your AC compressor, smart appliances & electronics from Phoenix monsoon lightning and grid surges. Type 2 surge installation: (480) 806-1832.",
+    h1: "Whole-Home Surge Protection in Phoenix, AZ",
+    short: "Shield expensive HVAC units, smart appliances, and electronics from destructive voltage spikes.",
+    description:
+      "Phoenix summer monsoons bring intense lightning strikes, while power grid switching creates daily micro-surges that degrade electronics. We install commercial-grade Type 2 surge protectors directly at your main panel.",
+    intro: [
+      "Most homeowners believe standard power strips protect their investments. In reality, strip protectors only shield the single plugged-in item from minor spikes — leaving expensive HVAC compressors, variable-speed pool pumps, smart refrigerators, and home automation systems completely unprotected.",
+      "Phoenix experiences severe lightning activity during monsoon season, along with heavy electrical utility grid switching as millions of air conditioners cycle on and off. A whole-home surge protective device (SPD) installed at your main electrical panel diverts dangerous excess voltage into the earth in nanoseconds.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&w=1600&q=70",
+    benefits: [
+      "Whole-house coverage protecting HVAC, appliances, and electronics",
+      "Type 2 panel-mounted SPD with industrial-grade surge suppression ratings",
+      "Meets 2020/2023 NEC code requirements for modern residential service",
+      "Manufacturer warranties backing connected home appliances",
+    ],
+    features: [
+      "Type 1 and Type 2 Surge Protective Device (SPD) installations at the main panel",
+      "High surge current capacity ratings (50kA to 100kA per phase)",
+      "LED diagnostic status indicators showing active surge protection status",
+      "Dedicated two-pole breaker installation for immediate surge diversion",
+      "Grounding electrode system testing to ensure maximum surge dissipation",
+      "Subpanel surge protection for detached workshops, casitas, and pool panels",
+    ],
+    problems: [
+      "Frequent monsoon thunderstorms and lightning strikes across the Valley",
+      "HVAC circuit boards or smart appliance control panels burning out prematurely",
+      "High-dollar investments in electronics, home theaters, or EV chargers",
+      "Unexplained electrical glitches or tripped sensitive electronics after grid blips",
+    ],
+    process: [
+      {
+        n: "01",
+        t: "Panel Assessment",
+        d: "We inspect your main electrical panel to verify available breaker space and measure service grounding resistance.",
+      },
+      {
+        n: "02",
+        t: "SPD Sizing",
+        d: "We select the optimal surge current capacity based on your service size, geographic exposure, and equipment load.",
+      },
+      {
+        n: "03",
+        t: "Direct Bus Installation",
+        d: "We mount the surge protector with the shortest possible conductor lengths directly adjacent to the main breaker.",
+      },
+      {
+        n: "04",
+        t: "Indicator Verification",
+        d: "We power up the device, verify green diagnostic LED indicators, and document the manufacturer warranty details.",
+      },
+    ],
+    whyUs: [
+      "We install UL 1449 4th Edition listed commercial-grade surge suppression units",
+      "Electricians maintain short lead lengths for maximum response time (<1 nanosecond)",
+      "ROC #341995 licensed, bonded, and insured with verified Arizona track record",
+      "We inspect your Ufer and ground rods to guarantee the surge has a low-resistance path to earth",
+    ],
+    faqs: [
+      {
+        q: "Why isn't a power strip surge protector enough?",
+        a: "Power strips cannot protect 240V appliances like your air conditioner compressor, oven, heat pump, or electric water heater. They also react slower and have lower energy absorption capacity than panel-mounted Type 2 surge protectors.",
+      },
+      {
+        q: "Does the current National Electrical Code require whole-home surge protection?",
+        a: "Yes. Beginning with the 2020 NEC (Article 242.08), all new homes and service upgrades/panel replacements require an approved Surge Protective Device (SPD) to protect against transient overvoltages.",
+      },
+      {
+        q: "How long does a whole-home surge protector last?",
+        a: "Quality surge protective devices typically last 5 to 10 years, depending on the frequency and magnitude of local surges and lightning strikes. Most models feature LED indicator lights that change color when the internal metal oxide varistors (MOVs) are depleted.",
+      },
+    ],
+    related: [
+      "electrical-panel-upgrades",
+      "electrical-maintenance",
+      "residential-electrical-services",
+    ],
+  },
+  {
+    slug: "emergency-electrical-troubleshooting",
+    title: "Emergency Electrical Troubleshooting",
+    navLabel: "Emergency Electrical",
+    metaTitle: "Emergency Electrical Troubleshooting Phoenix, AZ | APM Arizona Electric LLC",
+    metaDescription:
+      "Fast, licensed emergency electrical diagnostics in Phoenix, AZ. Burning smell, power outages, sparking panels & dead circuits. Call (480) 806-1832.",
+    h1: "Emergency Electrical Troubleshooting in Phoenix, AZ",
+    short: "Rapid electrical diagnostics when facing sudden power loss, burning odors, or sparking panels.",
+    description:
+      "Electrical emergencies can strike without warning — from melted breaker stabs to partial power loss during 115°F Phoenix heatwaves. We provide prompt diagnostics and code-compliant emergency repairs.",
+    intro: [
+      "An electrical emergency in the Arizona desert is more than an inconvenience — when your power fails during peak summer temperatures or an electrical panel emits a burning smell, it presents an immediate hazard to your family's safety and home.",
+      "APM Arizona Electric LLC responds promptly to urgent electrical service calls throughout Phoenix, Tempe, Mesa, Scottsdale, Chandler, and Glendale. Our licensed electricians pinpoint root causes rapidly using specialized diagnostic instruments, eliminate fire hazards, and restore safe power.",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1544724559-5622074591e6?auto=format&fit=crop&w=1600&q=70",
+    benefits: [
+      "Rapid dispatch across the Phoenix metropolitan area",
+      "ROC #341995 licensed electricians equipped with full diagnostic gear",
+      "Immediate hazard isolation to protect against electrical fires",
+      "Transparent emergency pricing with upfront repair authorization",
+    ],
+    features: [
+      "Sudden partial or whole-house power outage troubleshooting",
+      "Burning plastic odor and hot electrical panel diagnostics",
+      "Main breaker buzzing, humming, or tripping under AC load",
+      "Sparking outlets, switches, or junction box failures",
+      "Coordination with APS and SRP for emergency service disconnects",
+      "Temporary power restoration while awaiting major panel rebuilds",
+    ],
+    problems: [
+      "Smell of burning plastic or ozone coming from the breaker box",
+      "Half the power in your home is out while the other half works (lost leg of power)",
+      "Main breaker tripped and will not reset, leaving your AC down in summer heat",
+      "Loud buzzing, popping, or visible sparks from a wall receptacle or panel",
+    ],
+    process: [
+      {
+        n: "01",
+        t: "Immediate Safety Advice",
+        d: "When you call, we advise you on whether to shut down the main breaker or contact APS/SRP while an electrician is en route.",
+      },
+      {
+        n: "02",
+        t: "On-Site Root Cause Triage",
+        d: "We utilize thermal imaging, multimeter voltage drop tests, and circuit tracers to find the exact fault location.",
+      },
+      {
+        n: "03",
+        t: "Hazard Isolation",
+        d: "We isolate the damaged component to render the home safe from fire or shock before performing repairs.",
+      },
+      {
+        n: "04",
+        t: "Safe Power Restoration",
+        d: "We replace defective breakers, repair melted neutral connections, or install emergency bypasses to restore vital circuits.",
+      },
+    ],
+    whyUs: [
+      "We never take advantage of an emergency with exploitative pricing",
+      "Licensed and insured professionals who fix the underlying issue, not just symptoms",
+      "Fully stocked service vans carrying common breakers, panels, and heavy-gauge wire",
+      "Local Tempe-based shop ensuring quick response times across the East Valley and Phoenix",
+    ],
+    faqs: [
+      {
+        q: "What should I do if I smell burning plastic from my electrical panel?",
+        a: "Immediately turn off the main breaker if it is safe to approach, evacuate the area if you see active smoke or flames, call 911, and contact our emergency dispatch at (480) 806-1832. Do not attempt to touch or remove the panel cover.",
+      },
+      {
+        q: "Why is half of my house without power while the other half works?",
+        a: "Homes in the US receive two 120-volt 'legs' of electricity from the utility. If one leg is lost — due to a blown utility transformer fuse, a severed underground feeder, or a burned main breaker stab — only half your 120V circuits and none of your 240V appliances (AC, dryer, oven) will operate.",
+      },
+      {
+        q: "Is a buzzing circuit breaker considered an emergency?",
+        a: "Yes. A loud buzzing or vibrating breaker often indicates an internal mechanical failure, severe arcing, or continuous overcurrent that hasn't tripped the thermal trip mechanism. This requires urgent professional evaluation.",
+      },
+    ],
+    related: [
+      "circuit-breaker-repair",
+      "electrical-troubleshooting",
+      "electrical-panel-upgrades",
+    ],
+  },
 ];
 
 export type LocationProject = {

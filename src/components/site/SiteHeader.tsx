@@ -60,7 +60,7 @@ export function SiteHeader() {
                   initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }} transition={{ duration: 0.18 }}
                   className="absolute left-1/2 top-full w-[520px] -translate-x-1/2 pt-3"
                 >
-                  <div className="rounded-3xl border border-border bg-white p-3 shadow-[0_30px_70px_-30px_rgba(15,23,42,0.45)]">
+                  <div className="rounded-3xl border border-border bg-white p-3 shadow-[0_30px_70px_-30px_rgba(15,23,42,0.45)] max-h-[80vh] overflow-y-auto">
                     <div className="grid grid-cols-2 gap-1">
                       {SERVICES.map((s) => (
                         <Link key={s.slug} to="/services/$slug" params={{ slug: s.slug }} className="rounded-2xl px-4 py-3 text-sm font-medium text-secondary hover:bg-muted transition-colors">

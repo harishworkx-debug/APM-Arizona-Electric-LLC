@@ -32,7 +32,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Service Pages (10 URLs) -->
+  <!-- Service Pages (15 URLs) -->
   <url>
     <loc>https://www.apmarizonaelectric.com/services/residential-electrical-services/</loc>
     <lastmod>2026-10-19</lastmod>
@@ -89,6 +89,36 @@
   </url>
   <url>
     <loc>https://www.apmarizonaelectric.com/services/electrical-wiring-and-rewiring/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.apmarizonaelectric.com/services/outlet-and-switch-repair/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.apmarizonaelectric.com/services/gfci-outlet-installation/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.apmarizonaelectric.com/services/whole-home-electrical-inspections/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.apmarizonaelectric.com/services/surge-protection-installation/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.apmarizonaelectric.com/services/emergency-electrical-troubleshooting/</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
