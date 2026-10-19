@@ -14,7 +14,7 @@ import {
   IconMapPin,
 } from "@/components/site/Icons";
 
-const ABOUT_TITLE = "About APM Arizona Electric LLC | Phoenix, AZ Electricians";
+const ABOUT_TITLE = "About Arizona Electric | Phoenix, AZ Electricians";
 const ABOUT_DESC =
   "We are a family-owned electrical contractor providing residential and commercial electrical services, troubleshooting, and repairs across the Phoenix Metro Area.";
 
@@ -120,7 +120,7 @@ function AboutPage() {
           </Reveal>
           <Reveal delay={0.05}>
             <span className="mt-6 eyebrow bg-white/10 border-white/20 text-white">
-              About APM Arizona Electric LLC
+              About Arizona Electric
             </span>
           </Reveal>
           <Reveal delay={0.1}>
@@ -157,14 +157,14 @@ function AboutPage() {
               </h2>
               <div className="mt-6 space-y-5 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  <strong>The Inspiration:</strong> APM Arizona Electric LLC was founded in enduring
+                  <strong>The Inspiration:</strong> Arizona Electric was founded in enduring
                   tribute to <strong>Andres Portillo Marin (1962–2002)</strong>, whose 40 years as a
                   utility lineman set the benchmark for our discipline, technical precision, and
                   unwavering respect for high-voltage electricity.
                 </p>
                 <p>
-                  <strong>Our Company Today:</strong> Carrying that heritage forward, APM Arizona
-                  Electric LLC is an independent, family-owned electrical contracting company based
+                  <strong>Our Company Today:</strong> Carrying that heritage forward, Arizona
+                  Electric is an independent, family-owned electrical contracting company based
                   in Tempe and serving the entire Phoenix Metro Area. Our active electricians bring
                   over <strong>30 years of combined hands-on field experience</strong> solving
                   residential panel, wiring, and lighting challenges.
@@ -347,7 +347,7 @@ function AboutPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-4 text-white/70 text-lg">
-              Contact APM Arizona Electric for dependable electrical repairs today.
+              Contact Arizona Electric for dependable electrical repairs today.
             </p>
           </Reveal>
           <Reveal delay={0.15}>

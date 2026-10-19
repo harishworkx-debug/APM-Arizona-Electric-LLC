@@ -5,9 +5,9 @@ import { Reveal } from "@/components/site/Reveal";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconArrowRight, IconPhone, IconStar } from "@/components/site/Icons";
 
-const REVIEWS_TITLE = "Customer Reviews | APM Arizona Electric LLC";
+const REVIEWS_TITLE = "Customer Reviews | Arizona Electric";
 const REVIEWS_DESC =
-  "Read authentic reviews from homeowners across Phoenix, Mesa, Scottsdale, and surrounding areas who trust APM Arizona Electric LLC.";
+  "Read authentic reviews from homeowners across Phoenix, Mesa, Scottsdale, and surrounding areas who trust Arizona Electric.";
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({

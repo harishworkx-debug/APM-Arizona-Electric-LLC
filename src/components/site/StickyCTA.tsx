@@ -24,7 +24,7 @@ export function StickyCTA() {
         <a
           href={BUSINESS.phoneHref}
           onClick={trackCall}
-          aria-label="Call APM Arizona Electric LLC at (480) 806-1832"
+          aria-label="Call Arizona Electric at (480) 806-1832"
           className="group grid h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-primary to-primary-glow text-secondary shadow-[0_15px_40px_-10px_var(--primary)] transition-transform hover:scale-110 relative"
         >
           <span className="absolute inset-0 rounded-full animate-ping bg-primary/40" />
@@ -39,7 +39,7 @@ export function StickyCTA() {
             href={BUSINESS.phoneHref}
             onClick={trackCall}
             className="flex flex-col items-center gap-1 py-3 text-secondary"
-            aria-label="Call APM Arizona Electric LLC at (480) 806-1832"
+            aria-label="Call Arizona Electric at (480) 806-1832"
           >
             <IconPhone className="h-5 w-5 text-primary" />
             <span className="text-[11px] font-semibold">Call (480) 806-1832</span>

@@ -10,8 +10,8 @@ export const abs = (path: string) => {
 };
 
 export const BUSINESS = {
-  name: "APM Arizona Electric LLC",
-  shortName: "APM Arizona Electric",
+  name: "Arizona Electric",
+  shortName: "Arizona Electric",
   phone: "(480) 806-1832",
   phoneHref: "tel:+14808061832",
   phoneSchema: "+14808061832",
@@ -25,7 +25,7 @@ export const BUSINESS = {
   postalCode: "85282",
   address: "1216 W Hermosa Dr, Tempe, AZ 85282",
   mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106597.79846182055!2d-112.0103148506771!3d33.39243650285948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0f0f2af0a919%3A0x97952056a9736ef4!2sApm%20Arizona%20Electric%20LLC!5e0!3m2!1sen!2sin!4v1785142846531!5m2!1sen!2sin",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408287.6534262113!2d-114.81657805177894!3d34.04892813589146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927dd970a25!2sArizona%2C%20USA!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus",
   hours: [
     { d: "Monday – Friday", h: "7:00 AM – 4:00 PM" },
     { d: "Saturday", h: "8:00 AM – 1:00 PM" },
@@ -62,7 +62,7 @@ export const SERVICES: Service[] = [
     slug: "residential-electrical-phoenix-az",
     title: "Residential Electrical Services",
     navLabel: "Residential Electrical",
-    metaTitle: "Residential Electrician in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Residential Electrician in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Licensed residential electrician in Phoenix, AZ. Breaker panel upgrades, whole-home rewiring, EV chargers, outlets & safety inspections. Call (480) 806-1832.",
     h1: "Residential Electrician in Phoenix, AZ",
@@ -126,7 +126,7 @@ export const SERVICES: Service[] = [
     faqs: [
       {
         q: "Do I need a city permit for residential electrical work in Phoenix?",
-        a: "Yes. Major projects including panel replacements, service capacity upgrades, solar interconnections, and new dedicated circuit runs require permits from the City of Phoenix or your local municipality. APM Arizona Electric LLC handles all permit paperwork and meets the city inspector on-site.",
+        a: "Yes. Major projects including panel replacements, service capacity upgrades, solar interconnections, and new dedicated circuit runs require permits from the City of Phoenix or your local municipality. Arizona Electric handles all permit paperwork and meets the city inspector on-site.",
       },
       {
         q: "How do I know if my electrical panel needs an upgrade?",
@@ -147,7 +147,7 @@ export const SERVICES: Service[] = [
     slug: "ceiling-fan-installation-phoenix-az",
     title: "Ceiling Fan Installation & Replacement",
     navLabel: "Ceiling Fan Installation",
-    metaTitle: "Ceiling Fan Installation in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Ceiling Fan Installation in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Ceiling fan installation and replacement in Phoenix, AZ. Metal fan-rated bracing, high-ceiling and outdoor installations, and wobble-free balancing. Call (480) 806-1832.",
     h1: "Ceiling Fan Installation in Phoenix, AZ",
@@ -236,7 +236,7 @@ export const SERVICES: Service[] = [
     slug: "light-fixture-installation-phoenix-az",
     title: "Light Fixture Installation",
     navLabel: "Light Fixture Installation",
-    metaTitle: "Light Fixture Installation in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Light Fixture Installation in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Professional light fixture installation in Phoenix, AZ: chandeliers, recessed LED cans, pendants, and exterior security lighting. Call (480) 806-1832 for upfront pricing.",
     h1: "Light Fixture Installation in Phoenix, AZ",
@@ -325,7 +325,7 @@ export const SERVICES: Service[] = [
     slug: "circuit-breaker-repair-phoenix-az",
     title: "Circuit Breaker Troubleshooting & Repairs",
     navLabel: "Circuit Breaker Repair",
-    metaTitle: "Circuit Breaker Repair in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Circuit Breaker Repair in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Circuit breaker repair and electrical panel troubleshooting in Phoenix, AZ. Diagnosis for tripping breakers, buzzing panels, and worn bus bars. Call (480) 806-1832.",
     h1: "Circuit Breaker Repair in Phoenix, AZ",
@@ -414,7 +414,7 @@ export const SERVICES: Service[] = [
     slug: "kitchen-electrical-repairs-phoenix-az",
     title: "Kitchen Electrical Repairs",
     navLabel: "Kitchen Electrical Repairs",
-    metaTitle: "Kitchen Electrical Repairs in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Kitchen Electrical Repairs in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Kitchen electrical repairs in Phoenix, AZ: dedicated appliance circuits, GFCI upgrades, range feeds, and under-cabinet lighting. Call (480) 806-1832 for service.",
     h1: "Kitchen Electrical Repairs in Phoenix, AZ",
@@ -503,7 +503,7 @@ export const SERVICES: Service[] = [
     slug: "electrical-maintenance-phoenix-az",
     title: "Electrical Maintenance & Safety Inspections",
     navLabel: "Electrical Maintenance",
-    metaTitle: "Electrical Maintenance in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrical Maintenance in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Comprehensive electrical maintenance and safety inspections in Phoenix, AZ. Panel torque checks, infrared thermal scans, and GFCI testing. Call (480) 806-1832.",
     h1: "Electrical Maintenance in Phoenix, AZ",
@@ -592,7 +592,7 @@ export const SERVICES: Service[] = [
     slug: "electrical-troubleshooting-phoenix-az",
     title: "Electrical Troubleshooting & Diagnostics",
     navLabel: "Electrical Troubleshooting",
-    metaTitle: "Electrical Troubleshooting in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrical Troubleshooting in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Expert electrical troubleshooting in Phoenix, AZ: dead outlets, flickering lights, burning odors, and mystery power loss. Upfront diagnostic fee. Call (480) 806-1832.",
     h1: "Electrical Troubleshooting in Phoenix, AZ",
@@ -681,7 +681,7 @@ export const SERVICES: Service[] = [
     slug: "ev-charger-installation-phoenix-az",
     title: "EV Charger Installation & 240V Wiring",
     navLabel: "EV Charger Installation",
-    metaTitle: "EV Charger Installation in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "EV Charger Installation in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Professional Level 2 EV charger installation in Phoenix, AZ. Tesla Wall Connector & universal chargers, SRP/APS rebates, 240V circuits. Call (480) 806-1832.",
     h1: "EV Charger Installation in Phoenix, AZ",
@@ -690,7 +690,7 @@ export const SERVICES: Service[] = [
       "Fast, safe home electric vehicle charging tailored for Tesla, Rivian, Ford, and universal EVs with proper load calculations and municipal permits.",
     intro: [
       "Adding an Electric Vehicle (EV) to your Phoenix home transforms your daily driving experience, but plugging into a standard 120-volt wall outlet (Level 1) adds only 3 to 4 miles of range per hour. A dedicated Level 2 240-volt charging station delivers 30 to 45 miles of range per hour, charging your vehicle fully overnight while you sleep.",
-      "At APM Arizona Electric LLC, our licensed electricians handle every aspect of your EV charger installation: calculating whole-home electrical load per NEC Article 220, installing dedicated 50A or 60A circuits, pulling City of Phoenix permits, and helping you document work for SRP ($250–$1,000) or APS EV charging rebates.",
+      "At Arizona Electric, our licensed electricians handle every aspect of your EV charger installation: calculating whole-home electrical load per NEC Article 220, installing dedicated 50A or 60A circuits, pulling City of Phoenix permits, and helping you document work for SRP ($250–$1,000) or APS EV charging rebates.",
     ],
     image:
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=70",
@@ -753,7 +753,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Are there SRP or APS utility rebates for EV charger installation in Arizona?",
-        a: "Yes. Salt River Project (SRP) offers up to $250 for qualifying Level 2 smart chargers, and Arizona Public Service (APS) provides incentives for home charging equipment. Because APM Arizona Electric LLC is a licensed contractor (ROC #341995), our itemized invoices and city permits satisfy all utility rebate requirements.",
+        a: "Yes. Salt River Project (SRP) offers up to $250 for qualifying Level 2 smart chargers, and Arizona Public Service (APS) provides incentives for home charging equipment. Because Arizona Electric is a licensed contractor (ROC #341995), our itemized invoices and city permits satisfy all utility rebate requirements.",
       },
       {
         q: "How long does a home EV charger installation take?",
@@ -770,7 +770,7 @@ export const SERVICES: Service[] = [
     slug: "electrical-panel-upgrades-phoenix-az",
     title: "Electrical Panel Upgrades & Replacement",
     navLabel: "Panel Upgrades",
-    metaTitle: "Electrical Panel Upgrades in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrical Panel Upgrades in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Electrical panel upgrades & replacement in Phoenix, AZ. 100A to 200A/400A service changes, Zinsco & Federal Pacific replacements. Call (480) 806-1832.",
     h1: "Electrical Panel Upgrades in Phoenix, AZ",
@@ -859,7 +859,7 @@ export const SERVICES: Service[] = [
     slug: "electrical-wiring-and-rewiring-phoenix-az",
     title: "Electrical Wiring & Whole-Home Rewiring",
     navLabel: "Wiring & Rewiring",
-    metaTitle: "Electrical Wiring & Rewiring in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrical Wiring & Rewiring in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Expert electrical wiring & whole-home rewiring in Phoenix, AZ. Historic cloth-wire replacement, aluminum wire remediation, grounded circuits. Call (480) 806-1832.",
     h1: "Electrical Wiring & Rewiring in Phoenix, AZ",
@@ -948,7 +948,7 @@ export const SERVICES: Service[] = [
     slug: "outlet-and-switch-repair-phoenix-az",
     title: "Outlet & Switch Repair",
     navLabel: "Outlets & Switches",
-    metaTitle: "Outlet & Switch Repair Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Outlet & Switch Repair Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Licensed outlet and switch repair in Phoenix, AZ. Fixing loose plugs, buzzing dimmers, warm switches & burnt receptacles. Fast response: (480) 806-1832.",
     h1: "Outlet & Switch Repair in Phoenix, AZ",
@@ -957,7 +957,7 @@ export const SERVICES: Service[] = [
       "From loose receptacles that spark when plugging in vacuums to discolored switch faceplates, our licensed electricians repair and replace worn electrical devices to current NEC code.",
     intro: [
       "In the desert climate of Greater Phoenix, wall receptacles and light switches endure significant mechanical and thermal wear. Plugs that slip out easily or outlets that feel warm indicate degraded contact tension inside the box, which generates high-resistance electrical arcing and creates a serious fire hazard.",
-      "APM Arizona Electric LLC replaces cracked, buzzing, or non-functioning devices with commercial-grade, tamper-resistant receptacles and modern smart switches. We verify proper grounding, secure copper terminations, and make sure every box meets modern National Electrical Code standards.",
+      "Arizona Electric replaces cracked, buzzing, or non-functioning devices with commercial-grade, tamper-resistant receptacles and modern smart switches. We verify proper grounding, secure copper terminations, and make sure every box meets modern National Electrical Code standards.",
     ],
     image:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=70",
@@ -1033,7 +1033,7 @@ export const SERVICES: Service[] = [
     slug: "gfci-outlet-installation-phoenix-az",
     title: "GFCI Outlet Installation & Repair",
     navLabel: "GFCI Outlets",
-    metaTitle: "GFCI Outlet Installation Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "GFCI Outlet Installation Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Code-compliant GFCI outlet installation & testing in Phoenix, AZ kitchens, bathrooms, garages & outdoor patios. Licensed electrician: (480) 806-1832.",
     h1: "GFCI Outlet Installation & Repair in Phoenix, AZ",
@@ -1042,7 +1042,7 @@ export const SERVICES: Service[] = [
       "Ground Fault Circuit Interrupters (GFCI) protect against fatal electric shock by cutting power in milliseconds when moisture or ground faults occur. We install and service GFCI protection throughout Phoenix.",
     intro: [
       "Ground Fault Circuit Interrupter (GFCI) protection is mandated by the National Electrical Code in any area where electricity and moisture might meet: kitchens, bathrooms, garages, laundry rooms, crawlspaces, outdoor patios, and pool equipment areas.",
-      "A faulty or outdated GFCI that will not reset leaves circuits dead, while a failed GFCI that fails closed poses a lethal shock hazard. APM Arizona Electric LLC tests, upgrades, and installs weather-resistant and tamper-resistant GFCI devices across the Valley to keep your home fully protected and code-compliant.",
+      "A faulty or outdated GFCI that will not reset leaves circuits dead, while a failed GFCI that fails closed poses a lethal shock hazard. Arizona Electric tests, upgrades, and installs weather-resistant and tamper-resistant GFCI devices across the Valley to keep your home fully protected and code-compliant.",
     ],
     image:
       "https://images.unsplash.com/photo-1544724559-5622074591e6?auto=format&fit=crop&w=1600&q=70",
@@ -1118,7 +1118,7 @@ export const SERVICES: Service[] = [
     slug: "whole-home-electrical-inspections-phoenix-az",
     title: "Whole-Home Electrical Inspections",
     navLabel: "Electrical Inspections",
-    metaTitle: "Whole-Home Electrical Inspection Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Whole-Home Electrical Inspection Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Comprehensive 50-point electrical safety inspections for Phoenix home buyers and owners. Panel checks, wiring evaluation & code compliance. Call (480) 806-1832.",
     h1: "Whole-Home Electrical Safety Inspections in Phoenix, AZ",
@@ -1127,7 +1127,7 @@ export const SERVICES: Service[] = [
       "Whether buying a home in the Valley or evaluating an older property, our comprehensive 50-point electrical safety inspections identify hidden fire hazards, unpermitted work, and code violations.",
     intro: [
       "Electrical systems are largely hidden behind drywall and inside attics where problems develop unnoticed until a breaker fails to trip or a cable overheats. In Phoenix, where decades of rapid home construction have resulted in a mix of Zinsco panels, aluminum wiring, and unpermitted DIY renovations, an objective electrical inspection is essential.",
-      "APM Arizona Electric LLC conducts rigorous, thorough electrical inspections for prospective home buyers, real estate transactions, insurance requirements, and safety-conscious homeowners. We provide a detailed written report with prioritized recommendations and upfront repair costs.",
+      "Arizona Electric conducts rigorous, thorough electrical inspections for prospective home buyers, real estate transactions, insurance requirements, and safety-conscious homeowners. We provide a detailed written report with prioritized recommendations and upfront repair costs.",
     ],
     image:
       "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=70",
@@ -1203,7 +1203,7 @@ export const SERVICES: Service[] = [
     slug: "surge-protection-installation-phoenix-az",
     title: "Whole-Home Surge Protection",
     navLabel: "Surge Protection",
-    metaTitle: "Whole-Home Surge Protection Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Whole-Home Surge Protection Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Protect your AC compressor, smart appliances & electronics from Phoenix monsoon lightning and grid surges. Type 2 surge installation: (480) 806-1832.",
     h1: "Whole-Home Surge Protection in Phoenix, AZ",
@@ -1288,7 +1288,7 @@ export const SERVICES: Service[] = [
     slug: "emergency-electrical-troubleshooting-phoenix-az",
     title: "Emergency Electrical Troubleshooting",
     navLabel: "Emergency Electrical",
-    metaTitle: "Emergency Electrical Troubleshooting Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Emergency Electrical Troubleshooting Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Fast, licensed emergency electrical diagnostics in Phoenix, AZ. Burning smell, power outages, sparking panels & dead circuits. Call (480) 806-1832.",
     h1: "Emergency Electrical Troubleshooting in Phoenix, AZ",
@@ -1297,7 +1297,7 @@ export const SERVICES: Service[] = [
       "Electrical emergencies can strike without warning — from melted breaker stabs to partial power loss during 115°F Phoenix heatwaves. We provide prompt diagnostics and code-compliant emergency repairs.",
     intro: [
       "An electrical emergency in the Arizona desert is more than an inconvenience — when your power fails during peak summer temperatures or an electrical panel emits a burning smell, it presents an immediate hazard to your family's safety and home.",
-      "APM Arizona Electric LLC responds promptly to urgent electrical service calls throughout Phoenix, Tempe, Mesa, Scottsdale, Chandler, and Glendale. Our licensed electricians pinpoint root causes rapidly using specialized diagnostic instruments, eliminate fire hazards, and restore safe power.",
+      "Arizona Electric responds promptly to urgent electrical service calls throughout Phoenix, Tempe, Mesa, Scottsdale, Chandler, and Glendale. Our licensed electricians pinpoint root causes rapidly using specialized diagnostic instruments, eliminate fire hazards, and restore safe power.",
     ],
     image:
       "https://images.unsplash.com/photo-1544724559-5622074591e6?auto=format&fit=crop&w=1600&q=70",
@@ -1410,7 +1410,7 @@ export const LOCATIONS: Location[] = [
     slug: "electrician-phoenix-az",
     city: "Phoenix",
     navLabel: "Phoenix",
-    metaTitle: "Electrician in Phoenix, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrician in Phoenix, AZ | Arizona Electric",
     metaDescription:
       "Licensed residential electrician serving Phoenix, AZ from Arcadia to Desert Ridge. 200A panel upgrades, historic home rewiring, ceiling fans & EV chargers. Call (480) 806-1832.",
     h1: "Electrician in Phoenix, AZ",
@@ -1418,7 +1418,7 @@ export const LOCATIONS: Location[] = [
       "Licensed residential electrical services across Phoenix — from historic cloth-wiring updates in Encanto to 200-amp service upgrades in Arcadia and smart lighting in Desert Ridge.",
     intro: [
       "Phoenix is not one uniform electrical market; it spans over seven decades of evolving building codes and architecture. A 1940s red-brick ranch in Encanto or the Willo Historic District often operates on ungrounded two-wire branch circuits, cloth insulation, and an original 60-amp fuse box or split-bus panel. Meanwhile, modern suburban builds in Desert Ridge and Norterra feature 200-amp services that are already maxed out with dual HVAC compressors, pool filtration equipment, and electric vehicle charging loads.",
-      "At APM Arizona Electric LLC, our licensed electricians (ROC #341995) work directly within City of Phoenix jurisdiction daily. We pull municipal electrical permits, schedule and meet City of Phoenix inspectors on-site, and coordinate with Arizona Public Service (APS) and Salt River Project (SRP) for overhead and underground service entrance upgrades. Because our primary shop is minutes away in Tempe, central and north Phoenix homes are within our direct dispatch corridor.",
+      "At Arizona Electric, our licensed electricians (ROC #341995) work directly within City of Phoenix jurisdiction daily. We pull municipal electrical permits, schedule and meet City of Phoenix inspectors on-site, and coordinate with Arizona Public Service (APS) and Salt River Project (SRP) for overhead and underground service entrance upgrades. Because our primary shop is minutes away in Tempe, central and north Phoenix homes are within our direct dispatch corridor.",
     ],
     landmarks: [
       "Arcadia",
@@ -1472,7 +1472,7 @@ export const LOCATIONS: Location[] = [
       {
         author: "Hector Galvez",
         neighborhood: "Phoenix",
-        text: "APM Arizona Electric did excellent work in our home. They even detected mistakes that our previous electrician had made and corrected them at no charge. They are pros and their customer service was impeccable.",
+        text: "Arizona Electric did excellent work in our home. They even detected mistakes that our previous electrician had made and corrected them at no charge. They are pros and their customer service was impeccable.",
         service: "Circuit Breaker & Wiring Repair",
         rating: 5,
       },
@@ -1507,7 +1507,7 @@ export const LOCATIONS: Location[] = [
     slug: "electrician-mesa-az",
     city: "Mesa",
     navLabel: "Mesa",
-    metaTitle: "Electrician in Mesa, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrician in Mesa, AZ | Arizona Electric",
     metaDescription:
       "Trusted residential electrician serving Mesa, AZ from Dobson Ranch to Eastmark. Breaker panel replacements, EV chargers, patio fans & snowbird remote coordination. Call (480) 806-1832.",
     h1: "Electrician in Mesa, AZ",
@@ -1604,7 +1604,7 @@ export const LOCATIONS: Location[] = [
     slug: "electrician-scottsdale-az",
     city: "Scottsdale",
     navLabel: "Scottsdale",
-    metaTitle: "Electrician in Scottsdale, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrician in Scottsdale, AZ | Arizona Electric",
     metaDescription:
       "Premier residential electrician serving Scottsdale, AZ from Old Town to Troon & DC Ranch. Architectural lighting, Lutron smart controls, panel upgrades & landscape power. Call (480) 806-1832.",
     h1: "Electrician in Scottsdale, AZ",
@@ -1612,7 +1612,7 @@ export const LOCATIONS: Location[] = [
       "Precision electrical contracting for Scottsdale luxury homes — architectural recessed lighting, Lutron smart control integration, custom landscape illumination, and panel capacity expansions.",
     intro: [
       "Scottsdale residential electrical work demands a level of precision, clean execution, and aesthetic sensitivity that general rough-in contractors simply cannot deliver. In high-end custom homes throughout North Scottsdale, Troon, DC Ranch, and Silverleaf, electrical systems feature multi-scene lighting control systems, dedicated circuits for wine cellars and sub-zero refrigeration, integrated swimming pool subpanels, and multi-transformer architectural landscape lighting.",
-      "In and around Old Town Scottsdale, McCormick Ranch, and Gainey Ranch, residential properties often require sophisticated updates: retrofitting older soffits with high-CRI recessed LED lighting, installing heavy designer chandeliers without damaging custom plaster or drywall, and modernizing electrical distribution panels to support high-draw induction cooktops and dual vehicle chargers. At APM Arizona Electric LLC, our licensed electricians treat your home with total respect — wearing boot covers, using drop cloths, and ensuring surgical, clean installations.",
+      "In and around Old Town Scottsdale, McCormick Ranch, and Gainey Ranch, residential properties often require sophisticated updates: retrofitting older soffits with high-CRI recessed LED lighting, installing heavy designer chandeliers without damaging custom plaster or drywall, and modernizing electrical distribution panels to support high-draw induction cooktops and dual vehicle chargers. At Arizona Electric, our licensed electricians treat your home with total respect — wearing boot covers, using drop cloths, and ensuring surgical, clean installations.",
     ],
     landmarks: [
       "Old Town Scottsdale",
@@ -1701,7 +1701,7 @@ export const LOCATIONS: Location[] = [
     slug: "electrician-tempe-az",
     city: "Tempe",
     navLabel: "Tempe",
-    metaTitle: "Electrician in Tempe, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrician in Tempe, AZ | Arizona Electric",
     metaDescription:
       "Licensed residential electrician headquartered in Tempe, AZ at 1216 W Hermosa Dr. Fastest response for repairs, panel upgrades, ASU rental turnovers & ceiling fans. Call (480) 806-1832.",
     h1: "Electrician in Tempe, AZ",
@@ -1798,7 +1798,7 @@ export const LOCATIONS: Location[] = [
     slug: "electrician-chandler-az",
     city: "Chandler",
     navLabel: "Chandler",
-    metaTitle: "Electrician in Chandler, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrician in Chandler, AZ | Arizona Electric",
     metaDescription:
       "Licensed residential electrician serving Chandler, AZ from Ocotillo to Sun Lakes & Fulton Ranch. Full builder-panel upgrades, EV chargers, patio power & repairs. Call (480) 806-1832.",
     h1: "Electrician in Chandler, AZ",
@@ -1806,7 +1806,7 @@ export const LOCATIONS: Location[] = [
       "Reliable residential electrical contracting across Chandler — builder-grade panel capacity additions, dual EV charger installations, Sun Lakes HOA-compliant repairs, and patio outdoor living circuits.",
     intro: [
       "Chandler has grown into a major technological hub with high-demand residential neighborhoods like Ocotillo, Fulton Ranch, and master-planned communities along the Price Corridor. While many Chandler homes are relatively new, their original electrical infrastructure was frequently installed with builder-grade minimums. As families add second electric vehicles, high-efficiency heat pumps, backyard pools, and covered patio entertainment centers, their 200-amp main panels quickly run out of physical breaker spaces and electrical capacity.",
-      "Further south in communities like Sun Lakes and downtown Chandler, housing stock dates back to the 1980s and earlier, requiring dedicated panel modernization, GFCI retrofits, and aluminum wiring safety evaluations. At APM Arizona Electric LLC, we perform accurate NEC load calculations before recommending additions, handle City of Chandler permitting, and coordinate seamlessly with local HOA architectural review committees.",
+      "Further south in communities like Sun Lakes and downtown Chandler, housing stock dates back to the 1980s and earlier, requiring dedicated panel modernization, GFCI retrofits, and aluminum wiring safety evaluations. At Arizona Electric, we perform accurate NEC load calculations before recommending additions, handle City of Chandler permitting, and coordinate seamlessly with local HOA architectural review committees.",
     ],
     landmarks: [
       "Ocotillo",
@@ -1894,7 +1894,7 @@ export const LOCATIONS: Location[] = [
     slug: "electrician-glendale-az",
     city: "Glendale",
     navLabel: "Glendale",
-    metaTitle: "Electrician in Glendale, AZ | APM Arizona Electric LLC",
+    metaTitle: "Electrician in Glendale, AZ | Arizona Electric",
     metaDescription:
       "Licensed residential electrician serving Glendale, AZ from Historic Downtown to Arrowhead Ranch. Knob-and-tube rewiring, GFCI retrofits, panel repairs & no travel fees. Call (480) 806-1832.",
     h1: "Electrician in Glendale, AZ",
@@ -1902,7 +1902,7 @@ export const LOCATIONS: Location[] = [
       "Experienced residential electrician serving Glendale and the West Valley — historic home rewiring, GFCI grounding solutions, panel replacements, and security lighting with zero travel surcharges.",
     intro: [
       "Glendale is a community of diverse electrical eras. In Historic Downtown Glendale and surrounding vintage neighborhoods near Catlin Court, homes built in the 1920s through 1950s often still contain original two-wire cloth branch circuits, ungrounded outlets, and deteriorating push-button or fuse panels. Modernizing these homes requires specialized knowledge of older building assemblies, careful wire-fishing techniques that preserve historic lath-and-plaster, and code-compliant grounding solutions like NEC 406.4(D)(2) GFCI retrofits.",
-      "Further north in suburban communities like Arrowhead Ranch and around the Westgate Entertainment District, homes built from the 1990s onward face modern high-load challenges: aging 200-amp panels exposed to intense western desert heat, failing AC disconnects, and breaker tripping during peak summer cooling months. APM Arizona Electric LLC treats Glendale as an essential part of our core service area — we never charge West Valley travel surcharges, and our written estimates are always transparent and guaranteed.",
+      "Further north in suburban communities like Arrowhead Ranch and around the Westgate Entertainment District, homes built from the 1990s onward face modern high-load challenges: aging 200-amp panels exposed to intense western desert heat, failing AC disconnects, and breaker tripping during peak summer cooling months. Arizona Electric treats Glendale as an essential part of our core service area — we never charge West Valley travel surcharges, and our written estimates are always transparent and guaranteed.",
     ],
     landmarks: [
       "Historic Downtown Glendale",
@@ -1990,13 +1990,13 @@ export const LOCATIONS: Location[] = [
   "slug": "electrician-gilbert-az",
   "city": "Gilbert",
   "navLabel": "Gilbert",
-  "metaTitle": "Electrician in Gilbert, AZ | APM Arizona Electric LLC",
+  "metaTitle": "Electrician in Gilbert, AZ | Arizona Electric",
   "metaDescription": "Licensed residential electrician in Gilbert, AZ. Main panel upgrades, EV chargers, pool pump circuits, ceiling fans & rewiring. Call (480) 806-1832.",
   "h1": "Electrician in Gilbert, AZ",
   "blurb": "Licensed residential electrical services across Gilbert — from EV charging stations in Power Ranch and Morrison Ranch to 200A service upgrades in Agritopia and Val Vista Lakes.",
   "intro": [
     "Gilbert has grown rapidly over the last three decades, transforming from agricultural acreage into one of the East Valley's most dynamic family communities. Homes in master-planned neighborhoods like Val Vista Lakes, Power Ranch, Seville, and Morrison Ranch feature extensive square footage, multiple air conditioning units, resort-style pools, and modern smart home automation systems that place significant demands on residential electrical distribution.",
-    "At APM Arizona Electric LLC, our licensed electricians (ROC #341995) provide Gilbert homeowners with code-compliant electrical installations and precision diagnostics. From coordinating 200-amp and 400-amp panel upgrades with Salt River Project (SRP) to pulling Town of Gilbert electrical permits and installing Level 2 EV charging circuits, our team delivers high-quality workmanship backed by upfront itemized pricing."
+    "At Arizona Electric, our licensed electricians (ROC #341995) provide Gilbert homeowners with code-compliant electrical installations and precision diagnostics. From coordinating 200-amp and 400-amp panel upgrades with Salt River Project (SRP) to pulling Town of Gilbert electrical permits and installing Level 2 EV charging circuits, our team delivers high-quality workmanship backed by upfront itemized pricing."
   ],
   "landmarks": [
     "Val Vista Lakes",
@@ -2067,7 +2067,7 @@ export const LOCATIONS: Location[] = [
   "faqs": [
     {
       "q": "Do I need a permit for an electrical panel replacement in Gilbert?",
-      "a": "Yes. The Town of Gilbert requires municipal building permits for all main service panel replacements and capacity upgrades. APM Arizona Electric LLC handles the entire permit application, schedules the inspection, meets the town inspector, and coordinates utility meter disconnects with SRP."
+      "a": "Yes. The Town of Gilbert requires municipal building permits for all main service panel replacements and capacity upgrades. Arizona Electric handles the entire permit application, schedules the inspection, meets the town inspector, and coordinates utility meter disconnects with SRP."
     },
     {
       "q": "Can my Gilbert home handle a Level 2 EV charger without upgrading the panel?",
@@ -2079,7 +2079,7 @@ export const LOCATIONS: Location[] = [
     },
     {
       "q": "Who provides electrical utility service in Gilbert, AZ?",
-      "a": "The vast majority of residential homes in Gilbert receive power from Salt River Project (SRP). APM Arizona Electric LLC works with SRP daily to coordinate meter unlocks, temporary service disconnects, and service line upgrades."
+      "a": "The vast majority of residential homes in Gilbert receive power from Salt River Project (SRP). Arizona Electric works with SRP daily to coordinate meter unlocks, temporary service disconnects, and service line upgrades."
     }
   ]
 },
@@ -2087,13 +2087,13 @@ export const LOCATIONS: Location[] = [
   "slug": "electrician-peoria-az",
   "city": "Peoria",
   "navLabel": "Peoria",
-  "metaTitle": "Electrician in Peoria, AZ | APM Arizona Electric LLC",
+  "metaTitle": "Electrician in Peoria, AZ | Arizona Electric",
   "metaDescription": "Licensed residential electrician in Peoria, AZ. 200A panel upgrades, EV charger installations, ceiling fans, circuit repairs & rewiring. Call (480) 806-1832.",
   "h1": "Electrician in Peoria, AZ",
   "blurb": "Trusted residential electrical services in Peoria — from panel upgrades in Vistancia and Westgreen to high-ceiling fan installations in Fletcher Heights and Westbrook Village.",
   "intro": [
     "From established golf-course communities like Westbrook Village to sprawling modern developments in Vistancia and Fletcher Heights, Peoria encompasses a broad mix of residential electrical demands. Older Peoria homes often struggle with aging 100-amp panels and weathered exterior disconnects, while newer northern Peoria properties frequently require dedicated circuits for EV charging stations, RV hookups, and backyard pools.",
-    "APM Arizona Electric LLC delivers licensed, prompt, and code-compliant electrical craftsmanship throughout Peoria. Our team works under Arizona ROC license #341995, adhering strictly to City of Peoria building codes and coordinating seamless utility work with Arizona Public Service (APS). Whether you need emergency breaker troubleshooting or a planned service upgrade, we provide upfront itemized pricing with zero hidden fees."
+    "Arizona Electric delivers licensed, prompt, and code-compliant electrical craftsmanship throughout Peoria. Our team works under Arizona ROC license #341995, adhering strictly to City of Peoria building codes and coordinating seamless utility work with Arizona Public Service (APS). Whether you need emergency breaker troubleshooting or a planned service upgrade, we provide upfront itemized pricing with zero hidden fees."
   ],
   "landmarks": [
     "Vistancia",
@@ -2164,7 +2164,7 @@ export const LOCATIONS: Location[] = [
   "faqs": [
     {
       "q": "Do I need a city permit for residential electrical work in Peoria, AZ?",
-      "a": "Yes. Major residential projects including main service panel replacements, solar interconnections, and substantial rewiring require permits from the City of Peoria Development and Engineering Department. APM Arizona Electric LLC handles all permit filings and meets the city inspector on-site."
+      "a": "Yes. Major residential projects including main service panel replacements, solar interconnections, and substantial rewiring require permits from the City of Peoria Development and Engineering Department. Arizona Electric handles all permit filings and meets the city inspector on-site."
     },
     {
       "q": "Which electric utility serves Peoria homes?",
@@ -2184,13 +2184,13 @@ export const LOCATIONS: Location[] = [
   "slug": "electrician-surprise-az",
   "city": "Surprise",
   "navLabel": "Surprise",
-  "metaTitle": "Electrician in Surprise, AZ | APM Arizona Electric LLC",
+  "metaTitle": "Electrician in Surprise, AZ | Arizona Electric",
   "metaDescription": "Licensed residential electrician in Surprise, AZ. Electrical panel upgrades, EV chargers, GFCI outlets, ceiling fans & safety inspections. Call (480) 806-1832.",
   "h1": "Electrician in Surprise, AZ",
   "blurb": "Quality residential electrical contracting across Surprise — from solar-ready panel upgrades in Marley Park and Sierra Montana to EV charging in Surprise Farms and Sun City Grand.",
   "intro": [
     "Surprise has transformed into one of the fastest-growing residential hubs in Arizona, featuring prominent master-planned communities like Marley Park, Surprise Farms, Sierra Montana, and active adult retreats like Sun City Grand. While many homes are relatively modern, builders often installed minimum-capacity 100A or 125A panels that struggle to keep up as families add electric vehicles, second refrigerators, swimming pools, and backyard workshops.",
-    "APM Arizona Electric LLC provides Surprise homeowners with certified, code-compliant residential electrical solutions. Under Arizona Registrar of Contractors license ROC #341995, our master electricians handle everything from City of Surprise building permits to main breaker replacements, whole-home rewiring, and custom lighting installations. We focus on durable craftsmanship, upfront pricing, and respectful clean service."
+    "Arizona Electric provides Surprise homeowners with certified, code-compliant residential electrical solutions. Under Arizona Registrar of Contractors license ROC #341995, our master electricians handle everything from City of Surprise building permits to main breaker replacements, whole-home rewiring, and custom lighting installations. We focus on durable craftsmanship, upfront pricing, and respectful clean service."
   ],
   "landmarks": [
     "Marley Park",
@@ -2246,7 +2246,7 @@ export const LOCATIONS: Location[] = [
     {
       "author": "Steven P.",
       "neighborhood": "Marley Park",
-      "text": "APM Arizona Electric installed our EV charger and upgraded our panel. Andres and his crew were courteous, clean, and finished the job in one day. The inspection passed without a hitch.",
+      "text": "Arizona Electric installed our EV charger and upgraded our panel. Andres and his crew were courteous, clean, and finished the job in one day. The inspection passed without a hitch.",
       "service": "Panel Upgrade & EV Charger",
       "rating": 5
     },
@@ -2265,7 +2265,7 @@ export const LOCATIONS: Location[] = [
     },
     {
       "q": "Do you handle City of Surprise building permits for electrical work?",
-      "a": "Yes. All major service changes, subpanel installations, and dedicated 240V circuits requiring permit documentation are fully managed by APM Arizona Electric LLC."
+      "a": "Yes. All major service changes, subpanel installations, and dedicated 240V circuits requiring permit documentation are fully managed by Arizona Electric."
     },
     {
       "q": "Can I run an EV charger and an electric dryer on the same circuit?",
@@ -2281,13 +2281,13 @@ export const LOCATIONS: Location[] = [
   "slug": "electrician-goodyear-az",
   "city": "Goodyear",
   "navLabel": "Goodyear",
-  "metaTitle": "Electrician in Goodyear, AZ | APM Arizona Electric LLC",
+  "metaTitle": "Electrician in Goodyear, AZ | Arizona Electric",
   "metaDescription": "Licensed residential electrician in Goodyear, AZ. Breaker panel upgrades, EV chargers, pool circuits, ceiling fans & safety diagnostics. Call (480) 806-1832.",
   "h1": "Electrician in Goodyear, AZ",
   "blurb": "Trusted residential electrical services throughout Goodyear — from panel expansions in Estrella Mountain Ranch and Palm Valley to EV chargers in Canyon Trails and Sedella.",
   "intro": [
     "Goodyear is one of the premier master-planned cities in the Southwest Valley, framed by the scenic Estrella Mountains and upscale neighborhoods like Estrella Mountain Ranch, Palm Valley, PebbleCreek, and Canyon Trails. With hot summer temperatures regularly exceeding 115°F, Goodyear homes rely heavily on continuous air conditioning, pool filtration systems, outdoor patio misting systems, and modern high-draw lifestyle appliances.",
-    "APM Arizona Electric LLC provides comprehensive residential electrical contracting across Goodyear. Holding Arizona license ROC #341995, our electricians bring decades of technical knowledge to every project. Whether upgrading an electrical panel, wiring a custom pool pump or spa subpanel, or installing ceiling fans and recessed LEDs, we ensure code compliance, upfront itemized pricing, and reliable long-term safety."
+    "Arizona Electric provides comprehensive residential electrical contracting across Goodyear. Holding Arizona license ROC #341995, our electricians bring decades of technical knowledge to every project. Whether upgrading an electrical panel, wiring a custom pool pump or spa subpanel, or installing ceiling fans and recessed LEDs, we ensure code compliance, upfront itemized pricing, and reliable long-term safety."
   ],
   "landmarks": [
     "Estrella Mountain Ranch",
@@ -2358,7 +2358,7 @@ export const LOCATIONS: Location[] = [
   "faqs": [
     {
       "q": "Do I need a permit for an electrical panel upgrade in Goodyear?",
-      "a": "Yes. The City of Goodyear requires permits and inspections for all service panel upgrades and substantial electrical installations. APM Arizona Electric LLC coordinates all permit filings and meets the inspector on-site."
+      "a": "Yes. The City of Goodyear requires permits and inspections for all service panel upgrades and substantial electrical installations. Arizona Electric coordinates all permit filings and meets the inspector on-site."
     },
     {
       "q": "Can I add a hot tub or pool pump to my current electrical panel in Goodyear?",
@@ -2378,13 +2378,13 @@ export const LOCATIONS: Location[] = [
   "slug": "electrician-paradise-valley-az",
   "city": "Paradise Valley",
   "navLabel": "Paradise Valley",
-  "metaTitle": "Electrician in Paradise Valley, AZ | APM Arizona Electric LLC",
+  "metaTitle": "Electrician in Paradise Valley, AZ | Arizona Electric",
   "metaDescription": "Licensed residential electrician in Paradise Valley, AZ. High-capacity 400A panel upgrades, architectural lighting, EV chargers & smart home wiring. Call (480) 806-1832.",
   "h1": "Electrician in Paradise Valley, AZ",
   "blurb": "Premier residential electrical contracting for luxury estates in Paradise Valley — 400A service upgrades, high-end architectural lighting, smart home automation, and EV infrastructure.",
   "intro": [
     "Paradise Valley is renowned for expansive custom estates, dramatic Camelback Mountain and Mummy Mountain vistas, and sophisticated architectural designs. These luxury residences demand sophisticated electrical infrastructure capable of powering multi-zone commercial-grade HVAC systems, extensive landscape lighting, wine cellar refrigeration, home theaters, and multiple high-amperage electric vehicle chargers.",
-    "APM Arizona Electric LLC provides discreet, precision residential electrical contracting tailored to luxury homes across Paradise Valley. Operating under Arizona ROC license #341995, our experienced electricians coordinate 400-amp and 600-amp service entrance upgrades with APS, design clean architectural LED lighting layouts, and install premium surge suppression to protect sensitive automated control systems. We deliver white-glove trade service with meticulous attention to detail."
+    "Arizona Electric provides discreet, precision residential electrical contracting tailored to luxury homes across Paradise Valley. Operating under Arizona ROC license #341995, our experienced electricians coordinate 400-amp and 600-amp service entrance upgrades with APS, design clean architectural LED lighting layouts, and install premium surge suppression to protect sensitive automated control systems. We deliver white-glove trade service with meticulous attention to detail."
   ],
   "landmarks": [
     "Camelback Mountain Foothills",
@@ -2463,7 +2463,7 @@ export const LOCATIONS: Location[] = [
     },
     {
       "q": "Do I need a Town of Paradise Valley permit for residential electrical work?",
-      "a": "Yes. The Town of Paradise Valley enforces strict residential building and safety codes. APM Arizona Electric LLC handles all engineering submissions, permit applications, and on-site municipal inspection walk-throughs."
+      "a": "Yes. The Town of Paradise Valley enforces strict residential building and safety codes. Arizona Electric handles all engineering submissions, permit applications, and on-site municipal inspection walk-throughs."
     },
     {
       "q": "Which utility provides electricity in Paradise Valley?",
@@ -2502,7 +2502,7 @@ export const INDUSTRIES = [
 
 export const STATS = [
   { v: "30+", l: "Years Combined Field Experience" },
-  { v: "5.0 ★", l: "Average Rating Across 200+ Reviews" },
+  { v: "100%", l: "Workmanship and Code Guarantee" },
   { v: "1,000+", l: "Valley Homes & Projects Serviced" },
   { v: "11", l: "Phoenix Metro Cities Served Daily" },
 ];
@@ -2510,7 +2510,7 @@ export const STATS = [
 export const FAQS = [
   {
     q: "Are you licensed and insured in Arizona?",
-    a: "Yes. APM Arizona Electric LLC is a fully licensed, bonded, and insured electrical contractor operating across the Phoenix Metro Area. All electrical work meets or exceeds National Electrical Code (NEC) and municipal building safety standards.",
+    a: "Yes. Arizona Electric is a fully licensed, bonded, and insured electrical contractor operating across the Phoenix Metro Area. All electrical work meets or exceeds National Electrical Code (NEC) and municipal building safety standards.",
   },
   {
     q: "Do your electricians perform the work directly?",
@@ -2546,7 +2546,6 @@ export const NAV = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
-  { to: "/reviews", label: "Reviews" },
   { to: "/contact", label: "Contact" },
 ];
 

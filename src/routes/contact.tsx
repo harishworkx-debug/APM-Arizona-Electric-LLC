@@ -12,9 +12,9 @@ import {
   IconArrowRight,
 } from "@/components/site/Icons";
 
-const CONTACT_TITLE = "Contact Our Phoenix Electricians | APM Arizona Electric LLC";
+const CONTACT_TITLE = "Contact Our Phoenix Electricians | Arizona Electric";
 const CONTACT_DESC =
-  "Contact APM Arizona Electric LLC in Tempe, AZ to request electrical service across the Phoenix Metro Area.";
+  "Contact Arizona Electric in Tempe, AZ to request electrical service across the Phoenix Metro Area.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -129,7 +129,7 @@ function ContactPage() {
                       Thank You! Your Request Has Been Received.
                     </div>
                     <p className="text-sm text-emerald-800 mt-2 leading-relaxed">
-                      An electrician from APM Arizona Electric LLC will review your details and
+                      An electrician from Arizona Electric will review your details and
                       contact you shortly.
                     </p>
                     <div className="mt-4 pt-4 border-t border-emerald-200">
@@ -355,8 +355,8 @@ function ContactPage() {
         <div className="container-x">
           <div className="overflow-hidden rounded-3xl border border-border shadow-elegant">
             <iframe
-              title="APM Arizona Electric LLC on Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412478.3658121596!2d-117.31996582528662!3d33.35805185784505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0f0f2af0a919%3A0x97952056a9736ef4!2sApm%20Arizona%20Electric%20LLC!5e0!3m2!1sen!2sin!4v1784981145048!5m2!1sen!2sin"
+              title="Arizona Electric on Google Maps"
+              src={BUSINESS.mapEmbed}
               width="100%"
               height="500"
               style={{ border: 0 }}

@@ -81,7 +81,7 @@ export const Route = createFileRoute("/$slug")({
     if (!loaderData) {
       return {
         meta: [
-          { title: "Page Unavailable | APM Arizona Electric LLC" },
+          { title: "Page Unavailable | Arizona Electric" },
           { name: "robots", content: "noindex" },
         ],
       };

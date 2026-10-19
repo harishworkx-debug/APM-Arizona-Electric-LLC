@@ -74,13 +74,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#F59E0B" },
-      { name: "author", content: "APM Arizona Electric LLC" },
+      { name: "author", content: "Arizona Electric" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "APM Arizona Electric LLC" },
+      { property: "og:site_name", content: "Arizona Electric" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "APM Arizona Electric LLC | Licensed Electrician in Phoenix Metro, AZ" },
-      { property: "og:title", content: "APM Arizona Electric LLC | Licensed Electrician" },
-      { name: "twitter:title", content: "APM Arizona Electric LLC | Licensed Electrician" },
+      { title: "Arizona Electric | Licensed Electrician in Phoenix Metro, AZ" },
+      { property: "og:title", content: "Arizona Electric | Licensed Electrician" },
+      { name: "twitter:title", content: "Arizona Electric | Licensed Electrician" },
       {
         name: "description",
         content:
@@ -125,7 +125,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Electrician",
-          name: "APM Arizona Electric LLC",
+          name: "Arizona Electric",
           image:
             "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=70",
           telephone: "+14808061832",

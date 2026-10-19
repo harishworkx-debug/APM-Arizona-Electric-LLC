@@ -35,7 +35,7 @@ import {
 const HERO =
   "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=70";
 
-const HOME_TITLE = "Electrician in Phoenix, AZ | APM Arizona Electric LLC";
+const HOME_TITLE = "Electrician in Phoenix, AZ | Arizona Electric";
 const HOME_DESC =
   "Residential electrical service information for homeowners in Phoenix, Tempe, Mesa, Scottsdale, Chandler and Glendale, AZ. schedule your service for panel upgrades, rewiring, lighting, ceiling fans and breaker repair.";
 
@@ -191,7 +191,7 @@ function Hero() {
             <div className="glass-card grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden bg-white/70">
               {[
                 { n: "30+", l: "Years Combined Trade Experience" },
-                { n: "5.0 ★", l: "Over 200 Google Reviews" },
+                { n: "100%", l: "Licensed & Insured Electricians" },
                 { n: "1,000+", l: "Valley Homes Serviced" },
                 { n: "100%", l: "Workmanship Guarantee" },
               ].map((s) => (
@@ -217,7 +217,7 @@ function TrustBar() {
     "Licensed & Insured",
     "Upfront Written Pricing",
     "Permit & Code Compliant",
-    "5.0-Star Rated Local Team",
+    "Valley-Wide Professional Service",
     "Phoenix Metro Wide Service",
   ];
   return (
@@ -251,9 +251,9 @@ function WhyChoose() {
       d: "Centrally located in Tempe to provide rapid dispatch across Phoenix, Scottsdale, Mesa, Chandler, and Glendale.",
     },
     {
-      icon: IconStar,
-      t: "5.0-Star Workmanship",
-      d: "Over 200 genuine 5-star customer reviews across the Valley reflecting our commitment to getting it done right.",
+      icon: IconCheck,
+      t: "Top-Tier Workmanship",
+      d: "Precision electrical service across the Valley reflecting our commitment to getting every job done right the first time.",
     },
     {
       icon: IconHome,
@@ -280,7 +280,7 @@ function WhyChoose() {
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-4 text-muted-foreground text-lg">
-              We built APM Arizona Electric on the same principles a lineman lived by: show up, do
+              We built Arizona Electric on the same principles a lineman lived by: show up, do
               it right, tell the truth.
             </p>
           </Reveal>
@@ -538,7 +538,7 @@ function Gallery() {
               >
                 <img
                   src={src}
-                  alt="APM Arizona Electric featured electrical project"
+                  alt="Arizona Electric featured electrical project"
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-110"
                 />
@@ -855,7 +855,7 @@ function LocalIntro() {
               work accounts for all of it.
             </p>
             <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
-              APM Arizona Electric LLC is based at {BUSINESS.address} and this site provides
+              Arizona Electric is based at {BUSINESS.address} and this site provides
               residential electrical information for Phoenix, Tempe, Mesa, Scottsdale, Chandler and
               Glendale. We help homeowners request connections with our expert electricians.
             </p>
@@ -910,7 +910,7 @@ function MapSection() {
       <div className="container-x">
         <div className="overflow-hidden rounded-3xl border border-border shadow-elegant">
           <iframe
-            title="APM Arizona Electric LLC on Google Maps"
+            title="Arizona Electric on Google Maps"
             src={BUSINESS.mapEmbed}
             width="100%"
             height="500"

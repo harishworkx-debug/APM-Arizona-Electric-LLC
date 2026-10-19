@@ -20,7 +20,7 @@ export function SiteFooter() {
                 <IconBolt className="h-5 w-5" />
               </span>
               <div>
-                <div className="text-white font-bold">APM Arizona Electric LLC</div>
+                <div className="text-white font-bold">Arizona Electric</div>
                 <div className="text-xs uppercase tracking-[0.2em] text-white/50">
                   Licensed Electrical Contractor
                 </div>
@@ -102,12 +102,12 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
-          <p>© {new Date().getFullYear()} APM Arizona Electric LLC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Arizona Electric. All rights reserved.</p>
           <p>Licensed, bonded & insured for your peace of mind.</p>
         </div>
         <div className="mt-8 border-t border-white/10 pt-6 text-sm leading-relaxed text-white/65">
           <p>
-            APM Arizona Electric LLC is an independent, family-owned electrical contractor providing
+            Arizona Electric is an independent, family-owned electrical contractor providing
             code-compliant residential and commercial electrical installations, repairs, and
             diagnostics across Arizona.
           </p>

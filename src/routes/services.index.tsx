@@ -12,7 +12,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { IconPhone, IconArrowRight, IconCheck, IconMapPin } from "@/components/site/Icons";
 
-const SERVICES_TITLE = "Electrical Services in Phoenix, AZ | APM Arizona Electric LLC";
+const SERVICES_TITLE = "Electrical Services in Phoenix, AZ | Arizona Electric";
 const SERVICES_DESC =
   "Explore residential electrical service information across Phoenix, AZ — panel upgrades, rewiring, ceiling fans, lighting, breaker repair and maintenance. schedule your service.";
 

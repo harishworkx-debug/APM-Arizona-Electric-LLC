@@ -7,7 +7,6 @@ import { IconPhone, IconMenu, IconX, IconBolt, IconArrowRight } from "./Icons";
 const SIMPLE_NAV = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/reviews", label: "Reviews" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -41,8 +40,8 @@ export function SiteHeader() {
             <IconBolt className="h-5 w-5" />
           </span>
           <div className="min-w-0">
-            <div className={`text-sm font-bold leading-tight ${scrolled ? "text-secondary" : "text-white"}`}>APM Arizona</div>
-            <div className={`text-[10px] font-semibold uppercase tracking-[0.2em] ${scrolled ? "text-muted-foreground" : "text-white/70"}`}>Electric LLC</div>
+            <div className={`text-base font-bold leading-tight ${scrolled ? "text-secondary" : "text-white"}`}>Arizona Electric</div>
+            <div className={`text-[10px] font-semibold uppercase tracking-[0.2em] ${scrolled ? "text-muted-foreground" : "text-white/70"}`}>Licensed Contractor</div>
           </div>
         </Link>
 

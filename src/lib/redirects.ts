@@ -23,6 +23,10 @@ const STATIC_REDIRECTS: Record<string, string> = {
   "/commercial-electrical-services-phoenix-az": "/services",
   "/commercial-electrical-services-phoenix-az/": "/services",
 
+  // Reviews aliases
+  "/reviws": "/reviews",
+  "/reviws/": "/reviews",
+
   // Location Redirects: /locations/phoenix-az, /phoenix-az, /electricion-phoenix-az -> /electrician-phoenix-az
   "/locations/phoenix-az": "/electrician-phoenix-az",
   "/locations/phoenix-az/": "/electrician-phoenix-az",
