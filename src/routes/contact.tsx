@@ -227,7 +227,7 @@ function ContactPage() {
                           Light Fixture Installation
                         </option>
                         <option value="ceiling-fan-installation">Ceiling Fan Installation</option>
-                        <option value="residential-electrical-services">
+                        <option value="residential-electrical-phoenix-az">
                           Residential Electrical & Rewiring
                         </option>
                         <option value="kitchen-electrical-repairs">

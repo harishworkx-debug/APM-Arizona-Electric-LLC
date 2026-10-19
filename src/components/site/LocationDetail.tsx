@@ -41,7 +41,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
               items={[
                 { name: "Home", path: "/" },
                 { name: "Service Areas", path: "/services" },
-                { name: `${l.city}, AZ`, path: `/locations/${l.slug}` },
+                { name: `${l.city}, AZ`, path: `/${l.slug}` },
               ]}
             />
           </Reveal>
@@ -290,7 +290,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
             {SERVICES.map((s) => (
               <Link
                 key={s.slug}
-                to="/services/$slug"
+                to={s.slug === "residential-electrical-phoenix-az" ? "/$slug" : "/services/$slug"}
                 params={{ slug: s.slug }}
                 className="group rounded-2xl bg-surface border border-border p-6 hover:-translate-y-1 hover:shadow-elegant transition-all flex flex-col justify-between"
               >
@@ -333,7 +333,7 @@ export function LocationDetail({ location: l }: { location: Location }) {
             {nearbyPages.map((n) => (
               <Link
                 key={n.slug}
-                to="/locations/$slug"
+                to="/$slug"
                 params={{ slug: n.slug }}
                 className="flex items-center gap-3 rounded-2xl border border-border bg-white p-5 hover:border-primary/50 hover:-translate-y-0.5 hover:shadow-sm transition-all"
               >

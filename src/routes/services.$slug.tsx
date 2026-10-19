@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, redirect, notFound } from "@tanstack/react-router";
 import {
   SERVICES,
   LOCATIONS,
@@ -12,6 +12,17 @@ import { ServiceDetail } from "@/components/site/ServiceDetail";
 
 export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
+    if (
+      params.slug === "residential-electrical-services" ||
+      params.slug === "residential-electrical-phoenix-az" ||
+      params.slug === "residential-electrical" ||
+      params.slug === "residential-electrical-services-phoenix-az"
+    ) {
+      throw redirect({
+        href: "/residential-electrical-phoenix-az/",
+        statusCode: 301,
+      });
+    }
     const service = SERVICES.find((s) => s.slug === params.slug);
     if (service) return { kind: "service" as const, service };
     throw notFound();

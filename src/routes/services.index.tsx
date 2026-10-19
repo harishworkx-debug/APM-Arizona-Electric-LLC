@@ -141,14 +141,25 @@ function ServicesPage() {
                     ))}
                   </ul>
                   <div className="mt-auto flex flex-wrap gap-2">
-                    <Link
-                      to="/services/$slug"
-                      params={{ slug: s.slug }}
-                      className="btn-dark text-xs px-5 py-2.5"
-                    >
-                      Explore {s.navLabel ?? s.title}{" "}
-                      <IconArrowRight className="h-3.5 w-3.5 shrink-0" />
-                    </Link>
+                    {s.slug === "residential-electrical-phoenix-az" ? (
+                      <Link
+                        to="/$slug"
+                        params={{ slug: s.slug }}
+                        className="btn-dark text-xs px-5 py-2.5"
+                      >
+                        Explore {s.navLabel ?? s.title}{" "}
+                        <IconArrowRight className="h-3.5 w-3.5 shrink-0" />
+                      </Link>
+                    ) : (
+                      <Link
+                        to="/services/$slug"
+                        params={{ slug: s.slug }}
+                        className="btn-dark text-xs px-5 py-2.5"
+                      >
+                        Explore {s.navLabel ?? s.title}{" "}
+                        <IconArrowRight className="h-3.5 w-3.5 shrink-0" />
+                      </Link>
+                    )}
                     <a href={BUSINESS.phoneHref} className="btn-primary text-xs px-5 py-2.5">
                       <IconPhone className="h-3.5 w-3.5" /> Call {BUSINESS.phone}
                     </a>
@@ -174,7 +185,7 @@ function ServicesPage() {
             {LOCATIONS.map((l) => (
               <Link
                 key={l.slug}
-                to="/locations/$slug"
+                to="/$slug"
                 params={{ slug: l.slug }}
                 className="flex items-center gap-3 rounded-2xl border border-border bg-white p-6 hover:border-primary/40 hover:-translate-y-0.5 transition-all"
               >

@@ -38,7 +38,10 @@ export function ServiceDetail({ service: s }: { service: Service }) {
               items={[
                 { name: "Home", path: "/" },
                 { name: "Services", path: "/services" },
-                { name: s.title, path: `/services/${s.slug}` },
+                {
+                  name: s.title,
+                  path: s.slug === "residential-electrical-phoenix-az" ? `/${s.slug}` : `/services/${s.slug}`,
+                },
               ]}
             />
           </Reveal>
@@ -206,7 +209,7 @@ export function ServiceDetail({ service: s }: { service: Service }) {
                 {LOCATIONS.map((l) => (
                   <Link
                     key={l.slug}
-                    to="/locations/$slug"
+                    to="/$slug"
                     params={{ slug: l.slug }}
                     className="flex items-center gap-2 rounded-xl border border-border px-4 py-3 text-sm font-semibold text-secondary hover:border-primary/40 hover:-translate-y-0.5 transition-all"
                   >
@@ -257,7 +260,7 @@ export function ServiceDetail({ service: s }: { service: Service }) {
             {related.map((r) => (
               <Link
                 key={r.slug}
-                to="/services/$slug"
+                to={r.slug === "residential-electrical-phoenix-az" ? "/$slug" : "/services/$slug"}
                 params={{ slug: r.slug }}
                 className="group overflow-hidden rounded-3xl bg-white border border-border transition-all hover:-translate-y-1 hover:shadow-elegant"
               >

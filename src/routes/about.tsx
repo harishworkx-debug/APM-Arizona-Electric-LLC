@@ -326,7 +326,7 @@ function AboutPage() {
             {LOCATIONS.map((loc, i) => (
               <Reveal key={loc.slug} delay={i * 0.05}>
                 <Link
-                  to="/locations/$slug"
+                  to="/$slug"
                   params={{ slug: loc.slug }}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface border border-border hover:border-primary/50 transition-colors font-semibold text-secondary"
                 >

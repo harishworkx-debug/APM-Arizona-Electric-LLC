@@ -70,13 +70,23 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm">
               {SERVICES.map((s) => (
                 <li key={s.slug}>
-                  <Link
-                    to="/services/$slug"
-                    params={{ slug: s.slug }}
-                    className="hover:text-primary transition"
-                  >
-                    {s.title}
-                  </Link>
+                  {s.slug === "residential-electrical-phoenix-az" ? (
+                    <Link
+                      to="/$slug"
+                      params={{ slug: s.slug }}
+                      className="hover:text-primary transition"
+                    >
+                      {s.title}
+                    </Link>
+                  ) : (
+                    <Link
+                      to="/services/$slug"
+                      params={{ slug: s.slug }}
+                      className="hover:text-primary transition"
+                    >
+                      {s.title}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -88,7 +98,7 @@ export function SiteFooter() {
               {LOCATIONS.map((l) => (
                 <li key={l.slug}>
                   <Link
-                    to="/locations/$slug"
+                    to="/$slug"
                     params={{ slug: l.slug }}
                     className="hover:text-primary transition"
                   >

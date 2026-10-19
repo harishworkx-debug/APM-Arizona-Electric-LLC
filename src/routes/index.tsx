@@ -304,10 +304,13 @@ function WhyChoose() {
 }
 
 const ICON_MAP: Record<string, typeof IconHome> = {
+  "residential-electrical-phoenix-az": IconHome,
+  "residential-electrical-services": IconHome,
   "residential-electrical": IconHome,
   "ceiling-fan-installation": IconFan,
   "light-fixture-installation": IconLightbulb,
   "circuit-breaker-repairs": IconBolt,
+  "circuit-breaker-repair": IconBolt,
   "kitchen-electrical-repairs": IconSparkle,
   "electrical-maintenance": IconShield,
   "electrical-troubleshooting": IconWrench,
@@ -337,9 +340,14 @@ function ServicesGrid() {
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((s, i) => {
             const Icon = ICON_MAP[s.slug] ?? IconBolt;
+            const isResidential = s.slug === "residential-electrical-phoenix-az";
+            const linkProps = isResidential
+              ? { to: "/$slug" as const, params: { slug: s.slug } }
+              : { to: "/services/$slug" as const, params: { slug: s.slug } };
+
             return (
               <Reveal key={s.slug} delay={i * 0.04}>
-                <Link to="/services/$slug" params={{ slug: s.slug }} className="group block h-full">
+                <Link {...linkProps} className="group block h-full">
                   <div className="relative h-full overflow-hidden rounded-3xl bg-white border border-border shadow-[0_10px_40px_-25px_rgba(15,23,42,0.2)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_30px_60px_-25px_rgba(15,23,42,0.35)]">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img
@@ -661,7 +669,7 @@ function ServiceAreas() {
           {LOCATIONS.map((l, i) => (
             <Reveal key={l.slug} delay={i * 0.04}>
               <Link
-                to="/locations/$slug"
+                to="/$slug"
                 params={{ slug: l.slug }}
                 className="group flex w-full min-w-0 items-center gap-4 rounded-3xl border border-border bg-white p-5 sm:p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.3)] hover:border-primary/40"
               >

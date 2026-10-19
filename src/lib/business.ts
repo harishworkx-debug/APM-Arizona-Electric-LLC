@@ -30,6 +30,7 @@ export const BUSINESS = {
   rating: 5.0,
   reviewCount: 210,
   primaryKeyword: "Electrician",
+  geo: { latitude: 33.3924365, longitude: -112.0103148 },
 };
 
 export type Service = {
@@ -54,7 +55,7 @@ export type Service = {
 
 export const SERVICES: Service[] = [
   {
-    slug: "residential-electrical-services",
+    slug: "residential-electrical-phoenix-az",
     title: "Residential Electrical Services",
     navLabel: "Residential Electrical",
     metaTitle: "Residential Electrician in Phoenix, AZ | APM Arizona Electric LLC",
@@ -223,7 +224,7 @@ export const SERVICES: Service[] = [
     ],
     related: [
       "light-fixture-installation",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
       "electrical-troubleshooting",
     ],
   },
@@ -313,7 +314,7 @@ export const SERVICES: Service[] = [
     related: [
       "ceiling-fan-installation",
       "kitchen-electrical-repairs",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
     ],
   },
   {
@@ -402,7 +403,7 @@ export const SERVICES: Service[] = [
     related: [
       "electrical-troubleshooting",
       "electrical-maintenance",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
     ],
   },
   {
@@ -490,7 +491,7 @@ export const SERVICES: Service[] = [
     ],
     related: [
       "light-fixture-installation",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
       "circuit-breaker-repair",
     ],
   },
@@ -580,7 +581,7 @@ export const SERVICES: Service[] = [
     related: [
       "circuit-breaker-repair",
       "electrical-troubleshooting",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
     ],
   },
   {
@@ -668,7 +669,7 @@ export const SERVICES: Service[] = [
     ],
     related: [
       "circuit-breaker-repair",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
       "electrical-maintenance",
     ],
   },
@@ -757,7 +758,7 @@ export const SERVICES: Service[] = [
     ],
     related: [
       "circuit-breaker-repair",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
       "electrical-maintenance",
     ],
   },
@@ -846,7 +847,7 @@ export const SERVICES: Service[] = [
     ],
     related: [
       "circuit-breaker-repair",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
       "electrical-maintenance",
     ],
   },
@@ -935,7 +936,7 @@ export const SERVICES: Service[] = [
     ],
     related: [
       "circuit-breaker-repair",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
       "kitchen-electrical-repairs",
     ],
   },
@@ -1020,7 +1021,7 @@ export const SERVICES: Service[] = [
     ],
     related: [
       "gfci-outlet-installation",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
       "electrical-troubleshooting",
     ],
   },
@@ -1105,7 +1106,7 @@ export const SERVICES: Service[] = [
     ],
     related: [
       "outlet-and-switch-repair",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
       "kitchen-electrical-repairs",
     ],
   },
@@ -1276,7 +1277,7 @@ export const SERVICES: Service[] = [
     related: [
       "electrical-panel-upgrades",
       "electrical-maintenance",
-      "residential-electrical-services",
+      "residential-electrical-phoenix-az",
     ],
   },
   {
@@ -1402,7 +1403,7 @@ export type Location = {
 
 export const LOCATIONS: Location[] = [
   {
-    slug: "phoenix-az",
+    slug: "electrician-phoenix-az",
     city: "Phoenix",
     navLabel: "Phoenix",
     metaTitle: "Electrician in Phoenix, AZ | APM Arizona Electric LLC",
@@ -1499,7 +1500,7 @@ export const LOCATIONS: Location[] = [
     ],
   },
   {
-    slug: "mesa-az",
+    slug: "electrician-mesa-az",
     city: "Mesa",
     navLabel: "Mesa",
     metaTitle: "Electrician in Mesa, AZ | APM Arizona Electric LLC",
@@ -1596,7 +1597,7 @@ export const LOCATIONS: Location[] = [
     ],
   },
   {
-    slug: "scottsdale-az",
+    slug: "electrician-scottsdale-az",
     city: "Scottsdale",
     navLabel: "Scottsdale",
     metaTitle: "Electrician in Scottsdale, AZ | APM Arizona Electric LLC",
@@ -1693,7 +1694,7 @@ export const LOCATIONS: Location[] = [
     ],
   },
   {
-    slug: "tempe-az",
+    slug: "electrician-tempe-az",
     city: "Tempe",
     navLabel: "Tempe",
     metaTitle: "Electrician in Tempe, AZ | APM Arizona Electric LLC",
@@ -1790,7 +1791,7 @@ export const LOCATIONS: Location[] = [
     ],
   },
   {
-    slug: "chandler-az",
+    slug: "electrician-chandler-az",
     city: "Chandler",
     navLabel: "Chandler",
     metaTitle: "Electrician in Chandler, AZ | APM Arizona Electric LLC",
@@ -1886,7 +1887,7 @@ export const LOCATIONS: Location[] = [
     ],
   },
   {
-    slug: "glendale-az",
+    slug: "electrician-glendale-az",
     city: "Glendale",
     navLabel: "Glendale",
     metaTitle: "Electrician in Glendale, AZ | APM Arizona Electric LLC",
