@@ -3,7 +3,11 @@ export const SITE = {
   domain: "apmarizonaelectric.com",
 };
 
-export const abs = (path: string) => `${SITE.url}${path.endsWith("/") ? path : path + "/"}`;
+export const abs = (path: string) => {
+  if (path === "/" || path === "") return `${SITE.url}/`;
+  const clean = path.replace(/^\/+|\/+$/g, "");
+  return `${SITE.url}/${clean}`;
+};
 
 export const BUSINESS = {
   name: "APM Arizona Electric LLC",

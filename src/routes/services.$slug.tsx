@@ -21,7 +21,7 @@ export const Route = createFileRoute("/services/$slug")({
       slug === "residential-electrical-services-phoenix-az"
     ) {
       throw redirect({
-        href: "/residential-electrical-phoenix-az/",
+        href: "/residential-electrical-phoenix-az",
         statusCode: 301,
       });
     }
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/services/$slug")({
     const exactService = SERVICES.find((s) => s.slug === slug);
     if (exactService) {
       throw redirect({
-        href: `/${exactService.slug}/`,
+        href: `/${exactService.slug}`,
         statusCode: 301,
       });
     }
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/services/$slug")({
     const serviceWithSuffix = SERVICES.find((s) => s.slug === `${slug}-phoenix-az`);
     if (serviceWithSuffix) {
       throw redirect({
-        href: `/${serviceWithSuffix.slug}/`,
+        href: `/${serviceWithSuffix.slug}`,
         statusCode: 301,
       });
     }

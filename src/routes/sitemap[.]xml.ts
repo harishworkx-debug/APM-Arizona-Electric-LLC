@@ -32,18 +32,19 @@ export const Route = createFileRoute("/sitemap.xml")({
           })),
         ];
         const today = new Date().toISOString().split("T")[0];
-        const urls = entries.map((e) =>
-          [
+        const urls = entries.map((e) => {
+          const clean = e.path === "/" ? "/" : e.path.replace(/\/+$/, "");
+          return [
             `  <url>`,
-            `    <loc>${BASE_URL}${e.path.endsWith("/") ? e.path : e.path + "/"}</loc>`,
+            `    <loc>${BASE_URL}${clean}</loc>`,
             `    <lastmod>${today}</lastmod>`,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`,
           ]
             .filter(Boolean)
-            .join("\n"),
-        );
+            .join("\n");
+        });
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
           `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,

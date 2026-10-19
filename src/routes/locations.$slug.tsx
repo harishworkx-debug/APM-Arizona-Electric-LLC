@@ -14,7 +14,7 @@ export const Route = createFileRoute("/locations/$slug")({
     );
     if (location) {
       throw redirect({
-        href: `/${location.slug}/`,
+        href: `/${location.slug}`,
         statusCode: 301,
       });
     }

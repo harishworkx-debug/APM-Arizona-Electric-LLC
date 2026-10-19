@@ -55,7 +55,7 @@ export default {
           status: 301,
           headers: {
             Location: redirectTarget,
-            "Cache-Control": "public, max-age=31536000, immutable",
+            "Cache-Control": "public, max-age=3600",
           },
         });
       }
