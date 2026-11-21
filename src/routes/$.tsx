@@ -13,10 +13,24 @@ export const Route = createFileRoute("/$")({
     throw notFound();
   },
   notFoundComponent: SplatNotFound,
-  component: SplatNotFound,
+  component: SplatComponent,
 });
 
 function SplatNotFound() {
+  return (
+    <div className="min-h-[60vh] grid place-items-center container-x pt-32">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-secondary">Page not found</h1>
+        <p className="mt-3 text-muted-foreground">The page you are looking for does not exist.</p>
+        <a href="/" className="mt-6 btn-primary inline-flex">
+          Back home
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function SplatComponent() {
   return (
     <div className="min-h-[60vh] grid place-items-center container-x pt-32">
       <div className="text-center">
